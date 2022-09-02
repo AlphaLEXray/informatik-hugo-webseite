@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Automaten on My New Hugo Site</title>
+    <link>/automaten.html</link>
+    <description>Recent content in Automaten on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/automaten/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Formale Sprachen Grammatiken</title>
+      <link>/automaten/formale-sprachen-grammatiken.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/automaten/formale-sprachen-grammatiken.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mealy Automat</title>
+      <link>/automaten/mealy-automat.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/automaten/mealy-automat.html</guid>
+      <description>endlich: Eingabealphabet, (Ausgabealphabet), Zustände sind endlich
+A = (Q, Σ, δ, Ω, λ,s) Q: nichtleere, endliche Menge von Zuständen Σ: nichtleeres, endliches Eingabealphabet Ω: nichtleeres, endliches Ausgabealphabet δ: QxΣ → Q Übergangsfunktion, die jeder Kombination (Zustand, Eingabezeichen) einen Nachfolgezustand zuordnet λ: QxΣ → Ω Ausgabefunktion, die jeder Kombination (Zustand, Eingabezeichen) eine Ausgabe zuordnet s∈Q: Startzustand Beispiel: A = (Q, Σ,Ω, δ, λ,s) mit:
+Q = {q0, q1}
+q0: zu, q1: offen Σ = {O, S}</description>
+    </item>
+    <item>
+      <title>Dea</title>
+      <link>/automaten/dea.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/automaten/dea.html</guid>
+      <description>deterministisch: für jeden Zustand gibt es für jedes Eingabezeichen nur genau einen Folgezustand
+A = (Q, Σ, F, δ, s) Q: nichtleere, endliche Menge von Zuständen Σ: nichtleeres, endliches Eingabealphabet F⊆Q Menge der akzeptierenden Zustände δ: QxΣ → Q Übergangsfunktion, die jeder Kombination (Zustand, Eingabezeichen) einen Nachfolgezustand zuordnet s∈Q Startzustand Beispiel:
+A = (Q, Σ, F, δ, s) Q = {q0, q1} Σ = {0, 1} F = {q0, q3} s = q0 δ = 0 1 q0 q3 q2 q1 q3 q2 q2 q3 q1 q3 q2 q3 oder</description>
+    </item>
+    <item>
+      <title>Nea</title>
+      <link>/automaten/nea.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/automaten/nea.html</guid>
+      <description>nichtdeterministisch:
+für eine Kombination aus Zustand und Eingabezeichen kann es mehrere Folgezustände geben, oder keinen Folgezustand. Dann wird auf die leere Menge abgebildet (Fehlerzustand).
+A = (Q, Σ, F, δ, s) Q: nichtleere, endliche Menge von Zuständen Σ: nichtleeres, endliches Eingabealphabet F⊆Q Menge der akzeptierten Zustände δ: QxΣ → P(Q) Übergangsfunktion die jeder Kombination einen Nachfolgezustand zuordnet s∈Q Startzustand P(Q) ist die Potenzmenge von Q, also die Menge aller Teilmengen von Q.</description>
+    </item>
+    <item>
+      <title>Zusammenhang Dea Nea</title>
+      <link>/automaten/zusammenhang-dea-nea.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/automaten/zusammenhang-dea-nea.html</guid>
+      <description> DEAs und NEAs beschreiben die gleiche Sprachklasse (reguläre Sprachen) wesentlicher Unterschied: bei NEA sind auch mehrere Folgezustände bzw. kein Folgezustand mögliche der DEA ist ein Spezialfall von einem NEA jeder NEA lässt sich mittels Potenzmengenkonstruktion in einen äquivalenten DEA umwandeln </description>
+    </item>
+    <item>
+      <title>Potenzmengenkonstruktion</title>
+      <link>/automaten/potenzmengenkonstruktion.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/automaten/potenzmengenkonstruktion.html</guid>
+      <description>Idee Konstruiere zu NEA einen DEA durch:
+merke im Zustand des DEA, in welchen Zuständen der NEA sein könnte Zustände des DEA sind Mengen von Zuständen des NEA Beispiel
+NEA DEA Jeder Zustand des DEA, der mindestens einen Endzustand vom NEA enthält, wird ein akzeptierender Zustand.
+Algorithmus starte mit Menge des Anfangszustands solange es unbearbeiteten Zustand S={q1,&amp;hellip;, qk} gibt für jedes Eingabezeichen a: für jeden Zustand q1,&amp;hellip;, qk bestimme die Nachfolger für die Eingabe a im NEA und füge sie s&amp;rsquo; hinzu falls es den Zustand s&amp;rsquo; noch nicht gibt, füge ihn hinzu füge den Übergang von s zu s&amp;rsquo; hinzu markiere s als bearbeitet </description>
+    </item>
+    <item>
+      <title>Kellerautomat</title>
+      <link>/automaten/kellerautomat.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/automaten/kellerautomat.html</guid>
+      <description>A = (Q, Σ, K, F, δ, s, #) Q: nichtleere, endliche Menge von Zuständen Σ: nichtleeres, endliches Eingabealphabet F⊆Q Menge der akzeptierenden Zustände s∈Q Startzustand δ: Übergangsfunktion, die jeder Kombination (Zustand, Eingabezeichen (ϵ ist auch möglich, gehört aber nicht zum Eingabealphabet), Kellerzeichen) einen Nachfolgezustand und eine Kelleroperation zuordnet #ϵK Anfangssymbol im Keller Beispiel
+A = (Q, Σ, K, F, δ, s, #) Q = {z0, z1, z2} Σ = {a, b} K = {#, A} F = {Z2} s = Z0 δ: Zustand Eingabezeichen Kellerzeichen Folgezustand Kelleroperation z0 a # z0 push(A) z0 a A z0 push(A) z0 b A z1 pop() z1 b A z1 pop() z1 ϵ # z2 nop alle nicht aufgelisteten Übergänge führen in einen Fehlerzustand</description>
+    </item>
+    <item>
+      <title>Vergleich Automaten</title>
+      <link>/automaten/vergleich-automaten.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/automaten/vergleich-automaten.html</guid>
+      <description>DEA/NEA Beantwortung von Entscheidungsfragen (gehört die Eingabe einer bestimmten Sprache?) z.B.: zur Prüfung der syntaktischen Korrektheit von Quellcode (if, for, ..) erkennt reguläre Sprachen Kellerautomaten (nichtdeterministisch) Erkennung beliebig vieler Klammernschachtelnungen erkennt kontextfreie Sprachen erkennt keine Sprachen der Form L = {anbncn|n&amp;gt;0} </description>
+    </item>
+  </channel>
+</rss>
