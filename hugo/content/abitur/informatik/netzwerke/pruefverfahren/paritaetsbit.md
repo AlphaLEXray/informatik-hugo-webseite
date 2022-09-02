@@ -1,8 +1,7 @@
----
-title: "Paritaetsbit"
-draft: false
-weight: 1
----
++++
+title = "Paritaetsbit"
+weight = 1
++++
 
 **Definition**:  
 An die Bitfolge wird ein Prüfbit angehängt, durch das die Anzahl der Einsen in der Bitfolge gerade wird.

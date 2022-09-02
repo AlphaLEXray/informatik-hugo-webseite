@@ -1,8 +1,7 @@
----
-title: "Ring Topologie"
-draft: false
-weight: 2
----
++++
+title = "Ring Topologie"
+weight = 2
++++
 
 **Beschreibung**:  
 Jeder Computer im Netzwerk ist mit genau zwei weiteren verbunden. Die Daten werden vom Sender über die anderen Computer an den Empfänger geleitet.

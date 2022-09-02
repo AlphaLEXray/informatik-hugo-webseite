@@ -1,8 +1,7 @@
----
-title: "Bus Topologie"
-draft: false
-weight: 1
----
++++
+title = "Bus Topologie"
+weight = 1
++++
 
 **Beschreibung**:  
 Alle Rechner sind direkt mit dem Übertragungsmedium verbunden, dem sogenannten BUS. Dies führt dazu, dass nur ein Teilnehmer zu einem Zeitpunkt Daten versenden kann.

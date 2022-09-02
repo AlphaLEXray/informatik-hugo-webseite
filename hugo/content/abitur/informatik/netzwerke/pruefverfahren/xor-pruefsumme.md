@@ -1,8 +1,7 @@
----
-title: "XOR-Pruefsumme"
-draft: false
-weight: 3
----
++++
+title = "XOR-Pruefsumme"
+weight = 3
++++
 
 **Definition**:  
 Mehrere gleich lange Teile einer Bitfolge werden XOR-verknüpft. Es entsteht eine Prüfsumme, die die gleiche Länge wie die einzelnen Bitfolgen hat.

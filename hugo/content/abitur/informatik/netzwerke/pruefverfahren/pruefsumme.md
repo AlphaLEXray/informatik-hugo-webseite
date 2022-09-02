@@ -1,8 +1,7 @@
----
-title: "Pruefsumme"
-draft: false
-weight: 2
----
++++
+title = "Pruefsumme"
+weight = 2
++++
 
 **Definition**:  
 Es werden alle Bits der Bitfolge addiert. Die Summe wird modulo n gerechnet, wobei durch n die Länge der Prüfsumme bestimmt wird.

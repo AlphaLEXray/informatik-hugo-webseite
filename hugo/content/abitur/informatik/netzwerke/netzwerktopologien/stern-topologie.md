@@ -1,8 +1,7 @@
----
-title: "Stern Topologie"
-draft: false
-weight: 3
----
++++
+title = "Stern Topologie"
+weight = 3
++++
 
 **Beschreibung**:  
 Jeder Computer ist mit nur einem Zentralen verbunden. Alle Daten werden über diesen verteilt.

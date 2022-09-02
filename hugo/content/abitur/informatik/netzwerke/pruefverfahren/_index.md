@@ -1,7 +1,6 @@
----
-title: "Pruefverfahren"
-draft: false
-weight: 2
----
++++
+title = "Pruefverfahren"
+weight = 2
++++
 
 Prüfverfahren

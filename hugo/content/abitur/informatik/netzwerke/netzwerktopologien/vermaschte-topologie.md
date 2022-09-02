@@ -1,8 +1,7 @@
----
-title: "Vermaschte Topologie"
-draft: false
-weight: 4
----
++++
+title = "Vermaschte Topologie"
+weight = 4
++++
 
 **Beschreibung**:  
 Jeder Computer im Netzwerk ist mit mindestens einem weiteren verbunden. Die Daten haben meistens mehrere Routen vom Sender zum Empfänger. Wenn alle Rechner mit allen anderen verbunden sind heißt diese vollvermascht.
