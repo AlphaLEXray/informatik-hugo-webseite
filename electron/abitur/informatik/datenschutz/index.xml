@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Datenschutz on My New Hugo Site</title>
+    <link>/abitur/informatik/datenschutz.html</link>
+    <description>Recent content in Datenschutz on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/abitur/informatik/datenschutz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Grundprinzipien</title>
+      <link>/abitur/informatik/datenschutz/grundprinzipien.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/abitur/informatik/datenschutz/grundprinzipien.html</guid>
+      <description>Verbot mit Erlaubnisvorbehalt Die Verarbeitung, d. h. zum Beispiel die Erhebung, Speicherung, Weitergabe oder allgemeine Verwendung personenbezogener Daten ist grundsätzlich verboten – es sei denn, die betroffene Person hat der Verarbeitung für einen konkreten Zweck zugestimmt oder es gibt eine explizite gesetzliche Regelung, die eine Verarbeitung für einen konkreten Zweck erlaubt. Datenminimierung Die Verarbeitung personenbezogener Daten ist an dem Ziel auszurichten, so wenig personenbezogene Daten wie möglich zu verarbeiten. Insbesondere sind personenbezogene Daten nach Möglichkeit zu anonymisieren bzw.</description>
+    </item>
+    <item>
+      <title>Schutzziele in der Informationssicherheit</title>
+      <link>/abitur/informatik/datenschutz/schutzziele.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/abitur/informatik/datenschutz/schutzziele.html</guid>
+      <description>Es gibt 7 Schutzziele in der Informationssicherheit. Diese sind in keiner besonderen Reihenfolge:
+Vertraulichkeit
+Die Information einer Nachricht ist nur den befugten Personen zugänglich. Integrität
+Der Inahlt der Nachricht kann entweder nicht bearbeitet werden oder nicht unbemerkt bearbeitet werden. Verfügbarkeit
+Ein Dienst muss zur vereinbarten Zeit verfügbar sein. Die Verfügbarkeit setzt sich aus der eigentlichen Aktivzeit geteilt durch die vereinbarte Zeit zusammen. Authentizität
+Beinhaltet, dass der aktuelle Kommunikationsparnter auch der gewollte bzw.</description>
+    </item>
+    <item>
+      <title>Stellungnahme im Fach Informatik</title>
+      <link>/abitur/informatik/datenschutz/stellungnahme.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/abitur/informatik/datenschutz/stellungnahme.html</guid>
+      <description>Eine Stellungsnahme besteht aus drei Teilen. Die These, die Argumente und als letztes die Positionierung.
+These Die These ist eine Behauptung zu der man Stellung nehmen soll. Je nach Aufgabenstellung kann man seine eigenen These entwickeln oder man bekommt eine These.
+Argumente Bei den Argumenten sammelt man verschiedene die für die These oder gegen sie sprechen. Dabei kann man verschiedene Argumentationsverläufe verwenden, wie zum Beispiel:
+Ping-Pong: Pro und Contra Argumente folgen einander im Argumentationsverlauf.</description>
+    </item>
+  </channel>
+</rss>

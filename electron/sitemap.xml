@@ -1,211 +1,217 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/netzwerke/schichtenmodell/anwendungsschicht.html</loc>
+    <loc>/abitur.html</loc>
   </url>
   <url>
-    <loc>/automaten.html</loc>
+    <loc>/abitur/informatik/netzwerke/schichtenmodell/anwendungsschicht.html</loc>
   </url>
   <url>
-    <loc>/netzwerke/netzwerktopologien/bus-topologie.html</loc>
+    <loc>/abitur/informatik/automaten.html</loc>
   </url>
   <url>
-    <loc>/verschluesselung/symmetrische-verschluesselung/ceasar.html</loc>
+    <loc>/abitur/informatik/netzwerke/netzwerktopologien/bus-topologie.html</loc>
   </url>
   <url>
-    <loc>/netzwerke/client-server/client-server-modellierung.html</loc>
+    <loc>/abitur/informatik/verschluesselung/symmetrische-verschluesselung/ceasar.html</loc>
   </url>
   <url>
-    <loc>/datenbanken/beispiel-relationale-datenbanken/er-modell-erstellen.html</loc>
+    <loc>/abitur/informatik/netzwerke/client-server/client-server-modellierung.html</loc>
   </url>
   <url>
-    <loc>/datenbanken/ueberfuehrung-von-normalformen/erste-normalform.html</loc>
+    <loc>/abitur/informatik/datenbanken/beispiel-relationale-datenbanken/er-modell-erstellen.html</loc>
   </url>
   <url>
-    <loc>/datenbanken/fachwoerter.html</loc>
+    <loc>/abitur/informatik/datenbanken/ueberfuehrung-von-normalformen/erste-normalform.html</loc>
   </url>
   <url>
-    <loc>/verschluesselung/grundlagen/grundbegriffe.html</loc>
+    <loc>/abitur/informatik/datenbanken/fachwoerter.html</loc>
   </url>
   <url>
-    <loc>/verschluesselung/grundlagen.html</loc>
+    <loc>/abitur/informatik/verschluesselung/grundlagen/grundbegriffe.html</loc>
   </url>
   <url>
-    <loc>/datenschutz/grundprinzipien.html</loc>
+    <loc>/abitur/informatik/verschluesselung/grundlagen.html</loc>
   </url>
   <url>
-    <loc>/automaten/mealy-automat.html</loc>
+    <loc>/abitur/informatik/datenschutz/grundprinzipien.html</loc>
   </url>
   <url>
-    <loc>/datenbanken/er-modell/modellierung.html</loc>
+    <loc>/abitur/informatik.html</loc>
   </url>
   <url>
-    <loc>/netzwerke/netzwerktopologien.html</loc>
+    <loc>/abitur/informatik/automaten/mealy-automat.html</loc>
   </url>
   <url>
-    <loc>/netzwerke/pruefverfahren/paritaetsbit.html</loc>
+    <loc>/abitur/informatik/datenbanken/er-modell/modellierung.html</loc>
   </url>
   <url>
-    <loc>/verschluesselung/asymmetrische-verschluesselung/rsa.html</loc>
+    <loc>/abitur/informatik/netzwerke/netzwerktopologien.html</loc>
   </url>
   <url>
-    <loc>/automaten/formale-sprachen-grammatiken/syntax.html</loc>
+    <loc>/abitur/informatik/netzwerke/pruefverfahren/paritaetsbit.html</loc>
   </url>
   <url>
-    <loc>/datenbanken/operatoren/vergleichs-operatoren.html</loc>
+    <loc>/abitur/informatik/verschluesselung/asymmetrische-verschluesselung/rsa.html</loc>
   </url>
   <url>
-    <loc>/datenbanken/operatoren/arithmetische-operatoren.html</loc>
+    <loc>/abitur/informatik/automaten/formale-sprachen-grammatiken/syntax.html</loc>
   </url>
   <url>
-    <loc>/netzwerke/client-server/client-server-kommunikation.html</loc>
+    <loc>/abitur/informatik/datenbanken/operatoren/vergleichs-operatoren.html</loc>
   </url>
   <url>
-    <loc>/datenbanken.html</loc>
+    <loc>/abitur/informatik/datenbanken/operatoren/arithmetische-operatoren.html</loc>
   </url>
   <url>
-    <loc>/automaten/dea.html</loc>
+    <loc>/abitur/informatik/netzwerke/client-server/client-server-kommunikation.html</loc>
   </url>
   <url>
-    <loc>/datenbanken/beispiel-relationale-datenbanken/er-relation-uebertragen.html</loc>
+    <loc>/abitur/informatik/datenbanken.html</loc>
   </url>
   <url>
-    <loc>/automaten/formale-sprachen-grammatiken/formale-sprach.html</loc>
+    <loc>/abitur/informatik/automaten/dea.html</loc>
   </url>
   <url>
-    <loc>/verschluesselung/grundlagen/mathe-grundlagen-kryptografie.html</loc>
+    <loc>/abitur/informatik/datenbanken/beispiel-relationale-datenbanken/er-relation-uebertragen.html</loc>
   </url>
   <url>
-    <loc>/netzwerke/pruefverfahren/pruefsumme.html</loc>
+    <loc>/abitur/informatik/automaten/formale-sprachen-grammatiken/formale-sprach.html</loc>
   </url>
   <url>
-    <loc>/netzwerke/pruefverfahren.html</loc>
+    <loc>/abitur/informatik/verschluesselung/grundlagen/mathe-grundlagen-kryptografie.html</loc>
   </url>
   <url>
-    <loc>/netzwerke/netzwerktopologien/ring-topologie.html</loc>
+    <loc>/abitur/informatik/netzwerke/pruefverfahren/pruefsumme.html</loc>
   </url>
   <url>
-    <loc>/datenschutz/schutzziele.html</loc>
+    <loc>/abitur/informatik/netzwerke/pruefverfahren.html</loc>
   </url>
   <url>
-    <loc>/datenbanken/sql-befehle.html</loc>
+    <loc>/abitur/informatik/netzwerke/netzwerktopologien/ring-topologie.html</loc>
   </url>
   <url>
-    <loc>/verschluesselung/symmetrische-verschluesselung.html</loc>
+    <loc>/abitur/informatik/datenschutz/schutzziele.html</loc>
   </url>
   <url>
-    <loc>/netzwerke/schichtenmodell/transportschicht.html</loc>
+    <loc>/abitur/informatik/datenbanken/sql-befehle.html</loc>
   </url>
   <url>
-    <loc>/datenbanken/er-modell/umsetzung.html</loc>
+    <loc>/abitur/informatik/verschluesselung/symmetrische-verschluesselung.html</loc>
   </url>
   <url>
-    <loc>/verschluesselung/symmetrische-verschluesselung/vigenere.html</loc>
+    <loc>/abitur/informatik/netzwerke/schichtenmodell/transportschicht.html</loc>
   </url>
   <url>
-    <loc>/datenbanken/ueberfuehrung-von-normalformen/zweite-normalform.html</loc>
+    <loc>/abitur/informatik/datenbanken/er-modell/umsetzung.html</loc>
   </url>
   <url>
-    <loc>/verschluesselung/asymmetrische-verschluesselung.html</loc>
+    <loc>/abitur/informatik/verschluesselung/symmetrische-verschluesselung/vigenere.html</loc>
   </url>
   <url>
-    <loc>/netzwerke/client-server/client-server-implementierung.html</loc>
+    <loc>/abitur/informatik/datenbanken/ueberfuehrung-von-normalformen/zweite-normalform.html</loc>
   </url>
   <url>
-    <loc>/datenbanken/ueberfuehrung-von-normalformen/dritte-normalform.html</loc>
+    <loc>/abitur/informatik/verschluesselung/asymmetrische-verschluesselung.html</loc>
   </url>
   <url>
-    <loc>/automaten/formale-sprachen-grammatiken/formale-grammatik.html</loc>
+    <loc>/abitur/informatik/netzwerke/client-server/client-server-implementierung.html</loc>
   </url>
   <url>
-    <loc>/netzwerke/schichtenmodell/internetschicht.html</loc>
+    <loc>/abitur/informatik/datenbanken/ueberfuehrung-von-normalformen/dritte-normalform.html</loc>
   </url>
   <url>
-    <loc>/verschluesselung/symmetrische-verschluesselung/kasiski-test.html</loc>
+    <loc>/abitur/informatik/automaten/formale-sprachen-grammatiken/formale-grammatik.html</loc>
   </url>
   <url>
-    <loc>/datenbanken/operatoren/logische-operatoren.html</loc>
+    <loc>/abitur/informatik/netzwerke/schichtenmodell/internetschicht.html</loc>
   </url>
   <url>
-    <loc>/automaten/nea.html</loc>
+    <loc>/abitur/informatik/verschluesselung/symmetrische-verschluesselung/kasiski-test.html</loc>
   </url>
   <url>
-    <loc>/netzwerke.html</loc>
+    <loc>/abitur/informatik/datenbanken/operatoren/logische-operatoren.html</loc>
   </url>
   <url>
-    <loc>/datenbanken/operatoren.html</loc>
+    <loc>/abitur/informatik/automaten/nea.html</loc>
   </url>
   <url>
-    <loc>/datenbanken/beispiel-relationale-datenbanken/relation-in-normalformen.html</loc>
+    <loc>/abitur/informatik/netzwerke.html</loc>
   </url>
   <url>
-    <loc>/netzwerke/schichtenmodell.html</loc>
+    <loc>/abitur/informatik/datenbanken/operatoren.html</loc>
   </url>
   <url>
-    <loc>/datenschutz/stellungnahme.html</loc>
+    <loc>/abitur/informatik/datenbanken/beispiel-relationale-datenbanken/relation-in-normalformen.html</loc>
   </url>
   <url>
-    <loc>/netzwerke/netzwerktopologien/stern-topologie.html</loc>
+    <loc>/abitur/informatik/netzwerke/schichtenmodell.html</loc>
   </url>
   <url>
-    <loc>/netzwerke/pruefverfahren/xor-pruefsumme.html</loc>
+    <loc>/abitur/informatik/datenschutz/stellungnahme.html</loc>
   </url>
   <url>
-    <loc>/automaten/formale-sprachen-grammatiken/anwendung.html</loc>
+    <loc>/abitur/informatik/netzwerke/netzwerktopologien/stern-topologie.html</loc>
   </url>
   <url>
-    <loc>/netzwerke/client-server.html</loc>
+    <loc>/abitur/informatik/netzwerke/pruefverfahren/xor-pruefsumme.html</loc>
   </url>
   <url>
-    <loc>/verschluesselung/symmetrische-verschluesselung/diffie-hellman-verfahren.html</loc>
+    <loc>/abitur/informatik/automaten/formale-sprachen-grammatiken/anwendung.html</loc>
   </url>
   <url>
-    <loc>/datenbanken/funktionen.html</loc>
+    <loc>/abitur/informatik/netzwerke/client-server.html</loc>
   </url>
   <url>
-    <loc>/datenbanken/beispiel-relationale-datenbanken/implementation-in-sql.html</loc>
+    <loc>/abitur/informatik/verschluesselung/symmetrische-verschluesselung/diffie-hellman-verfahren.html</loc>
   </url>
   <url>
-    <loc>/netzwerke/schichtenmodell/netzzugangsschicht.html</loc>
+    <loc>/abitur/informatik/datenbanken/funktionen.html</loc>
   </url>
   <url>
-    <loc>/netzwerke/netzwerktopologien/vermaschte-topologie.html</loc>
+    <loc>/abitur/informatik/datenbanken/beispiel-relationale-datenbanken/implementation-in-sql.html</loc>
   </url>
   <url>
-    <loc>/verschluesselung.html</loc>
+    <loc>/abitur/informatik/netzwerke/schichtenmodell/netzzugangsschicht.html</loc>
   </url>
   <url>
-    <loc>/automaten/zusammenhang-dea-nea.html</loc>
+    <loc>/abitur/informatik/netzwerke/netzwerktopologien/vermaschte-topologie.html</loc>
   </url>
   <url>
-    <loc>/datenschutz.html</loc>
+    <loc>/abitur/informatik/verschluesselung.html</loc>
   </url>
   <url>
-    <loc>/datenbanken/normalformen.html</loc>
+    <loc>/abitur/informatik/automaten/zusammenhang-dea-nea.html</loc>
   </url>
   <url>
-    <loc>/automaten/potenzmengenkonstruktion.html</loc>
+    <loc>/abitur/informatik/datenschutz.html</loc>
   </url>
   <url>
-    <loc>/datenbanken/abhaengigkeiten.html</loc>
+    <loc>/abitur/informatik/datenbanken/normalformen.html</loc>
   </url>
   <url>
-    <loc>/automaten/kellerautomat.html</loc>
+    <loc>/abitur/informatik/automaten/potenzmengenkonstruktion.html</loc>
   </url>
   <url>
-    <loc>/automaten/vergleich-automaten.html</loc>
+    <loc>/abitur/informatik/datenbanken/abhaengigkeiten.html</loc>
   </url>
   <url>
-    <loc>/datenbanken/er-modell.html</loc>
+    <loc>/abitur/informatik/automaten/kellerautomat.html</loc>
   </url>
   <url>
-    <loc>/datenbanken/ueberfuehrung-von-normalformen.html</loc>
+    <loc>/abitur/informatik/automaten/vergleich-automaten.html</loc>
   </url>
   <url>
-    <loc>/datenbanken/beispiel-relationale-datenbanken.html</loc>
+    <loc>/abitur/informatik/datenbanken/er-modell.html</loc>
   </url>
   <url>
-    <loc>/automaten/formale-sprachen-grammatiken.html</loc>
+    <loc>/abitur/informatik/datenbanken/ueberfuehrung-von-normalformen.html</loc>
+  </url>
+  <url>
+    <loc>/abitur/informatik/datenbanken/beispiel-relationale-datenbanken.html</loc>
+  </url>
+  <url>
+    <loc>/abitur/informatik/automaten/formale-sprachen-grammatiken.html</loc>
   </url>
   <url>
     <loc>/categories.html</loc>

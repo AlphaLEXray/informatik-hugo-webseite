@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Schichtenmodell on My New Hugo Site</title>
+    <link>/abitur/informatik/netzwerke/schichtenmodell.html</link>
+    <description>Recent content in Schichtenmodell on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/abitur/informatik/netzwerke/schichtenmodell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Anwendungsschicht</title>
+      <link>/abitur/informatik/netzwerke/schichtenmodell/anwendungsschicht.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/abitur/informatik/netzwerke/schichtenmodell/anwendungsschicht.html</guid>
+      <description> Stellt Dienste für die jeweilige Anwendung bereit Übersetzt die Daten in eine Systemunabhängige Form Verbindet jeweils die an einer Sitzung beteiligten Anwendungen </description>
+    </item>
+    <item>
+      <title>Transportschicht</title>
+      <link>/abitur/informatik/netzwerke/schichtenmodell/transportschicht.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/abitur/informatik/netzwerke/schichtenmodell/transportschicht.html</guid>
+      <description> Stellt eine zuverlässige Verbindung zwischen den Computern her </description>
+    </item>
+    <item>
+      <title>Internetschicht</title>
+      <link>/abitur/informatik/netzwerke/schichtenmodell/internetschicht.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/abitur/informatik/netzwerke/schichtenmodell/internetschicht.html</guid>
+      <description> Die Daten werden vom Sender zum Empfänger über das Netzwerk verschickt </description>
+    </item>
+    <item>
+      <title>Netzzugangsschicht</title>
+      <link>/abitur/informatik/netzwerke/schichtenmodell/netzzugangsschicht.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/abitur/informatik/netzwerke/schichtenmodell/netzzugangsschicht.html</guid>
+      <description> Stellt eine zuverlässige physikalische Verbindung her Überträgt die Daten mithilfe von physischen Signalen (wie Licht oder elektrischem Strom) </description>
+    </item>
+  </channel>
+</rss>
