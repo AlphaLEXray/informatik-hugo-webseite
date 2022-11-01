@@ -42,13 +42,6 @@
     "uri": "/abitur/informatik/netzwerke/client-server/client-server-modellierung.html"
   },
   {
-    "content": "Die Striche stehen für 1 und die Dreiecke für n. D.h. die Kundenart und Kunden haben eine 1-n Beziehung während Auftrag und Auftragsart eine n-m Beziehung haben.\n",
-    "description": "",
-    "tags": null,
-    "title": "Er Modell Erstellen",
-    "uri": "/abitur/informatik/datenbanken/beispiel-relationale-datenbanken/er-modell-erstellen.html"
-  },
-  {
     "content": "Alle Werte müsen atomar sein, das heißt, dass sie nicht weiter zerlegbar sind. Beispiel:\nName Telefon Nummer Kevin 0217817563, 021738498 Name Telefon Nummer Kevin 0217817563 Kevin 021738498 Die Tabelle befindet sich nun in der ersten Normalform, da die Attribute nicht weiter aufgebrochen werden können.\n",
     "description": "",
     "tags": null,
@@ -166,13 +159,6 @@
     "tags": null,
     "title": "Dea",
     "uri": "/abitur/informatik/automaten/dea.html"
-  },
-  {
-    "content": "Nun wird jede Entität in eine eigene Relation übertragen. Dabei sind die Attribute die Spalten der Relation.\nKundenart(KID, Art)\nKunden(KID, Name, Art)\nAuftrag(KID, AID, PID)\nAuftragsart(AID, Art)\nPositionsarten(PaID, Position)\nPersonal_Info(PID, PaID, FID, Email, TelefonNr, Straße, Hausnummer, Stadt, PLZ, Geburtsdatum, KontoNr)\nFachgebiete(FID, Gebiete)\nPersonal(PID, Name, Vorname)\nHinweis: Die Primärschlüssel sind eigentlich unterstrichen (wir im ER-Modell, hier aber Fett da man in Markdown schlecht unterstreichen kann.)\n",
-    "description": "",
-    "tags": null,
-    "title": "Er Relation Uebertragen",
-    "uri": "/abitur/informatik/datenbanken/beispiel-relationale-datenbanken/er-relation-uebertragen.html"
   },
   {
     "content": "Eine Formale Sprache L über einem Alphabet Σ ist eine Teilmenge aller möglichen Verknüpfungen des Alphabets\nZusammenhang zwischen Automaten und Grammatiken Automaten können die Wörter einer Sprache erkennen. Grammatiken geben die Struktur der Wörter einer Sprache vor. Mittels Produktionsregeln lassen sich Wörter der Sprache erzeugen.\n",
@@ -329,13 +315,6 @@
     "uri": "/abitur/informatik/datenbanken/operatoren.html"
   },
   {
-    "content": "Dies kann kann schlecht an unserem Beispiel gezeigt werden, da wir schon in der Planungsphase versucht haben darauf zu achten, dass die Attribute atomar sind. Hätten wir dies nicht getan könnte ein Beispiel so aussehen:\nVorher Nachher Personal_Info(PID, PaID, FID, Email, TelefonNr, Anschrift, Geburtsdatum, KontoNr) Personal_Info(PID, PaID, FID, Email, TelefonNr, Straße, Hausnummer, Stadt, PLZ, Geburtsdatum, KontoNr) Wie man in der Tabelle oben sieht wurde das Attribut Anschrift in seine kleinsten Bestandteile aufgeteilt.\nAnschrift → Straße, Hausnummer, Stadt, PLZ\n",
-    "description": "",
-    "tags": null,
-    "title": "Relation in Normalformen",
-    "uri": "/abitur/informatik/datenbanken/beispiel-relationale-datenbanken/relation-in-normalformen.html"
-  },
-  {
     "content": "Schichtenmodell\n",
     "description": "",
     "tags": null,
@@ -390,13 +369,6 @@
     "tags": null,
     "title": "Funktionen",
     "uri": "/abitur/informatik/datenbanken/funktionen.html"
-  },
-  {
-    "content": "CREATE TABLE Kundenart( KID STRING(255), Art varchar(255) ); CREATE TABLE Kunden( KID STRING(255), Name varchar(255), Art varchar(255) ); CREATE TABLE Auftrag( KID STRING(255), AID STRING(255), PID STRING(255) ); CREATE TABLE Auftragsart( AID STRING(255), Art varchar(255) ); CREATE TABLE Positionsarten( PaID STRING(255), Position varchar(255) ); CREATE TABLE Personal_Info( PID STRING(255), PaID STRING(255), FID STRING(255), Email varchar(255), TelefonNr int(20), Straße varchar(255), Hausnummer varchar(255), Stadt varchar(255), PLZ int(10), Geburtsdatum date, KontoNr int(30) ); CREATE TABLE Fachgebiete( FID STRING(255), Gebiete varchar(255) ); CREATE TABLE Personal( PID STRING(255), Name varchar(255), Vorname varchar(255) ); ",
-    "description": "",
-    "tags": null,
-    "title": "Implementation in Sql",
-    "uri": "/abitur/informatik/datenbanken/beispiel-relationale-datenbanken/implementation-in-sql.html"
   },
   {
     "content": " Stellt eine zuverlässige physikalische Verbindung her Überträgt die Daten mithilfe von physischen Signalen (wie Licht oder elektrischem Strom) ",
@@ -481,13 +453,6 @@
     "tags": null,
     "title": "Ueberfuehrung Von Normalformen",
     "uri": "/abitur/informatik/datenbanken/ueberfuehrung-von-normalformen.html"
-  },
-  {
-    "content": "Hier werden die oben genannten Konzepte im Zusammenhang einer Datenbank für eine Schülerfirma nochmal dargestellt.\n",
-    "description": "",
-    "tags": null,
-    "title": "Beispeil Relationale Datenbanken",
-    "uri": "/abitur/informatik/datenbanken/beispiel-relationale-datenbanken.html"
   },
   {
     "content": "",

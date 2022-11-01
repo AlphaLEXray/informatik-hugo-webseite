@@ -19,9 +19,6 @@
     <loc>/abitur/informatik/netzwerke/client-server/client-server-modellierung.html</loc>
   </url>
   <url>
-    <loc>/abitur/informatik/datenbanken/beispiel-relationale-datenbanken/er-modell-erstellen.html</loc>
-  </url>
-  <url>
     <loc>/abitur/informatik/datenbanken/ueberfuehrung-von-normalformen/erste-normalform.html</loc>
   </url>
   <url>
@@ -71,9 +68,6 @@
   </url>
   <url>
     <loc>/abitur/informatik/automaten/dea.html</loc>
-  </url>
-  <url>
-    <loc>/abitur/informatik/datenbanken/beispiel-relationale-datenbanken/er-relation-uebertragen.html</loc>
   </url>
   <url>
     <loc>/abitur/informatik/automaten/formale-sprachen-grammatiken/formale-sprach.html</loc>
@@ -142,9 +136,6 @@
     <loc>/abitur/informatik/datenbanken/operatoren.html</loc>
   </url>
   <url>
-    <loc>/abitur/informatik/datenbanken/beispiel-relationale-datenbanken/relation-in-normalformen.html</loc>
-  </url>
-  <url>
     <loc>/abitur/informatik/netzwerke/schichtenmodell.html</loc>
   </url>
   <url>
@@ -167,9 +158,6 @@
   </url>
   <url>
     <loc>/abitur/informatik/datenbanken/funktionen.html</loc>
-  </url>
-  <url>
-    <loc>/abitur/informatik/datenbanken/beispiel-relationale-datenbanken/implementation-in-sql.html</loc>
   </url>
   <url>
     <loc>/abitur/informatik/netzwerke/schichtenmodell/netzzugangsschicht.html</loc>
@@ -206,9 +194,6 @@
   </url>
   <url>
     <loc>/abitur/informatik/datenbanken/ueberfuehrung-von-normalformen.html</loc>
-  </url>
-  <url>
-    <loc>/abitur/informatik/datenbanken/beispiel-relationale-datenbanken.html</loc>
   </url>
   <url>
     <loc>/abitur/informatik/automaten/formale-sprachen-grammatiken.html</loc>
