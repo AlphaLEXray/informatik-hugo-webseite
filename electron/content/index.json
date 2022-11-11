@@ -63,7 +63,7 @@
     "uri": "/abitur/informatik/verschluesselung/grundlagen/grundbegriffe.html"
   },
   {
-    "content": "Lorem Ipsum.\n",
+    "content": "",
     "description": "",
     "tags": null,
     "title": "Grundlagen",
@@ -77,7 +77,7 @@
     "uri": "/abitur/informatik/datenschutz/grundprinzipien.html"
   },
   {
-    "content": "Lorem Ipsum.\n",
+    "content": "",
     "description": "",
     "tags": null,
     "title": "Informatik",
@@ -147,7 +147,7 @@
     "uri": "/abitur/informatik/netzwerke/client-server/client-server-kommunikation.html"
   },
   {
-    "content": "Lorem Ipsum.\n",
+    "content": "",
     "description": "",
     "tags": null,
     "title": "Datenbanken",
@@ -385,7 +385,7 @@
     "uri": "/abitur/informatik/netzwerke/netzwerktopologien/vermaschte-topologie.html"
   },
   {
-    "content": "Lorem Ipsum.\n",
+    "content": "",
     "description": "",
     "tags": null,
     "title": "Verschluesselung",
