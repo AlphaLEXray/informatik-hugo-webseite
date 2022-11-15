@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Asymmetrische Verschluesselung on My New Hugo Site</title>
+    <link>/informatik/verschluesselung/asymmetrische-verschluesselung.html</link>
+    <description>Recent content in Asymmetrische Verschluesselung on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/informatik/verschluesselung/asymmetrische-verschluesselung/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RSA-Verschlüsselung</title>
+      <link>/informatik/verschluesselung/asymmetrische-verschluesselung/rsa.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/informatik/verschluesselung/asymmetrische-verschluesselung/rsa.html</guid>
+      <description>privater Schlüssel: (d, N)
+Beispiel:	(11, 14)
+öffentlicher Schlüssel: (e, N)
+Beispiel: (5, 14)
+Nachricht: m
+Beispiel: c (3)
+Verschlüsseln m^e (als Zahl) mod N
+Beispiel:
+3 mod 14 = 5 (e) Cyphertext (c) = 5 (e)
+Entschlüsseln c^d (als Zahl) mod N
+Beispiel:
+5 mod 15 = 3 (c)
+RSA-Schlüsselgeneration Um eine Nachricht mit dem RSA-Verfahren zu verschlüsseln braucht man einen privaten und einen öffentlichen Schlüssel. Dieser wird generell in 5 Schritten erzeugt.</description>
+    </item>
+  </channel>
+</rss>

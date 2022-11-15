@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Symmetrische Verschluesselung on My New Hugo Site</title>
+    <link>/informatik/verschluesselung/symmetrische-verschluesselung.html</link>
+    <description>Recent content in Symmetrische Verschluesselung on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/informatik/verschluesselung/symmetrische-verschluesselung/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Caesar-Verschlüsselung</title>
+      <link>/informatik/verschluesselung/symmetrische-verschluesselung/ceasar.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/informatik/verschluesselung/symmetrische-verschluesselung/ceasar.html</guid>
+      <description>Das Caesar-Verfahren ist ein unsicheres, symmetrisches Verschlüsselungsverfahren. Bei der Verschlüsselung wird das Alphabet um einen festen Schlüssel verschoben, wobei dieser eine Zahl von 1-25 an nehmen kann. Das Verfahren ist unsicher, da es nur 25 verschiedene Schlüssel gibt, wodurch alle möglichen Kombinationen schnell ausprobiert werden können.
+Beispiel:
+Verschlüsseln wir eine Nachricht:
+→ &amp;ldquo;TEST&amp;rdquo;
+Wir erhalten:
+T → W
+E → H
+S → V
+T → W
+Verschlüsselt: WHVW
+Beim Entschlüsseln wird dieser Vorgang einfach rückwärts durchgeführt.</description>
+    </item>
+    <item>
+      <title>Vigenere</title>
+      <link>/informatik/verschluesselung/symmetrische-verschluesselung/vigenere.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/informatik/verschluesselung/symmetrische-verschluesselung/vigenere.html</guid>
+      <description>Das VIGENÈRE-Verfahren ist ein unsicheres Verschlüsselungsverfahren, welches durch ein Schlüsselwort den Quellbuchstaben durch ein sich veränderndes Alphabet ein anderen Wert zu ordnet.
+Beispiel:
+Nachricht: Test Schlüsselwort: Test Im Vigenere Quadrat:
+„Test“ mit dem Schlüssel „Test“ ergibt: MIKM
+Beim Entschlüsseln wird dieses Verfahren einfach rückwärts angewandt.</description>
+    </item>
+    <item>
+      <title>Kasiski Test</title>
+      <link>/informatik/verschluesselung/symmetrische-verschluesselung/kasiski-test.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/informatik/verschluesselung/symmetrische-verschluesselung/kasiski-test.html</guid>
+      <description>Wird benutzt, um die Länge des Schlüsselworts bei der Vigenere Verschlüsselung zu bestimmen Nachdem die Länge bestimmt wurde, können einfach wie auch beim Caesar verfahren alle Möglichkeiten durchprobiert werden. Beispiel:
+AXTRX TRYLC TYSZO EMLAF QWEUZ HRKDP NRVWM WXRPI JTRHN IKMYF WLQIE NNOXW OTVXB NEXRK AFYHW KXAXF QYAWD PKKWB WLZOF XRLSN AAWUX WTURH RFWLL WWKYF WGAXG LPCTG ZXWOX RPIYB CSMYF WIKPA DHYBC SMYFW KGMTE EUWAD LHSLP AVHFK HMWLK
+Dieser Text wurde mit dem Wort „ALTESTESTAMENT“ verschlüsselt.</description>
+    </item>
+    <item>
+      <title>Diffie Hellman Verfahren</title>
+      <link>/informatik/verschluesselung/symmetrische-verschluesselung/diffie-hellman-verfahren.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/informatik/verschluesselung/symmetrische-verschluesselung/diffie-hellman-verfahren.html</guid>
+      <description>Das Diffie-Hellman-Verfahren wird genutzt, um einen symmetrischen Schlüssel über eine ungesicherte Verbindung auszutauschen.
+Beispiel:
+Quelle: Wikimedia Commons, Public Domain → https://commons.wikimedia.org/wiki/File:Diffie-Hellman_Key_Exchange_(de).svg
+Quelle: Lorddota, Wikimedia Commons, Creative Commons Attribution-Share Alike 4.0 → https://commons.wikimedia.org/wiki/File:Diffie-Hellman_Key_Exchange-modified.png
+Quelle: https://openclipart.org</description>
+    </item>
+  </channel>
+</rss>
