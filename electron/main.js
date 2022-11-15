@@ -17,6 +17,9 @@ function createWindow () {
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
+
+  // Removes the menu bar at the top of the application
+  mainWindow.removeMenu()
 }
 
 // This method will be called when Electron has finished
