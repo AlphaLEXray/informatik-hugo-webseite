@@ -18,7 +18,13 @@
       <link>/informatik/datenstrukturen/nichtlineare-datenstrukturen.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/informatik/datenstrukturen/nichtlineare-datenstrukturen.html</guid>
-      <description></description>
+      <description>Um Graphen (und auch Baeume) zu erstellen gibt es eine gute Webseite:
+https://csacademy.com/app/graph_editor/
+Graphen Definition: Ein Graph besteht aus Knoten die mit Kanten verbunden sind. Zudem können Kanten gewichtet werden. Ein praktisches Beispiel eines Graphen ist das Internet, wo viele veschiedene Computer (Knoten) mit Kabeln (Kanten) verbunden sind.
+Es gibt verschiedene Arten von Graphen die nicht exlusiv zueinander sind.
+Dazu gehören:
+ungerichtete/gerichtete Graphen ungewichtete/gewichtete Graphen Beispiel eines ungerichteten Graphen:
+Beispiel eines gerichteten Graphen:</description>
     </item>
   </channel>
 </rss>
