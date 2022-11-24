@@ -5,7 +5,7 @@ weight = 1
 
 
 
-```
+```Java
 /**
  * Beschreiben Sie hier die Klasse SortierAlgorythmen.
  */
