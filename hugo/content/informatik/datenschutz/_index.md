@@ -1,7 +1,5 @@
 +++
 archetype = "chapter"
 title = "Datenschutz"
-weight = 5
+weight = 7
 +++
-
-Datenschutz

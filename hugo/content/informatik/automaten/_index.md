@@ -1,7 +1,7 @@
 +++
 archetype = "chapter"
 title = "Automaten"
-weight = 1
+weight = 3
 +++
 
 # Endliche Automaten

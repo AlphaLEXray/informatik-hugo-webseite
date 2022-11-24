@@ -1,5 +1,5 @@
 +++
 archetype = "chapter"
 title = "Datenbanken"
-weight = 2
+weight = 4
 +++

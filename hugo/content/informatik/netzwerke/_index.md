@@ -1,7 +1,7 @@
 +++
 archetype = "chapter"
 title = "Netzwerke"
-weight = 3
+weight = 5
 +++
 
 Hier handelt es sich um Netzwerke.
