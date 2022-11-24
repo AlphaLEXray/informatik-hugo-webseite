@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Informatik on My New Hugo Site</title>
+    <title>Informatik on Abitur</title>
     <link>/informatik.html</link>
-    <description>Recent content in Informatik on My New Hugo Site</description>
+    <description>Recent content in Informatik on Abitur</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/informatik/index.xml" rel="self" type="application/rss+xml" />
+    <language>de-de</language><atom:link href="/informatik/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algorithmen</title>
+      <link>/informatik/algorithmen.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/informatik/algorithmen.html</guid>
+      <description>Sortierverfahren Sortierfahren Definitionen Bubble Sort Der Bubble Sort Algorythmus Vergleicht jeweils zwei benachbarte Zahlen. Falls sie in der falschen Reihenfolge sind, werden sie getauscht. Dies wird so oft wiederholt, bis keine Zahlen mehr getauscht werden müssen.
+Beispiel: Erster Durchlauf:
+( 5 1 4 2 8 ) –&amp;gt; ( 1 5 4 2 8 ), 5 ist größer als 1, daher werden die Elemente getauscht
+( 1 5 4 2 8 ) –&amp;gt; ( 1 4 5 2 8 ), Tausch, da 5 &amp;gt; 4 ( 1 4 5 2 8 ) –&amp;gt; ( 1 4 2 5 8 ), Tausch, da 5 &amp;gt; 2 ( 1 4 2 5 8 ) –&amp;gt; ( 1 4 2 5 8 ), Kein Tausch, da die Reihenfolge hier schon richtig ist</description>
+    </item>
+    <item>
+      <title>Datenstrukturen</title>
+      <link>/informatik/datenstrukturen.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/informatik/datenstrukturen.html</guid>
+      <description></description>
+    </item>
     <item>
       <title>Automaten</title>
       <link>/informatik/automaten.html</link>
@@ -39,7 +56,7 @@
       <link>/informatik/datenschutz.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/informatik/datenschutz.html</guid>
-      <description>Datenschutz</description>
+      <description></description>
     </item>
   </channel>
 </rss>

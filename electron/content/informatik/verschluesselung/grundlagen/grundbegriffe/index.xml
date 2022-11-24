@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Grundbegriffe on My New Hugo Site</title>
+    <title>Grundbegriffe on Abitur</title>
     <link>/informatik/verschluesselung/grundlagen/grundbegriffe.html</link>
-    <description>Recent content in Grundbegriffe on My New Hugo Site</description>
+    <description>Recent content in Grundbegriffe on Abitur</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/informatik/verschluesselung/grundlagen/grundbegriffe/index.xml" rel="self" type="application/rss+xml" />
+    <language>de-de</language><atom:link href="/informatik/verschluesselung/grundlagen/grundbegriffe/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mathematische Grundlagen der Kryptografie on My New Hugo Site</title>
+    <title>Mathematische Grundlagen der Kryptografie on Abitur</title>
     <link>/informatik/verschluesselung/grundlagen/mathe-grundlagen-kryptografie.html</link>
-    <description>Recent content in Mathematische Grundlagen der Kryptografie on My New Hugo Site</description>
+    <description>Recent content in Mathematische Grundlagen der Kryptografie on Abitur</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/informatik/verschluesselung/grundlagen/mathe-grundlagen-kryptografie/index.xml" rel="self" type="application/rss+xml" />
+    <language>de-de</language><atom:link href="/informatik/verschluesselung/grundlagen/mathe-grundlagen-kryptografie/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

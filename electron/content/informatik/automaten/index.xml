@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Automaten on My New Hugo Site</title>
+    <title>Automaten on Abitur</title>
     <link>/informatik/automaten.html</link>
-    <description>Recent content in Automaten on My New Hugo Site</description>
+    <description>Recent content in Automaten on Abitur</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/informatik/automaten/index.xml" rel="self" type="application/rss+xml" />
+    <language>de-de</language><atom:link href="/informatik/automaten/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Formale Sprachen Grammatiken</title>
       <link>/informatik/automaten/formale-sprachen-grammatiken.html</link>
@@ -64,7 +64,7 @@ Algorithmus starte mit Menge des Anfangszustands solange es unbearbeiteten Zusta
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/informatik/automaten/kellerautomat.html</guid>
       <description>A = (Q, Σ, K, F, δ, s, #) Q: nichtleere, endliche Menge von Zuständen Σ: nichtleeres, endliches Eingabealphabet F⊆Q Menge der akzeptierenden Zustände s∈Q Startzustand δ: Übergangsfunktion, die jeder Kombination (Zustand, Eingabezeichen (ϵ ist auch möglich, gehört aber nicht zum Eingabealphabet), Kellerzeichen) einen Nachfolgezustand und eine Kelleroperation zuordnet #ϵK Anfangssymbol im Keller Beispiel
-A = (Q, Σ, K, F, δ, s, #) Q = {z0, z1, z2} Σ = {a, b} K = {#, A} F = {Z2} s = Z0 δ: Zustand Eingabezeichen Kellerzeichen Folgezustand Kelleroperation z0 a # z0 push(A) z0 a A z0 push(A) z0 b A z1 pop() z1 b A z1 pop() z1 ϵ # z2 nop alle nicht aufgelisteten Übergänge führen in einen Fehlerzustand</description>
+A = (Q, Σ, K, F, δ, s, #) Q = {z0, z1, z2} Σ = {a, b} K = {#, A} F = {Z2} s = Z0 δ: stand|E ngabezeichen|K llerzeichen|F lgezustand|K lleroperation| sub&amp;gt;0|a # z sub&amp;gt;0|p sh(A)| sub&amp;gt;0|a A z sub&amp;gt;0|p sh(A)| sub&amp;gt;0|b A z sub&amp;gt;1|p p()| sub&amp;gt;1|b A z sub&amp;gt;1|p p()| sub&amp;gt;1|� |# z sub&amp;gt;2|n p| alle nicht aufgelisteten Übergänge führen in einen Fehlerzustand</description>
     </item>
     <item>
       <title>Vergleich Automaten</title>

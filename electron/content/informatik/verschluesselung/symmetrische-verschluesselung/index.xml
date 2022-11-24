@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Symmetrische Verschluesselung on My New Hugo Site</title>
+    <title>Symmetrische Verschluesselung on Abitur</title>
     <link>/informatik/verschluesselung/symmetrische-verschluesselung.html</link>
-    <description>Recent content in Symmetrische Verschluesselung on My New Hugo Site</description>
+    <description>Recent content in Symmetrische Verschluesselung on Abitur</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/informatik/verschluesselung/symmetrische-verschluesselung/index.xml" rel="self" type="application/rss+xml" />
+    <language>de-de</language><atom:link href="/informatik/verschluesselung/symmetrische-verschluesselung/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Caesar-Verschlüsselung</title>
       <link>/informatik/verschluesselung/symmetrische-verschluesselung/ceasar.html</link>
@@ -51,7 +51,6 @@ Dieser Text wurde mit dem Wort „ALTESTESTAMENT“ verschlüsselt.</description
       <description>Das Diffie-Hellman-Verfahren wird genutzt, um einen symmetrischen Schlüssel über eine ungesicherte Verbindung auszutauschen.
 Beispiel:
 Quelle: Wikimedia Commons, Public Domain → https://commons.wikimedia.org/wiki/File:Diffie-Hellman_Key_Exchange_(de).svg
-Quelle: Lorddota, Wikimedia Commons, Creative Commons Attribution-Share Alike 4.0 → https://commons.wikimedia.org/wiki/File:Diffie-Hellman_Key_Exchange-modified.png
 Quelle: https://openclipart.org</description>
     </item>
   </channel>

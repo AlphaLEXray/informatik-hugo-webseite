@@ -1,17 +1,17 @@
 [
   {
+    "content": "Sortierverfahren Sortierfahren Definitionen Bubble Sort Der Bubble Sort Algorythmus Vergleicht jeweils zwei benachbarte Zahlen. Falls sie in der falschen Reihenfolge sind, werden sie getauscht. Dies wird so oft wiederholt, bis keine Zahlen mehr getauscht werden müssen.\nBeispiel: Erster Durchlauf:\n( 5 1 4 2 8 ) –\u003e ( 1 5 4 2 8 ), 5 ist größer als 1, daher werden die Elemente getauscht\n( 1 5 4 2 8 ) –\u003e ( 1 4 5 2 8 ), Tausch, da 5 \u003e 4 ( 1 4 5 2 8 ) –\u003e ( 1 4 2 5 8 ), Tausch, da 5 \u003e 2 ( 1 4 2 5 8 ) –\u003e ( 1 4 2 5 8 ), Kein Tausch, da die Reihenfolge hier schon richtig ist\nZweiter Durchlauf: ( 1 4 2 5 8 ) –\u003e ( 1 4 2 5 8 ) ( 1 4 2 5 8 ) –\u003e ( 1 2 4 5 8 ), Tausch, da 4 \u003e 2 ( 1 2 4 5 8 ) –\u003e ( 1 2 4 5 8 ) ( 1 2 4 5 8 ) –\u003e ( 1 2 4 5 8 ) Die Zahlenreihe ist hier zwar sortiert, jedoch weiß der Algorithmus dies nicht. Er muss erst ein weiteres mal die komplette Liste durchlaufen, ohne einen wechsel vor nehmen zu müssen.\nDritter Durchlauf: ( 1 2 4 5 8 ) –\u003e ( 1 2 4 5 8 ) ( 1 2 4 5 8 ) –\u003e ( 1 2 4 5 8 ) ( 1 2 4 5 8 ) –\u003e ( 1 2 4 5 8 ) ( 1 2 4 5 8 ) –\u003e ( 1 2 4 5 8 ) →Die Zahlenreihe ist sortiert\nSelection Sort Der Selection Sort Algorithmus durchsucht eine Zahlenliste nach der kleinsten Zahl. Diese verschiebt er an den Anfang. Die nächst kleinste Zahl wird an die zweite Position gesetzt und so weiter.\nBeispiel: // suche nach der kleinsten zahl in [0…4]\n// und Platziere sie am Index 0\n11 25 12 22 64\n// suche nach der kleinsten zahl in [1…4]\n// und Platziere sie am Index 1\n11 12 25 22 64\n// suche nach der kleinsten zahl in [2…4]\n// und Platziere sie am Index 2\n11 12 22 25 64\n// suche nach der kleinsten zahl in [3…4]\n// und Platziere sie am Index 3\n11 12 22 25 64\nInsertion Sort Beim Insertion Sort Algorithmus wird die Zahlenliste praktisch in einen sortierten und einen unsortierten Teil aufgeteilt. Die Werte aus dem unsortierten Teil werden ausgewählt und an der richtigen Stelle im sortierten Teil eingefügt.\nFunktionsweise: Iterieren Sie von Index 1 bis index n der Liste. Vergleiche hierbei das aktuelle Element (Schlüssel) mit seinem Vorgänger. Wenn das Schlüsselelement kleiner ist als sein Vorgänger, vergleiche es mit den Elementen davor. Verschiebe die höheren Elemente um eine Position nach oben, um Platz für das vertauschte Element zu schaffen. ",
+    "description": "",
+    "tags": null,
+    "title": "Algorithmen",
+    "uri": "/informatik/algorithmen.html"
+  },
+  {
     "content": " Stellt Dienste für die jeweilige Anwendung bereit Übersetzt die Daten in eine Systemunabhängige Form Verbindet jeweils die an einer Sitzung beteiligten Anwendungen ",
     "description": "",
     "tags": null,
     "title": "Anwendungsschicht",
     "uri": "/informatik/netzwerke/schichtenmodell/anwendungsschicht.html"
-  },
-  {
-    "content": "Endliche Automaten Anmerkung: Bei den Graphen werden die Fehlerzustände, der Übersichtlichkeit halber, nicht mitgezeichnet.\n",
-    "description": "",
-    "tags": null,
-    "title": "Automaten",
-    "uri": "/informatik/automaten.html"
   },
   {
     "content": "Beschreibung:\nAlle Rechner sind direkt mit dem Übertragungsmedium verbunden, dem sogenannten BUS. Dies führt dazu, dass nur ein Teilnehmer zu einem Zeitpunkt Daten versenden kann.\nVorteile Nachteile Einfache Installation Der Ausfall eines Kabels führt zum Ausfall des gesamten Netzwerks Kurze Leitungen Besitzt einen hohen Organisationsaufwand wegen der eingeschränkten Sendemöglichkeiten ",
@@ -70,11 +70,18 @@
     "uri": "/informatik/datenschutz/grundprinzipien.html"
   },
   {
-    "content": "",
+    "content": "Dies ist eine Sammlung von Lernmaterialen für den Informatikunterricht als Vorbereitung für das Abitur (in NRW).\nThis is a collection of computer science materials for the German Abitur (Majors/A-Levels).\nVorgaben Abitur 2022 NRW Link: https://www.standardsicherung.schulministerium.nrw.de/cms/zentralabitur-gost/faecher/getfile.php?file=5024#page=4\nMaterialien zu den zentralen Abiturprüfungen im Fach Informatik Link: https://www.schulentwicklung.nrw.de/lehrplaene/upload/klp_SII/if/Dokumentation_ZA-IF_GK-LK_ab_2018_2021_12_22.pdf\n",
     "description": "",
     "tags": null,
     "title": "Informatik",
     "uri": "/informatik.html"
+  },
+  {
+    "content": "Queue Aufbau Methoden enqueue() Hängt ein Objekt am Anfang der Schlange an dequeue() Entfernt das Objekt am Ende der Schlange getContent() Gibt das Inhaltsobjekt am Ende der Schlange wieder isEmpty() Gibt true zurück wenn die Schlange leer ist List Aufbau Methoden isEmpty() Gibt true zurück wenn die Liste leer ist hasAccess() Gibt true zurück falls der Pointer auf ein valides Objekt zeigt next() Bewegt den Pointer eine Information weiter toFirst() Setzt den Pointer zurück auf die erste information in der Liste toLast() Setzt den Pointer auf das letzte Element in der Liste getContent() Gibt das aktuelle inhaltsobjekt zurück setContent(pContent) setzt den aktuellen Inhalt auf den Parameter insert(pContent) fügt ein Objekt nach dem Pointer ein append(pContent) fügt am ende der Liste ein Objekt hinzu concat() setzt zwei Listen zu einer zusammen remove() entfernt das aktuelle Objekt aus der Liste Stack Aufbau Methoden top() Gibt das Objekt das oben auf dem Stapel liegt zurück push() Legt ein Objekt oben auf den Stapel pop() Entfernt das oberste Objekt isEmpty() gibt true zurück, falls der Stapel keine Inhaltsobjekte hat ",
+    "description": "",
+    "tags": null,
+    "title": "Lineare Datenstrukturen",
+    "uri": "/informatik/datenstrukturen/lineare-datenstrukturen.html"
   },
   {
     "content": "endlich: Eingabealphabet, (Ausgabealphabet), Zustände sind endlich\nA = (Q, Σ, δ, Ω, λ,s) Q: nichtleere, endliche Menge von Zuständen Σ: nichtleeres, endliches Eingabealphabet Ω: nichtleeres, endliches Ausgabealphabet δ: QxΣ → Q Übergangsfunktion, die jeder Kombination (Zustand, Eingabezeichen) einen Nachfolgezustand zuordnet λ: QxΣ → Ω Ausgabefunktion, die jeder Kombination (Zustand, Eingabezeichen) eine Ausgabe zuordnet s∈Q: Startzustand Beispiel: A = (Q, Σ,Ω, δ, λ,s) mit:\nQ = {q0, q1}\nq0: zu, q1: offen Σ = {O, S}\nO: öffnen, S: schließen Ω = {GO, GS, N}\nGO: “Tür wird geöffnet”, GS: “Tür wird geschlossen”, N: keine Ausgabe s = q0\nδ:\nO S q0 q1 q0 q1 q1 q0 λ:\nO S q0 GO N q1 N GS oder als Übergangsgraph:\n",
@@ -98,6 +105,13 @@
     "uri": "/informatik/netzwerke/netzwerktopologien.html"
   },
   {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "Nichtlineare Datenstrukturen",
+    "uri": "/informatik/datenstrukturen/nichtlineare-datenstrukturen.html"
+  },
+  {
     "content": "Definition:\nAn die Bitfolge wird ein Prüfbit angehängt, durch das die Anzahl der Einsen in der Bitfolge gerade wird.\nBeispiel: Bitfolge: 10010111 Berechnung: Anzahl der Einsen ist ungerade Prüfbit: 1 ",
     "description": "",
     "tags": null,
@@ -110,6 +124,13 @@
     "tags": null,
     "title": "RSA-Verschlüsselung",
     "uri": "/informatik/verschluesselung/asymmetrische-verschluesselung/rsa.html"
+  },
+  {
+    "content": "/** * Beschreiben Sie hier die Klasse SortierAlgorythmen. */ public class SortierAlgorythmen { //Initialisieren eines leeren Integerarrays mit dem Namen zahlen als Attribut/Globalvariabel int[] zahlen; /** * Konstruktor für Objekte der Klasse SortierAlgorythmen */ public SortierAlgorythmen() { //Das Array bekommt Werte zugewiesen zahlen = new int[]{24, 45, 106, 2, 321, 486, 3, 2345, 5543, 4456, 455}; } /** * Diese Methode führt den Bubblesortalgorithmus auf dem Array zahlen aus */ public void bubbleSort() { //Die Variabel n gleich die Länge des Arrays zahlen setzen int n = zahlen.length; //Temporäre Variabel namens temp erstellen um Integers zwischenzuspeichern int temp; //Solange die Länge des Arrays größer als 1 ist while (n \u003e 1){ //Für n - 1 for(int i=0; i\u003cn-1; i++){ //Überprüft ob der Wert der aktuellen Stelle größer ist als der nächste Wert if (zahlen[i] \u003e zahlen[i +1]) { //Ist dies der Fall werden diese beiden Getauscht //Die aktuelle Zahl (also die größere Zahl) wird in der Variabel temp zwischengespeichert temp = zahlen[i]; //Die aktuelle Zahl im Array wird gleich der nächsten Stelle des Arrays gesetzt (also der kleinereren Zahl) zahlen[i] = zahlen[i+1]; //Die nächste Zahl wird der Variabel temp gesetzt in der die größere Zahl gespeichert wurde zahlen[i+1] = temp; //Somit wurden die beiden Zahlen im Array getauscht System.out.println(zahlen[i]); } } //n wird um eins reduziert, da wieder eine Zahl sortiert wurde n = n-1; } //Das ganze Array wird durchgegangen und ausgegeben for (int i = 0; i\u003c zahlen.length; i++) { System.out.println(zahlen[i]); } } /** * Diese Methode fürht den Selectionsort auf dem Array Zahlen aus */ public void selectionSort() { //Die Integervariabel links wird als 0 initialisiert int links = 0; //Die Variabel n wird der Länge des Arrays zahlen gesetzt int n = zahlen.length; //Instanzierung von der Variabel temp int temp; while (links \u003c n) { int min = links; for(int i= links+1; i\u003czahlen.length; i++) { if (zahlen[i] \u003c zahlen[min]) { min = i; } } temp = zahlen[min]; zahlen[min] = zahlen[links]; zahlen[links] = temp; links = links+1; } for (int i = 0; i\u003c zahlen.length; i++) { System.out.println(zahlen[i]); } } } ",
+    "description": "",
+    "tags": null,
+    "title": "Sortieralgorithmen implementation",
+    "uri": "/informatik/algorithmen/sortieralgorithmen.html"
   },
   {
     "content": "Regelsystem zur Kombination elementarer Zeichen zu zusammengesetzten Zeichen, z.B.: Syntaxregeln einer Grammatik, etc.\n",
@@ -143,8 +164,8 @@
     "content": "",
     "description": "",
     "tags": null,
-    "title": "Datenbanken",
-    "uri": "/informatik/datenbanken.html"
+    "title": "Datenstrukturen",
+    "uri": "/informatik/datenstrukturen.html"
   },
   {
     "content": "deterministisch: für jeden Zustand gibt es für jedes Eingabezeichen nur genau einen Folgezustand\nA = (Q, Σ, F, δ, s) Q: nichtleere, endliche Menge von Zuständen Σ: nichtleeres, endliches Eingabealphabet F⊆Q Menge der akzeptierenden Zustände δ: QxΣ → Q Übergangsfunktion, die jeder Kombination (Zustand, Eingabezeichen) einen Nachfolgezustand zuordnet s∈Q Startzustand Beispiel:\nA = (Q, Σ, F, δ, s) Q = {q0, q1} Σ = {0, 1} F = {q0, q3} s = q0 δ = 0 1 q0 q3 q2 q1 q3 q2 q2 q3 q1 q3 q2 q3 oder\nBegriffe Alphabet: Ein Alphabet Σ ist eine endliche, nicht leere Menge, die Symbole verschiedener Art enthalten kann. Buchstabe: Ein Buchstabe ist ein Element eines Alphabets. Wort: Ein Wort über einem Alphabet Σ ist eine endliche Folge von Buchstaben aus Σ. vom Automaten akzeptierte Sprache: Die Menge der Wörter, die von einem Automaten akzeptiert werden. Verhalten eines DEA DEA erhält Eingabewort w=w1…wn er startet in q0 und liest in jedem Schritt genau ein Eingabezeichen er stoppt, sobald die Eingabe vollständig gelesen wurde befindet er sich dann in einem akzeptierenden Zustand, dann gehört das Wort zur Sprache des Automaten L(A) Zeigen, dass ein Wort zur Sprache eines DEA gehört (siehe Beispiel-DEA) Zustandsfolgen für die Eingabewörter:\n1011 q0 → q2 → q3 → q3 → q3; Das Wort wird akzeptiert, da q3 ein akzeptierender Zustand ist. (Auf den Pfeilen steht das gelesene Symbol) 111 q0 → q2 → q1 → q2; Das Wort wird nicht akzeptiert, da q2 kein akzeptierender Zustand ist. Sprache eines Automaten Die Sprache eines DEA A besteht aus allen Eingabewörtern, die von A akzeptiert werden.\n",
@@ -245,6 +266,13 @@
     "uri": "/informatik/verschluesselung/asymmetrische-verschluesselung.html"
   },
   {
+    "content": "Endliche Automaten Anmerkung: Bei den Graphen werden die Fehlerzustände, der Übersichtlichkeit halber, nicht mitgezeichnet.\n",
+    "description": "",
+    "tags": null,
+    "title": "Automaten",
+    "uri": "/informatik/automaten.html"
+  },
+  {
     "content": "Um durch die Abiturklassen eine Verbindung auf zu bauen, werden einige Methoden und Vererbungen benötigt.* Der Client muss hier bei diese Methode implementieren: +ProcessMessage(pMessage: String): void Hierbei ist auch wichtig, dass die jeweilige Client Klasse von der Abiturklasse „Client“ erbt (extends). Hierbei muss auch darauf geachtet werden, dass ein Client Objekt durch super mit einer Server IP sowie Port erstellt wird.\nDer Server muss hierbei folgende Methoden Implementieren:\n+processNewConnection(pClientIP: String, pClientPort: int): void +processMessage(pClientIP: String, pClientPort: int, pMessage: String): void +processClosingConnection(pClientIP: String, pClientPort: int): void Es ist darauf zu achten, dass die implementierende Klasse von der Abiturklasse „Server“ erbt (extends), sowie durch einen „super()“ Aufruf eine „Server“ Klasse erstellt.\nBeispiel für eine Server-Implementierung\npublic class ShopServer extends Server { public ShopServer(int pPortnummer) { super(pPortnummer); } public void processNewConnection(String pClientIP, int pClientPort){ } public void processMessage(String pClientIP, int pClientPort, String pMessage){ } public void processClosingConnection(String pClientIP, int pClientPort){ } } ",
     "description": "",
     "tags": null,
@@ -292,13 +320,6 @@
     "tags": null,
     "title": "Nea",
     "uri": "/informatik/automaten/nea.html"
-  },
-  {
-    "content": "Hier handelt es sich um Netzwerke.\n",
-    "description": "",
-    "tags": null,
-    "title": "Netzwerke",
-    "uri": "/informatik/netzwerke.html"
   },
   {
     "content": "",
@@ -350,7 +371,14 @@
     "uri": "/informatik/netzwerke/client-server.html"
   },
   {
-    "content": "Das Diffie-Hellman-Verfahren wird genutzt, um einen symmetrischen Schlüssel über eine ungesicherte Verbindung auszutauschen.\nBeispiel:\nQuelle: Wikimedia Commons, Public Domain → https://commons.wikimedia.org/wiki/File:Diffie-Hellman_Key_Exchange_(de).svg\nQuelle: Lorddota, Wikimedia Commons, Creative Commons Attribution-Share Alike 4.0 → https://commons.wikimedia.org/wiki/File:Diffie-Hellman_Key_Exchange-modified.png\nQuelle: https://openclipart.org\n",
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "Datenbanken",
+    "uri": "/informatik/datenbanken.html"
+  },
+  {
+    "content": "Das Diffie-Hellman-Verfahren wird genutzt, um einen symmetrischen Schlüssel über eine ungesicherte Verbindung auszutauschen.\nBeispiel:\nQuelle: Wikimedia Commons, Public Domain → https://commons.wikimedia.org/wiki/File:Diffie-Hellman_Key_Exchange_(de).svg\nQuelle: https://openclipart.org\n",
     "description": "",
     "tags": null,
     "title": "Diffie Hellman Verfahren",
@@ -378,13 +406,6 @@
     "uri": "/informatik/netzwerke/netzwerktopologien/vermaschte-topologie.html"
   },
   {
-    "content": "",
-    "description": "",
-    "tags": null,
-    "title": "Verschluesselung",
-    "uri": "/informatik/verschluesselung.html"
-  },
-  {
     "content": " DEAs und NEAs beschreiben die gleiche Sprachklasse (reguläre Sprachen) wesentlicher Unterschied: bei NEA sind auch mehrere Folgezustände bzw. kein Folgezustand mögliche der DEA ist ein Spezialfall von einem NEA jeder NEA lässt sich mittels Potenzmengenkonstruktion in einen äquivalenten DEA umwandeln ",
     "description": "",
     "tags": null,
@@ -392,11 +413,11 @@
     "uri": "/informatik/automaten/zusammenhang-dea-nea.html"
   },
   {
-    "content": "Datenschutz\n",
+    "content": "Hier handelt es sich um Netzwerke.\n",
     "description": "",
     "tags": null,
-    "title": "Datenschutz",
-    "uri": "/informatik/datenschutz.html"
+    "title": "Netzwerke",
+    "uri": "/informatik/netzwerke.html"
   },
   {
     "content": " Normalform Bedingung Erste Normalform (1NF) ist erreicht, wenn alle Attribute einen atomaren Wertebereich haben Zweite Normalform (2NF) ist erreicht, wenn die Datenbank in der 1NF ist und zusätzlich jedes Nichtschlüsselattribut vom Primärschlüssel voll funktional abhängig ist und nicht von einem Teil der Schlüsselattribute Dritte Normalform (3NF) ist erreicht, wenn die Datenbank in der 2NF ist und es zusätzlich kein Nichtschlüsselattribut gibt, das transitiv abhängig von einem Schlüsselattribut ist. Es darf also keine funktionalen Abhängigkeiten zwischen Nichtschlüsselattributen geben ",
@@ -420,7 +441,7 @@
     "uri": "/informatik/datenbanken/abhaengigkeiten.html"
   },
   {
-    "content": " A = (Q, Σ, K, F, δ, s, #) Q: nichtleere, endliche Menge von Zuständen Σ: nichtleeres, endliches Eingabealphabet F⊆Q Menge der akzeptierenden Zustände s∈Q Startzustand δ: Übergangsfunktion, die jeder Kombination (Zustand, Eingabezeichen (ϵ ist auch möglich, gehört aber nicht zum Eingabealphabet), Kellerzeichen) einen Nachfolgezustand und eine Kelleroperation zuordnet #ϵK Anfangssymbol im Keller Beispiel\nA = (Q, Σ, K, F, δ, s, #) Q = {z0, z1, z2} Σ = {a, b} K = {#, A} F = {Z2} s = Z0 δ: Zustand Eingabezeichen Kellerzeichen Folgezustand Kelleroperation z0 a # z0 push(A) z0 a A z0 push(A) z0 b A z1 pop() z1 b A z1 pop() z1 ϵ # z2 nop alle nicht aufgelisteten Übergänge führen in einen Fehlerzustand\noder:\n",
+    "content": " A = (Q, Σ, K, F, δ, s, #) Q: nichtleere, endliche Menge von Zuständen Σ: nichtleeres, endliches Eingabealphabet F⊆Q Menge der akzeptierenden Zustände s∈Q Startzustand δ: Übergangsfunktion, die jeder Kombination (Zustand, Eingabezeichen (ϵ ist auch möglich, gehört aber nicht zum Eingabealphabet), Kellerzeichen) einen Nachfolgezustand und eine Kelleroperation zuordnet #ϵK Anfangssymbol im Keller Beispiel\nA = (Q, Σ, K, F, δ, s, #) Q = {z0, z1, z2} Σ = {a, b} K = {#, A} F = {Z2} s = Z0 δ: stand|E ngabezeichen|K llerzeichen|F lgezustand|K lleroperation| sub\u003e0|a # z sub\u003e0|p sh(A)| sub\u003e0|a A z sub\u003e0|p sh(A)| sub\u003e0|b A z sub\u003e1|p p()| sub\u003e1|b A z sub\u003e1|p p()| sub\u003e1|� |# z sub\u003e2|n p| alle nicht aufgelisteten Übergänge führen in einen Fehlerzustand\noder:\n",
     "description": "",
     "tags": null,
     "title": "Kellerautomat",
@@ -432,6 +453,20 @@
     "tags": null,
     "title": "Vergleich Automaten",
     "uri": "/informatik/automaten/vergleich-automaten.html"
+  },
+  {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "Verschluesselung",
+    "uri": "/informatik/verschluesselung.html"
+  },
+  {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "Datenschutz",
+    "uri": "/informatik/datenschutz.html"
   },
   {
     "content": "",
