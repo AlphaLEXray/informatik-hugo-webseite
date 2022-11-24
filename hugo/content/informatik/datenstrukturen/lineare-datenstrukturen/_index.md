@@ -5,7 +5,7 @@ weight = 1
 
 ## Queue
 ### Aufbau
-![Aufbau einer Queue](queue-illustration)
+![Aufbau einer Queue](lineare-datenstrukturen/queue-illustration.png)
 
 ### Methoden
 - enqueue()
