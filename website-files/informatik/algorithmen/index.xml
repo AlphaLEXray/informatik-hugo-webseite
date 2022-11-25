@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Algorithmen on Abitur</title>
+    <link>/informatik/algorithmen.html</link>
+    <description>Recent content in Algorithmen on Abitur</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language><atom:link href="/informatik/algorithmen/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sortieralgorithmen implementation</title>
+      <link>/informatik/algorithmen/sortieralgorithmen.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/informatik/algorithmen/sortieralgorithmen.html</guid>
+      <description>/** * Beschreiben Sie hier die Klasse SortierAlgorythmen. */ public class SortierAlgorythmen { //Initialisieren eines leeren Integerarrays mit dem Namen zahlen als Attribut/Globalvariabel int[] zahlen; /** * Konstruktor für Objekte der Klasse SortierAlgorythmen */ public SortierAlgorythmen() { //Das Array bekommt Werte zugewiesen zahlen = new int[]{24, 45, 106, 2, 321, 486, 3, 2345, 5543, 4456, 455}; } /** * Diese Methode führt den Bubblesortalgorithmus auf dem Array zahlen aus */ public void bubbleSort() { //Die Variabel n gleich die Länge des Arrays zahlen setzen int n = zahlen.</description>
+    </item>
+  </channel>
+</rss>
