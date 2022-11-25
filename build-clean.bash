@@ -3,7 +3,7 @@ test -d ../abitur-electron-app
 dirvar=$(echo $?)
 if [ $dirvar == 0 ]
 then
-	rm -rf electron/content/*
+	rm -rf electron/src/content/*
 	cd hugo/
 	hugo -d ../electron/content/
 else
@@ -11,7 +11,7 @@ else
 	dirvar=$(echo $?)
 	if [ $dirvar == 0 ]
 	then
-		rm -rf ../electron/content/*
-		hugo -d ../electron/content/
+		rm -rf ../electron/sr/content/*
+		hugo -d ../electron/src/content/
 	fi
 fi
