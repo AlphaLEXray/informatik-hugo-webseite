@@ -19,10 +19,10 @@ There are two ways to access the content of this project:
 
 ## Licenses
 ## Hugo Theme Relearn Local
-MIT
+[MIT](https://github.com/AlphaLEXray/hugo-theme-relearn-local/blob/main/LICENSE)
 
 ## Electron
-MIT
+[MIT](https://github.com/electron/electron/blob/main/LICENSE)
 
 ## Hugo
-Apache License 2.0
+[Apache License 2.0](https://github.com/gohugoio/hugo/blob/master/LICENSE)
