@@ -16,3 +16,13 @@ There are two ways to access the content of this project:
 
 1. You install the app from the [releases](https://github.com/AlphaLEXray/abitur-electron-app/releases).
 2. You download the **website-files** folder and open the file **index.html** in a browser of your choice.
+
+## Licenses
+## Hugo Theme Relearn Local
+MIT
+
+## Electron
+MIT
+
+## Hugo
+Apache License 2.0
