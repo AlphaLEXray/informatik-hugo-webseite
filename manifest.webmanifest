@@ -1,0 +1,17 @@
+{
+    "name": "Informatik-Hugo-Webseite",
+    "short_name": "IHW",
+    "description": "Eine Hugo-Webseite mit Materialien zum Informatik-Abitur",
+    "scope": "/informatik-hugo-webseite-hosting/",
+    "start_url": "/informatik-hugo-webseite-hosting/",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "display": "standalone", 
+    "icons": [
+        {
+          "src": "/informatik-hugo-webseite-hosting/images/icon.png",
+          "type": "image/png",
+          "sizes": "700x700"
+        }
+    ]
+  }
