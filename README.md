@@ -11,6 +11,10 @@ This project is intended as a more interactive way to view the study material fo
 ### Usage
 To view the content of this project you either download the **website-files** folder and open the *index.html* file in a Browser or you download the **hugo** folder and start a Hugo server on your local machine.
 
+## Build-Instructions
+
+If you want to install this project on your local computer you can add the website files to an Electron-Project and build it following the official build instructions.
+
 ## Licenses
 ### Hugo Theme Relearn Local
 [MIT](https://github.com/AlphaLEXray/hugo-theme-relearn-local/blob/main/LICENSE)
