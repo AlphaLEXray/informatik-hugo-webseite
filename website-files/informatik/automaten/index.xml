@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Automaten on Abitur</title>
+    <title>Automaten on Informatikabitur</title>
     <link>/informatik/automaten.html</link>
-    <description>Recent content in Automaten on Abitur</description>
+    <description>Recent content in Automaten on Informatikabitur</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language><atom:link href="/informatik/automaten/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Formale Sprachen Grammatiken</title>
-      <link>/informatik/automaten/formale-sprachen-grammatiken.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/informatik/automaten/formale-sprachen-grammatiken.html</guid>
-      <description></description>
-    </item>
     <item>
       <title>Mealy Automat</title>
       <link>/informatik/automaten/mealy-automat.html</link>
@@ -72,6 +65,13 @@ A = (Q, Σ, K, F, δ, s, #) Q = {z0, z1, z2} Σ = {a, b} K = {#, A} F = {Z2} s =
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/informatik/automaten/vergleich-automaten.html</guid>
       <description>DEA/NEA Beantwortung von Entscheidungsfragen (gehört die Eingabe einer bestimmten Sprache?) z.B.: zur Prüfung der syntaktischen Korrektheit von Quellcode (if, for, ..) erkennt reguläre Sprachen Kellerautomaten (nichtdeterministisch) Erkennung beliebig vieler Klammernschachtelnungen erkennt kontextfreie Sprachen erkennt keine Sprachen der Form L = {anbncn|n&amp;gt;0} </description>
+    </item>
+    <item>
+      <title>Formale Sprachen Grammatiken</title>
+      <link>/informatik/automaten/formale-sprachen-grammatiken.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/informatik/automaten/formale-sprachen-grammatiken.html</guid>
+      <description></description>
     </item>
   </channel>
 </rss>

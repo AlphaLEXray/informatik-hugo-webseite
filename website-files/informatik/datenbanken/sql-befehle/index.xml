@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sql Befehle on Abitur</title>
+    <title>Sql Befehle on Informatikabitur</title>
     <link>/informatik/datenbanken/sql-befehle.html</link>
-    <description>Recent content in Sql Befehle on Abitur</description>
+    <description>Recent content in Sql Befehle on Informatikabitur</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language><atom:link href="/informatik/datenbanken/sql-befehle/index.xml" rel="self" type="application/rss+xml" />
   </channel>
