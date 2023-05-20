@@ -25,7 +25,7 @@ theme = "relearn"
   # Prefix URL to edit current page. Will display an "Edit" button on top right hand corner of every page.
   # Useful to give opportunity to people to create merge request for your doc.
   # See the config.toml file from this documentation site to have an example.
-  editURL = "https://www.github.com/alphalexray/informatik-hugo-webseite/hugo/content/"
+  editURL = "https://github.com/AlphaLEXray/informatik-hugo-webseite/blob/master/hugo/content/"
 
   # Author of the site, will be used in meta information
   ##author = ""
