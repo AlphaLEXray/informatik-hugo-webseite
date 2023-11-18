@@ -27,3 +27,14 @@ jobs:
           sudo mv hugo /usr/local/bin          
       - name: Build
         run: rm -rf website-files/* && cd hugo/ && hugo -d ../website-files/
+      - name: Commit files
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add Mathe-Abitur.pdf
+          git commit -m "[auto] Build website" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
