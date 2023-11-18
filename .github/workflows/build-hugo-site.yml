@@ -26,4 +26,4 @@ jobs:
           tar -xvzf hugo.tar.gz
           sudo mv hugo /usr/local/bin          
       - name: Build
-        run: pwd && ls
+        run: rm -rf website-files/* && hugo -d ../website-files/
