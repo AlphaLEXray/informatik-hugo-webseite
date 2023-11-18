@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.120.4">
+    <meta name="generator" content="Relearn 5.23.2+tip">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Datenstrukturen :: Informatikabitur">
+    <meta name="twitter:description" content="">
+    <meta property="og:title" content="Datenstrukturen :: Informatikabitur">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/informatik/datenstrukturen.html">
+    <meta property="og:site_name" content="Informatikabitur">
+    <title>Datenstrukturen :: Informatikabitur</title>
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="../../css/fontawesome-all.min.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fontawesome-all.min.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../css/nucleus.css?1700327140" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/auto-complete.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../css/perfect-scrollbar.min.css?1700327140" rel="stylesheet">
+    <link href="../../css/fonts.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fonts.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../css/theme.css?1700327140" rel="stylesheet">
+    <link href="../../css/theme-auto.css?1700327140" rel="stylesheet" id="R-variant-style">
+    <link href="../../css/variant.css?1700327140" rel="stylesheet">
+    <link href="../../css/print.css?1700327140" rel="stylesheet" media="print">
+    <link href="../../css/format-print.css?1700327140" rel="stylesheet">
+    <link href="../../css/ie.css?1700327140" rel="stylesheet">
+    <script src="../../js/url.js?1700327140"></script>
+    <script src="../../js/variant.js?1700327140"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="../../index.search.js";
+      var root_url="../../";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='/';
+      // variant stuff
+      window.variants && variants.init( [ 'auto', 'relearn-bright', 'relearn-light', 'relearn-dark', 'zen-light', 'zen-dark', 'neon', 'learn', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="../../informatik/datenstrukturen.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+              <button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)">
+                <i class="fa-fw fas fa-bars"></i>
+              </button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../informatik.html"><span itemprop="name">Informatik</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Datenstrukturen</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="datenstrukturen">Datenstrukturen</h1>
+
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+          <section>
+            <h1 class="a11y-only">Subsections of Datenstrukturen</h1>
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="lineare-datenstrukturen">Lineare Datenstrukturen</h1>
+
+<h2 id="queue">Queue</h2>
+<h3 id="aufbau">Aufbau</h3>
+<p><a href="#R-image-8858e8a1329349c241e4b0c52e8fb58f" class="lightbox-link"><img src="../../informatik/datenstrukturen/lineare-datenstrukturen.html/lineare-datenstrukturen/queue-illustration.png" alt="Aufbau einer Queue" class="figure-image border lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8858e8a1329349c241e4b0c52e8fb58f"><img src="../../informatik/datenstrukturen/lineare-datenstrukturen.html/lineare-datenstrukturen/queue-illustration.png" alt="Aufbau einer Queue" class="lightbox-image border lightbox noshadow" loading="lazy"></a></p>
+<h3 id="methoden">Methoden</h3>
+<ul>
+<li>enqueue()
+<ul>
+<li>Hängt ein Objekt am Anfang der Schlange an</li>
+</ul>
+</li>
+<li>dequeue()
+<ul>
+<li>Entfernt das Objekt am Ende der Schlange</li>
+</ul>
+</li>
+<li>getContent()
+<ul>
+<li>Gibt das Inhaltsobjekt am Ende der Schlange wieder</li>
+</ul>
+</li>
+<li>isEmpty()
+<ul>
+<li>Gibt true zurück wenn die Schlange leer ist</li>
+</ul>
+</li>
+</ul>
+<h2 id="list">List</h2>
+<h3 id="aufbau-1">Aufbau</h3>
+<p><a href="#R-image-0623d8c077c3d74aadc310e321e93f52" class="lightbox-link"><img src="" alt="Aufbau einer List" class="figure-image border lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0623d8c077c3d74aadc310e321e93f52"><img src="" alt="Aufbau einer List" class="lightbox-image border lightbox noshadow" loading="lazy"></a></p>
+<h3 id="methoden-1">Methoden</h3>
+<ul>
+<li>isEmpty()
+<ul>
+<li>Gibt true zurück wenn die Liste leer ist</li>
+</ul>
+</li>
+<li>hasAccess()
+<ul>
+<li>Gibt true zurück falls der Pointer auf ein valides Objekt zeigt</li>
+</ul>
+</li>
+<li>next()
+<ul>
+<li>Bewegt den Pointer eine Information weiter</li>
+</ul>
+</li>
+<li>toFirst()
+<ul>
+<li>Setzt den Pointer zurück auf die erste information in der Liste</li>
+</ul>
+</li>
+<li>toLast()
+<ul>
+<li>Setzt den Pointer auf das letzte Element in der Liste</li>
+</ul>
+</li>
+<li>getContent()
+<ul>
+<li>Gibt das aktuelle inhaltsobjekt zurück</li>
+</ul>
+</li>
+<li>setContent(pContent)
+<ul>
+<li>setzt den aktuellen Inhalt auf den Parameter</li>
+</ul>
+</li>
+<li>insert(pContent)
+<ul>
+<li>fügt ein Objekt nach dem Pointer ein</li>
+</ul>
+</li>
+<li>append(pContent)
+<ul>
+<li>fügt am ende der Liste ein Objekt hinzu</li>
+</ul>
+</li>
+<li>concat()
+<ul>
+<li>setzt zwei Listen zu einer zusammen</li>
+</ul>
+</li>
+<li>remove()
+<ul>
+<li>entfernt das aktuelle Objekt aus der Liste</li>
+</ul>
+</li>
+</ul>
+<h2 id="stack">Stack</h2>
+<h3 id="aufbau-2">Aufbau</h3>
+<p><a href="#R-image-ce8a3492e3d1728dc5d390e2243df4cd" class="lightbox-link"><img src="" alt="Aufbau eines Stacks" class="figure-image border lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ce8a3492e3d1728dc5d390e2243df4cd"><img src="" alt="Aufbau eines Stacks" class="lightbox-image border lightbox noshadow" loading="lazy"></a></p>
+<h3 id="methoden-2">Methoden</h3>
+<ul>
+<li>top()
+<ul>
+<li>Gibt das Objekt das oben auf dem Stapel liegt zurück</li>
+</ul>
+</li>
+<li>push()
+<ul>
+<li>Legt ein Objekt oben auf den Stapel</li>
+</ul>
+</li>
+<li>pop()
+<ul>
+<li>Entfernt das oberste Objekt</li>
+</ul>
+</li>
+<li>isEmpty()
+<ul>
+<li>gibt true zurück, falls der Stapel keine Inhaltsobjekte hat</li>
+</ul>
+</li>
+</ul>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="nichtlineare-datenstrukturen">Nichtlineare Datenstrukturen</h1>
+
+<p>Um Graphen (und auch Baeume) zu erstellen gibt es eine gute Webseite:</p>
+<p><a href="https://csacademy.com/app/graph_editor/" target="_blank">https://csacademy.com/app/graph_editor/</a></p>
+<h2 id="graphen">Graphen</h2>
+<h3 id="definition">Definition:</h3>
+<p>Ein Graph besteht aus <strong>Knoten</strong> die mit <strong>Kanten</strong> verbunden sind. Zudem können Kanten gewichtet werden. Ein praktisches Beispiel eines Graphen ist das Internet, wo viele veschiedene Computer (Knoten) mit Kabeln (Kanten) verbunden sind.</p>
+<p>Es gibt verschiedene Arten von Graphen die nicht exlusiv zueinander sind.</p>
+<p>Dazu gehören:</p>
+<ul>
+<li>ungerichtete/gerichtete Graphen</li>
+<li>ungewichtete/gewichtete Graphen</li>
+</ul>
+<p>Beispiel eines <strong>ungerichteten</strong> Graphen:</p>
+<p><a href="#R-image-7082e466b28c31c335230ecb234ddf17" class="lightbox-link"><img src="../../informatik/datenstrukturen/nichtlineare-datenstrukturen.html/nichtlineare-datenstrukturen/ungerichteter-graph-beispiel.png" alt="Beispiel eines ungerichteten Graphen" class="figure-image border lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7082e466b28c31c335230ecb234ddf17"><img src="../../informatik/datenstrukturen/nichtlineare-datenstrukturen.html/nichtlineare-datenstrukturen/ungerichteter-graph-beispiel.png" alt="Beispiel eines ungerichteten Graphen" class="lightbox-image border lightbox noshadow" loading="lazy"></a></p>
+<p>Beispiel eines <strong>gerichteten</strong> Graphen:</p>
+<p><a href="#R-image-e6042b9a447dc1896daaad5eb68dec38" class="lightbox-link"><img src="../../informatik/datenstrukturen/nichtlineare-datenstrukturen.html/nichtlineare-datenstrukturen/gerichteter-graph-beispiel.png" alt="Beispiel eines gerichteten Graphen" class="figure-image border lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e6042b9a447dc1896daaad5eb68dec38"><img src="../../informatik/datenstrukturen/nichtlineare-datenstrukturen.html/nichtlineare-datenstrukturen/gerichteter-graph-beispiel.png" alt="Beispiel eines gerichteten Graphen" class="lightbox-image border lightbox noshadow" loading="lazy"></a></p>
+<h2 id="bäume">Bäume</h2>
+<h3 id="begriffe">Begriffe:</h3>
+<ul>
+<li>Baumstruktur:
+<ul>
+<li>Eine hierarchische Struktur, die aus Knoten und Kanten besteht</li>
+</ul>
+</li>
+<li>Teilbaum:</li>
+<li>Wurzel:
+<ul>
+<li>Einziger Knoten ohne Vorgänger</li>
+</ul>
+</li>
+<li>Pfad:
+<ul>
+<li>Der Weg über Kanten den man gehen muss, um von einem Knoten zu einem anderen zu gelangen</li>
+</ul>
+</li>
+<li>Tiefe:
+<ul>
+<li>Anzahl der Kanten auf dem Pfad von der Wurzel bis zu diesem Knoten.</li>
+</ul>
+</li>
+<li>Grad:
+<ul>
+<li>Der (Verzweigungs-) Grad eines Baumes bezeichnet die maximale Anzahl der Nachfolger, die ein Knoten dieses Baumes haben kann.</li>
+</ul>
+</li>
+</ul>
+<h3 id="kriterien-eines-binären-baums">Kriterien eines binären Baums:</h3>
+<ul>
+<li>es gibt nur genau eine Wurzel.</li>
+<li>jeder Knoten außer der Wurzel hat genau einen Vaterknoten.</li>
+<li>Die Wurzel ist der Vorfahre jedes Knotens.</li>
+<li>Jeder Knoten hat höchstens zwei Kinderknoten, ein linkes und ein rechtes.</li>
+</ul>
+<h3 id="kriterien-eines-binären-suchbaums">Kriterien eines binären Suchbaums</h3>
+<h4 id="traversierungsmethoden">Traversierungsmethoden:</h4>
+<p><strong>Preorder Traversierung</strong>:</p>
+<p>Wurzel, linker Teilbaum, rechter Teilbaum</p>
+<p><strong>Inorder Traversierung</strong>:</p>
+<p>linker Teilbaum, Wurzel, rechter Teilbaum</p>
+<p><strong>Postorder Traversierung</strong>:</p>
+<p>linker Teilbaum, rechter Teilbaum, Wurzel</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+          </section>
+        </div>
+      </main>
+    </div>
+    <script src="../../js/clipboard.min.js?1700327140" defer></script>
+    <script src="../../js/perfect-scrollbar.min.js?1700327140" defer></script>
+    <script>
+      function useMathJax( config ){
+        if( !Object.assign ){
+          
+          return;
+        }
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          loader: {
+            load: ['[tex]/mhchem']
+          },
+          startup: {
+            elements: [
+              '.math'
+            ]
+          },
+          tex: {
+            inlineMath: [
+              ['$', '$'], 
+              ['\\(', '\\)']
+            ]
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="../../js/mathjax/tex-mml-chtml.js?1700327140"></script>
+    <script src="../../js/d3/d3-color.min.js?1700327140" defer></script>
+    <script src="../../js/d3/d3-dispatch.min.js?1700327140" defer></script>
+    <script src="../../js/d3/d3-drag.min.js?1700327140" defer></script>
+    <script src="../../js/d3/d3-ease.min.js?1700327140" defer></script>
+    <script src="../../js/d3/d3-interpolate.min.js?1700327140" defer></script>
+    <script src="../../js/d3/d3-selection.min.js?1700327140" defer></script>
+    <script src="../../js/d3/d3-timer.min.js?1700327140" defer></script>
+    <script src="../../js/d3/d3-transition.min.js?1700327140" defer></script>
+    <script src="../../js/d3/d3-zoom.min.js?1700327140" defer></script>
+    <script src="../../js/js-yaml.min.js?1700327140" defer></script>
+    <script src="../../js/mermaid.min.js?1700327140" defer></script>
+    <script>
+      window.themeUseMermaid = JSON.parse("{ \"securityLevel\": \"loose\" }");
+    </script>
+    <script src="../../js/theme.js?1700327140" defer></script>
+  </body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.120.4">
+    <meta name="generator" content="Relearn 5.23.2+tip">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Potenzmengenkonstruktion :: Informatikabitur">
+    <meta name="twitter:description" content="Idee Konstruiere zu NEA einen DEA durch:
+merke im Zustand des DEA, in welchen Zuständen der NEA sein könnte Zustände des DEA sind Mengen von Zuständen des NEA Beispiel
+NEA DEA Jeder Zustand des DEA, der mindestens einen Endzustand vom NEA enthält, wird ein akzeptierender Zustand.
+Algorithmus starte mit Menge des Anfangszustands solange es unbearbeiteten Zustand S={q1,&hellip;, qk} gibt für jedes Eingabezeichen a: für jeden Zustand q1,&hellip;, qk bestimme die Nachfolger für die Eingabe a im NEA und füge sie s&rsquo; hinzu falls es den Zustand s&rsquo; noch nicht gibt, füge ihn hinzu füge den Übergang von s zu s&rsquo; hinzu markiere s als bearbeitet ">
+    <meta property="og:title" content="Potenzmengenkonstruktion :: Informatikabitur">
+    <meta property="og:description" content="Idee Konstruiere zu NEA einen DEA durch:
+merke im Zustand des DEA, in welchen Zuständen der NEA sein könnte Zustände des DEA sind Mengen von Zuständen des NEA Beispiel
+NEA DEA Jeder Zustand des DEA, der mindestens einen Endzustand vom NEA enthält, wird ein akzeptierender Zustand.
+Algorithmus starte mit Menge des Anfangszustands solange es unbearbeiteten Zustand S={q1,&hellip;, qk} gibt für jedes Eingabezeichen a: für jeden Zustand q1,&hellip;, qk bestimme die Nachfolger für die Eingabe a im NEA und füge sie s&rsquo; hinzu falls es den Zustand s&rsquo; noch nicht gibt, füge ihn hinzu füge den Übergang von s zu s&rsquo; hinzu markiere s als bearbeitet ">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="/informatik/automaten/potenzmengenkonstruktion.html">
+    <meta property="article:section" content="Automaten :: Informatikabitur">
+    <meta property="og:site_name" content="Informatikabitur">
+    <title>Potenzmengenkonstruktion :: Informatikabitur</title>
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="../../../css/fontawesome-all.min.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fontawesome-all.min.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../../css/nucleus.css?1700327140" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/auto-complete.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../../css/perfect-scrollbar.min.css?1700327140" rel="stylesheet">
+    <link href="../../../css/fonts.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fonts.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../../css/theme.css?1700327140" rel="stylesheet">
+    <link href="../../../css/theme-auto.css?1700327140" rel="stylesheet" id="R-variant-style">
+    <link href="../../../css/variant.css?1700327140" rel="stylesheet">
+    <link href="../../../css/print.css?1700327140" rel="stylesheet" media="print">
+    <link href="../../../css/format-print.css?1700327140" rel="stylesheet">
+    <link href="../../../css/ie.css?1700327140" rel="stylesheet">
+    <script src="../../../js/url.js?1700327140"></script>
+    <script src="../../../js/variant.js?1700327140"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="../../../index.search.js";
+      var root_url="../../../";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='/';
+      // variant stuff
+      window.variants && variants.init( [ 'auto', 'relearn-bright', 'relearn-light', 'relearn-dark', 'zen-light', 'zen-dark', 'neon', 'learn', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="../../../informatik/automaten/potenzmengenkonstruktion.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+              <button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)">
+                <i class="fa-fw fas fa-bars"></i>
+              </button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../informatik.html"><span itemprop="name">Informatik</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../informatik/automaten.html"><span itemprop="name">Automaten</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Potenzmengenkonstruktion</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="potenzmengenkonstruktion">Potenzmengenkonstruktion</h1>
+
+<p><strong>Idee</strong>
+Konstruiere zu NEA einen DEA durch:</p>
+<ul>
+<li>merke im Zustand des DEA, in welchen Zuständen der NEA sein könnte</li>
+<li>Zustände des DEA sind Mengen von Zuständen des NEA</li>
+</ul>
+<p><strong>Beispiel</strong></p>
+<!-- raw HTML omitted -->
+<p><em>NEA</em>
+<a href="#R-image-94c2a5c07fddff5abb7647d4836566a1" class="lightbox-link"><img src="../../../informatik/automaten/potenzmengenkonstruktion.html/potenzmengenkonstruktion-nea.jpg" alt="Potenzmengenkonstruktion NEA" class="figure-image border lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-94c2a5c07fddff5abb7647d4836566a1"><img src="../../../informatik/automaten/potenzmengenkonstruktion.html/potenzmengenkonstruktion-nea.jpg" alt="Potenzmengenkonstruktion NEA" class="lightbox-image border lightbox noshadow" loading="lazy"></a>
+<em>DEA</em>
+<a href="#R-image-21cd4b86d6ab27c5167eb65766041212" class="lightbox-link"><img src="../../../informatik/automaten/potenzmengenkonstruktion.html/potenzmengenkonstruktion-dea.jpg" alt="Potenzmengenkonstruktion DEA" class="figure-image border lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-21cd4b86d6ab27c5167eb65766041212"><img src="../../../informatik/automaten/potenzmengenkonstruktion.html/potenzmengenkonstruktion-dea.jpg" alt="Potenzmengenkonstruktion DEA" class="lightbox-image border lightbox noshadow" loading="lazy"></a></p>
+<blockquote>
+<p>Jeder Zustand des DEA, der mindestens einen Endzustand vom NEA enthält, wird ein akzeptierender Zustand.</p>
+</blockquote>
+<h3 id="algorithmus">Algorithmus</h3>
+<ul>
+<li>starte mit Menge des Anfangszustands</li>
+<li>solange es unbearbeiteten Zustand S={q<!-- raw HTML omitted -->1<!-- raw HTML omitted -->,&hellip;, q<!-- raw HTML omitted -->k<!-- raw HTML omitted -->} gibt
+<ul>
+<li>für jedes Eingabezeichen a:
+<ul>
+<li>für jeden Zustand q<!-- raw HTML omitted -->1<!-- raw HTML omitted -->,&hellip;, q<!-- raw HTML omitted -->k<!-- raw HTML omitted -->
+<ul>
+<li>bestimme die Nachfolger für die Eingabe a im NEA und füge sie s&rsquo; hinzu</li>
+</ul>
+</li>
+<li>falls es den Zustand s&rsquo; noch nicht gibt, füge ihn hinzu</li>
+<li>füge den Übergang von s zu s&rsquo; hinzu</li>
+</ul>
+</li>
+<li>markiere s als bearbeitet</li>
+</ul>
+</li>
+</ul>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="../../../js/clipboard.min.js?1700327140" defer></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1700327140" defer></script>
+    <script>
+      function useMathJax( config ){
+        if( !Object.assign ){
+          
+          return;
+        }
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          loader: {
+            load: ['[tex]/mhchem']
+          },
+          startup: {
+            elements: [
+              '.math'
+            ]
+          },
+          tex: {
+            inlineMath: [
+              ['$', '$'], 
+              ['\\(', '\\)']
+            ]
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="../../../js/mathjax/tex-mml-chtml.js?1700327140"></script>
+    <script src="../../../js/d3/d3-color.min.js?1700327140" defer></script>
+    <script src="../../../js/d3/d3-dispatch.min.js?1700327140" defer></script>
+    <script src="../../../js/d3/d3-drag.min.js?1700327140" defer></script>
+    <script src="../../../js/d3/d3-ease.min.js?1700327140" defer></script>
+    <script src="../../../js/d3/d3-interpolate.min.js?1700327140" defer></script>
+    <script src="../../../js/d3/d3-selection.min.js?1700327140" defer></script>
+    <script src="../../../js/d3/d3-timer.min.js?1700327140" defer></script>
+    <script src="../../../js/d3/d3-transition.min.js?1700327140" defer></script>
+    <script src="../../../js/d3/d3-zoom.min.js?1700327140" defer></script>
+    <script src="../../../js/js-yaml.min.js?1700327140" defer></script>
+    <script src="../../../js/mermaid.min.js?1700327140" defer></script>
+    <script>
+      window.themeUseMermaid = JSON.parse("{ \"securityLevel\": \"loose\" }");
+    </script>
+    <script src="../../../js/theme.js?1700327140" defer></script>
+  </body>
+</html>

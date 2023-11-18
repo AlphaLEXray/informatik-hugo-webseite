@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.120.4">
+    <meta name="generator" content="Relearn 5.23.2+tip">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Umsetzung :: Informatikabitur">
+    <meta name="twitter:description" content="Begriff Bedeutung Beispiel Relationsschema Jede Entitätsmenge wird im relationalen Modell einer eigenständigen Relation überführt Verlag(VID, Name, Sitz, Ansprechpartner) Fremdschlüssel Primärschlüssel der in einer Relation vorkommt und mit einem senkreckten Pfeil gekennzeichnet wird m:n-Beziehung Wird im relationalem Modell (Relationsschema) in eine eigene Relation überführt. Attribute sind die Primärschlüssel der beiden an der Beziehung beteiligten Entitätsmengen (als Fremdschlüssel), die gemeinsam den Primärschlüssel der Beziehungstabelle bilden, sowie ggf. Attribute der Beziehungsmenge 1:n-Beziehung Die Relation mit der Kardinalität n wird der Primärschlüssel der Relation mit der Kardinalität 1 als Fremdschlüssel angefügt.">
+    <meta property="og:title" content="Umsetzung :: Informatikabitur">
+    <meta property="og:description" content="Begriff Bedeutung Beispiel Relationsschema Jede Entitätsmenge wird im relationalen Modell einer eigenständigen Relation überführt Verlag(VID, Name, Sitz, Ansprechpartner) Fremdschlüssel Primärschlüssel der in einer Relation vorkommt und mit einem senkreckten Pfeil gekennzeichnet wird m:n-Beziehung Wird im relationalem Modell (Relationsschema) in eine eigene Relation überführt. Attribute sind die Primärschlüssel der beiden an der Beziehung beteiligten Entitätsmengen (als Fremdschlüssel), die gemeinsam den Primärschlüssel der Beziehungstabelle bilden, sowie ggf. Attribute der Beziehungsmenge 1:n-Beziehung Die Relation mit der Kardinalität n wird der Primärschlüssel der Relation mit der Kardinalität 1 als Fremdschlüssel angefügt.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="/informatik/datenbanken/er-modell/umsetzung.html">
+    <meta property="article:section" content="Er Modell :: Informatikabitur">
+    <meta property="og:site_name" content="Informatikabitur">
+    <title>Umsetzung :: Informatikabitur</title>
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="../../../../css/fontawesome-all.min.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../../css/fontawesome-all.min.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../../../css/nucleus.css?1700327140" rel="stylesheet">
+    <link href="../../../../css/auto-complete.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../../css/auto-complete.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../../../css/perfect-scrollbar.min.css?1700327140" rel="stylesheet">
+    <link href="../../../../css/fonts.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../../css/fonts.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../../../css/theme.css?1700327140" rel="stylesheet">
+    <link href="../../../../css/theme-auto.css?1700327140" rel="stylesheet" id="R-variant-style">
+    <link href="../../../../css/variant.css?1700327140" rel="stylesheet">
+    <link href="../../../../css/print.css?1700327140" rel="stylesheet" media="print">
+    <link href="../../../../css/format-print.css?1700327140" rel="stylesheet">
+    <link href="../../../../css/ie.css?1700327140" rel="stylesheet">
+    <script src="../../../../js/url.js?1700327140"></script>
+    <script src="../../../../js/variant.js?1700327140"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="../../../../index.search.js";
+      var root_url="../../../../";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='/';
+      // variant stuff
+      window.variants && variants.init( [ 'auto', 'relearn-bright', 'relearn-light', 'relearn-dark', 'zen-light', 'zen-dark', 'neon', 'learn', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="../../../../informatik/datenbanken/er-modell/umsetzung.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+              <button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)">
+                <i class="fa-fw fas fa-bars"></i>
+              </button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../../informatik.html"><span itemprop="name">Informatik</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../../informatik/datenbanken.html"><span itemprop="name">Datenbanken</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../../informatik/datenbanken/er-modell.html"><span itemprop="name">Er Modell</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Umsetzung</span><meta itemprop="position" content="4"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="umsetzung">Umsetzung</h1>
+
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Begriff</th>
+<th style="text-align:left">Bedeutung</th>
+<th style="text-align:left">Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Relationsschema</td>
+<td style="text-align:left">Jede Entitätsmenge wird im relationalen Modell einer eigenständigen Relation überführt</td>
+<td style="text-align:left">Verlag(<strong>VID</strong>, Name, Sitz, Ansprechpartner)</td>
+</tr>
+<tr>
+<td style="text-align:left">Fremdschlüssel</td>
+<td style="text-align:left">Primärschlüssel der in einer Relation vorkommt und mit einem senkreckten Pfeil gekennzeichnet wird</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">m:n-Beziehung</td>
+<td style="text-align:left">Wird im relationalem Modell (Relationsschema) in eine eigene Relation überführt. Attribute sind die Primärschlüssel der beiden an der Beziehung beteiligten Entitätsmengen (als Fremdschlüssel), die gemeinsam den Primärschlüssel der Beziehungstabelle bilden, sowie ggf. Attribute der Beziehungsmenge</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">1:n-Beziehung</td>
+<td style="text-align:left">Die Relation mit der Kardinalität n wird der Primärschlüssel der Relation mit der Kardinalität 1 als Fremdschlüssel angefügt. Attribute der Beziehungsmenge werden ggf. auch dieser Relation hinzugefügt</td>
+<td style="text-align:left">Jedes Buch kann nur von einem Verlag herausgebracht werden aber ein Verlag kann mehrere Bücher herausbringen: Buch n – 1 Verlag: Buch (<strong>ISBN</strong>, Titel, Autor, Preis, Kategorie, ↑VID)</td>
+</tr>
+<tr>
+<td style="text-align:left">1:1-Beziehung</td>
+<td style="text-align:left">Einer an der Beziehung beteiligten Relation wird der Primärschlüssel der anderen Relation als Fremdschlüssel angefügt. Attribute der Beziehungsmenge werden ggf. auch dieser Relation angefügt.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="../../../../js/clipboard.min.js?1700327140" defer></script>
+    <script src="../../../../js/perfect-scrollbar.min.js?1700327140" defer></script>
+    <script>
+      function useMathJax( config ){
+        if( !Object.assign ){
+          
+          return;
+        }
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          loader: {
+            load: ['[tex]/mhchem']
+          },
+          startup: {
+            elements: [
+              '.math'
+            ]
+          },
+          tex: {
+            inlineMath: [
+              ['$', '$'], 
+              ['\\(', '\\)']
+            ]
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="../../../../js/mathjax/tex-mml-chtml.js?1700327140"></script>
+    <script src="../../../../js/d3/d3-color.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-dispatch.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-drag.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-ease.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-interpolate.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-selection.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-timer.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-transition.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-zoom.min.js?1700327140" defer></script>
+    <script src="../../../../js/js-yaml.min.js?1700327140" defer></script>
+    <script src="../../../../js/mermaid.min.js?1700327140" defer></script>
+    <script>
+      window.themeUseMermaid = JSON.parse("{ \"securityLevel\": \"loose\" }");
+    </script>
+    <script src="../../../../js/theme.js?1700327140" defer></script>
+  </body>
+</html>

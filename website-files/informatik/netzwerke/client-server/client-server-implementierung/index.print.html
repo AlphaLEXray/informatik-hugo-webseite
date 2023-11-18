@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.120.4">
+    <meta name="generator" content="Relearn 5.23.2+tip">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Client Server Implementierung :: Informatikabitur">
+    <meta name="twitter:description" content="Um durch die Abiturklassen eine Verbindung auf zu bauen, werden einige Methoden und Vererbungen benötigt.* Der Client muss hier bei diese Methode implementieren: &#43;ProcessMessage(pMessage: String): void Hierbei ist auch wichtig, dass die jeweilige Client Klasse von der Abiturklasse „Client“ erbt (extends). Hierbei muss auch darauf geachtet werden, dass ein Client Objekt durch super mit einer Server IP sowie Port erstellt wird.
+Der Server muss hierbei folgende Methoden Implementieren:
+&#43;processNewConnection(pClientIP: String, pClientPort: int): void &#43;processMessage(pClientIP: String, pClientPort: int, pMessage: String): void &#43;processClosingConnection(pClientIP: String, pClientPort: int): voidEs ist darauf zu achten, dass die implementierende Klasse von der Abiturklasse „Server“ erbt (extends), sowie durch einen „super()“ Aufruf eine „Server“ Klasse erstellt.">
+    <meta property="og:title" content="Client Server Implementierung :: Informatikabitur">
+    <meta property="og:description" content="Um durch die Abiturklassen eine Verbindung auf zu bauen, werden einige Methoden und Vererbungen benötigt.* Der Client muss hier bei diese Methode implementieren: &#43;ProcessMessage(pMessage: String): void Hierbei ist auch wichtig, dass die jeweilige Client Klasse von der Abiturklasse „Client“ erbt (extends). Hierbei muss auch darauf geachtet werden, dass ein Client Objekt durch super mit einer Server IP sowie Port erstellt wird.
+Der Server muss hierbei folgende Methoden Implementieren:
+&#43;processNewConnection(pClientIP: String, pClientPort: int): void &#43;processMessage(pClientIP: String, pClientPort: int, pMessage: String): void &#43;processClosingConnection(pClientIP: String, pClientPort: int): voidEs ist darauf zu achten, dass die implementierende Klasse von der Abiturklasse „Server“ erbt (extends), sowie durch einen „super()“ Aufruf eine „Server“ Klasse erstellt.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="/informatik/netzwerke/client-server/client-server-implementierung.html">
+    <meta property="article:section" content="Client Server :: Informatikabitur">
+    <meta property="og:site_name" content="Informatikabitur">
+    <title>Client Server Implementierung :: Informatikabitur</title>
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="../../../../css/fontawesome-all.min.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../../css/fontawesome-all.min.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../../../css/nucleus.css?1700327140" rel="stylesheet">
+    <link href="../../../../css/auto-complete.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../../css/auto-complete.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../../../css/perfect-scrollbar.min.css?1700327140" rel="stylesheet">
+    <link href="../../../../css/fonts.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../../css/fonts.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../../../css/theme.css?1700327140" rel="stylesheet">
+    <link href="../../../../css/theme-auto.css?1700327140" rel="stylesheet" id="R-variant-style">
+    <link href="../../../../css/variant.css?1700327140" rel="stylesheet">
+    <link href="../../../../css/print.css?1700327140" rel="stylesheet" media="print">
+    <link href="../../../../css/format-print.css?1700327140" rel="stylesheet">
+    <link href="../../../../css/ie.css?1700327140" rel="stylesheet">
+    <script src="../../../../js/url.js?1700327140"></script>
+    <script src="../../../../js/variant.js?1700327140"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="../../../../index.search.js";
+      var root_url="../../../../";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='/';
+      // variant stuff
+      window.variants && variants.init( [ 'auto', 'relearn-bright', 'relearn-light', 'relearn-dark', 'zen-light', 'zen-dark', 'neon', 'learn', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="../../../../informatik/netzwerke/client-server/client-server-implementierung.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+              <button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)">
+                <i class="fa-fw fas fa-bars"></i>
+              </button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../../informatik.html"><span itemprop="name">Informatik</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../../informatik/netzwerke.html"><span itemprop="name">Netzwerke</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../../informatik/netzwerke/client-server.html"><span itemprop="name">Client Server</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Client Server Implementierung</span><meta itemprop="position" content="4"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="client-server-implementierung">Client Server Implementierung</h1>
+
+<p><em>Um durch die Abiturklassen eine Verbindung auf zu bauen, werden einige Methoden und Vererbungen benötigt.</em>*
+<a href="#R-image-44b5ac133ae2f747c3d67e061ccd2fc0" class="lightbox-link"><img src="../../../../informatik/netzwerke/client-server/client-server-implementierung.html/implementationsdiagramm-netzwerke.png" alt="Implementationsdiagramm Netzwerke" class="figure-image border lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-44b5ac133ae2f747c3d67e061ccd2fc0"><img src="../../../../informatik/netzwerke/client-server/client-server-implementierung.html/implementationsdiagramm-netzwerke.png" alt="Implementationsdiagramm Netzwerke" class="lightbox-image border lightbox noshadow" loading="lazy"></a></p>
+<p><strong>Der Client muss hier bei diese Methode implementieren:</strong>
+<code>+ProcessMessage(pMessage: String): void</code>
+Hierbei ist auch wichtig, dass die jeweilige Client Klasse von der Abiturklasse „Client“ erbt (extends). Hierbei muss auch darauf geachtet werden, dass ein Client Objekt durch super mit einer Server IP sowie Port erstellt wird.</p>
+<p><strong>Der Server muss hierbei folgende Methoden Implementieren:</strong></p>
+<div class="wrap-code highlight"><pre tabindex="0"><code>+processNewConnection(pClientIP: String, pClientPort: int): void
++processMessage(pClientIP: String, pClientPort: int, pMessage: String): void
++processClosingConnection(pClientIP: String, pClientPort: int): void</code></pre></div><p>Es ist darauf zu achten, dass die implementierende Klasse von der Abiturklasse „Server“ erbt (extends), sowie durch einen „super()“ Aufruf eine „Server“ Klasse erstellt.</p>
+<p><strong>Beispiel für eine Server-Implementierung</strong></p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ShopServer</span> <span style="color:#66d9ef">extends</span> Server
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#a6e22e">ShopServer</span>(<span style="color:#66d9ef">int</span> pPortnummer)
+</span></span><span style="display:flex;"><span>	{
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">super</span>(pPortnummer);
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">processNewConnection</span>(String pClientIP, <span style="color:#66d9ef">int</span> pClientPort){
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">processMessage</span>(String pClientIP, <span style="color:#66d9ef">int</span> pClientPort, String pMessage){
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">processClosingConnection</span>(String pClientIP, <span style="color:#66d9ef">int</span> pClientPort){
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+            <footer class="footline">
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="../../../../js/clipboard.min.js?1700327140" defer></script>
+    <script src="../../../../js/perfect-scrollbar.min.js?1700327140" defer></script>
+    <script>
+      function useMathJax( config ){
+        if( !Object.assign ){
+          
+          return;
+        }
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          loader: {
+            load: ['[tex]/mhchem']
+          },
+          startup: {
+            elements: [
+              '.math'
+            ]
+          },
+          tex: {
+            inlineMath: [
+              ['$', '$'], 
+              ['\\(', '\\)']
+            ]
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="../../../../js/mathjax/tex-mml-chtml.js?1700327140"></script>
+    <script src="../../../../js/d3/d3-color.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-dispatch.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-drag.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-ease.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-interpolate.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-selection.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-timer.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-transition.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-zoom.min.js?1700327140" defer></script>
+    <script src="../../../../js/js-yaml.min.js?1700327140" defer></script>
+    <script src="../../../../js/mermaid.min.js?1700327140" defer></script>
+    <script>
+      window.themeUseMermaid = JSON.parse("{ \"securityLevel\": \"loose\" }");
+    </script>
+    <script src="../../../../js/theme.js?1700327140" defer></script>
+  </body>
+</html>

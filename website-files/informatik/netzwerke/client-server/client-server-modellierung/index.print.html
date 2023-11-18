@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.120.4">
+    <meta name="generator" content="Relearn 5.23.2+tip">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Client Server Modellierung :: Informatikabitur">
+    <meta name="twitter:description" content="Allgemein:
+Nr. Client an Server Server an Client 1 Anfrage Reaktion auf diese Anfrage (Was geschieht bei dieser Anfrage) 2 Message Was passiert beim Erhalt der Message (bei variablen, was für fälle gibt es) &hellip; &hellip; &hellip; Beispiel:
+Nr. Client an Server Server an Client 1 ANMELDUNG Begrüßung, Aufforderung zur Wahl der Größe und Farbe des T-Shirts 2 HOODIE: &lt;Groesse&gt;:&lt;Farbe&gt; Größe und Farbe werden bestätigt, Preis wird übermittelt, Bestätigung wird angefordert, Größe oder Farbe ist falsch, Aufforderung für eine korrekte Eingabe 3 BESTAETIGUNG:&lt;Wahl&gt; Bei &lt;Wahl&gt; = ja (gleich) wird dem Kunden gedanktBei &lt;Wahl&gt; = (gleich) nein wird der Kunde abgemeldetBei &lt;Wahl&gt; !">
+    <meta property="og:title" content="Client Server Modellierung :: Informatikabitur">
+    <meta property="og:description" content="Allgemein:
+Nr. Client an Server Server an Client 1 Anfrage Reaktion auf diese Anfrage (Was geschieht bei dieser Anfrage) 2 Message Was passiert beim Erhalt der Message (bei variablen, was für fälle gibt es) &hellip; &hellip; &hellip; Beispiel:
+Nr. Client an Server Server an Client 1 ANMELDUNG Begrüßung, Aufforderung zur Wahl der Größe und Farbe des T-Shirts 2 HOODIE: &lt;Groesse&gt;:&lt;Farbe&gt; Größe und Farbe werden bestätigt, Preis wird übermittelt, Bestätigung wird angefordert, Größe oder Farbe ist falsch, Aufforderung für eine korrekte Eingabe 3 BESTAETIGUNG:&lt;Wahl&gt; Bei &lt;Wahl&gt; = ja (gleich) wird dem Kunden gedanktBei &lt;Wahl&gt; = (gleich) nein wird der Kunde abgemeldetBei &lt;Wahl&gt; !">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="/informatik/netzwerke/client-server/client-server-modellierung.html">
+    <meta property="article:section" content="Client Server :: Informatikabitur">
+    <meta property="og:site_name" content="Informatikabitur">
+    <title>Client Server Modellierung :: Informatikabitur</title>
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="../../../../css/fontawesome-all.min.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../../css/fontawesome-all.min.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../../../css/nucleus.css?1700327140" rel="stylesheet">
+    <link href="../../../../css/auto-complete.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../../css/auto-complete.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../../../css/perfect-scrollbar.min.css?1700327140" rel="stylesheet">
+    <link href="../../../../css/fonts.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../../css/fonts.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../../../css/theme.css?1700327140" rel="stylesheet">
+    <link href="../../../../css/theme-auto.css?1700327140" rel="stylesheet" id="R-variant-style">
+    <link href="../../../../css/variant.css?1700327140" rel="stylesheet">
+    <link href="../../../../css/print.css?1700327140" rel="stylesheet" media="print">
+    <link href="../../../../css/format-print.css?1700327140" rel="stylesheet">
+    <link href="../../../../css/ie.css?1700327140" rel="stylesheet">
+    <script src="../../../../js/url.js?1700327140"></script>
+    <script src="../../../../js/variant.js?1700327140"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="../../../../index.search.js";
+      var root_url="../../../../";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='/';
+      // variant stuff
+      window.variants && variants.init( [ 'auto', 'relearn-bright', 'relearn-light', 'relearn-dark', 'zen-light', 'zen-dark', 'neon', 'learn', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="../../../../informatik/netzwerke/client-server/client-server-modellierung.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+              <button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)">
+                <i class="fa-fw fas fa-bars"></i>
+              </button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../../informatik.html"><span itemprop="name">Informatik</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../../informatik/netzwerke.html"><span itemprop="name">Netzwerke</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../../informatik/netzwerke/client-server.html"><span itemprop="name">Client Server</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Client Server Modellierung</span><meta itemprop="position" content="4"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="client-server-modellierung">Client Server Modellierung</h1>
+
+<p><strong>Allgemein</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Nr.</th>
+<th style="text-align:center">Client an Server</th>
+<th style="text-align:center">Server an Client</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Anfrage</td>
+<td style="text-align:center">Reaktion auf diese Anfrage (Was geschieht bei dieser Anfrage)</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">Message</td>
+<td style="text-align:center">Was passiert beim Erhalt der Message (bei variablen, was für fälle gibt es)</td>
+</tr>
+<tr>
+<td style="text-align:center">&hellip;</td>
+<td style="text-align:center">&hellip;</td>
+<td style="text-align:center">&hellip;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Beispiel</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Nr.</th>
+<th style="text-align:left">Client an Server</th>
+<th style="text-align:left">Server an Client</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left"><code>ANMELDUNG</code></td>
+<td style="text-align:left">Begrüßung, Aufforderung zur Wahl der Größe und Farbe des T-Shirts</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left"><code>HOODIE: &lt;Groesse&gt;:&lt;Farbe&gt;</code></td>
+<td style="text-align:left">Größe und Farbe werden bestätigt,<!-- raw HTML omitted --> Preis wird übermittelt,<!-- raw HTML omitted --> Bestätigung wird angefordert,<!-- raw HTML omitted --> Größe oder Farbe ist falsch,<!-- raw HTML omitted --> Aufforderung für eine korrekte Eingabe</td>
+</tr>
+<tr>
+<td style="text-align:left">3</td>
+<td style="text-align:left"><code>BESTAETIGUNG:&lt;Wahl&gt;</code></td>
+<td style="text-align:left"><!-- raw HTML omitted --><!-- raw HTML omitted -->Bei <code>&lt;Wahl&gt;</code> = ja (gleich) wird dem Kunden gedankt<!-- raw HTML omitted --><!-- raw HTML omitted -->Bei <code>&lt;Wahl&gt;</code> = (gleich) nein wird der Kunde abgemeldet<!-- raw HTML omitted --><!-- raw HTML omitted -->Bei <code>&lt;Wahl&gt;</code> != (ungleich) (ja oder nein), Aufforderung für eine korrekte Eingabe<!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td style="text-align:left">4</td>
+<td style="text-align:left"><code>ABMELDEN</code></td>
+<td style="text-align:left">Der Kunde wird verabschiedet</td>
+</tr>
+<tr>
+<td style="text-align:left">5</td>
+<td style="text-align:left">Sonstige Nachricht</td>
+<td style="text-align:left">Unbekannte Anweisung, Aufforderung für eine korrekte Eingabe</td>
+</tr>
+</tbody>
+</table>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="../../../../js/clipboard.min.js?1700327140" defer></script>
+    <script src="../../../../js/perfect-scrollbar.min.js?1700327140" defer></script>
+    <script>
+      function useMathJax( config ){
+        if( !Object.assign ){
+          
+          return;
+        }
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          loader: {
+            load: ['[tex]/mhchem']
+          },
+          startup: {
+            elements: [
+              '.math'
+            ]
+          },
+          tex: {
+            inlineMath: [
+              ['$', '$'], 
+              ['\\(', '\\)']
+            ]
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="../../../../js/mathjax/tex-mml-chtml.js?1700327140"></script>
+    <script src="../../../../js/d3/d3-color.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-dispatch.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-drag.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-ease.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-interpolate.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-selection.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-timer.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-transition.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-zoom.min.js?1700327140" defer></script>
+    <script src="../../../../js/js-yaml.min.js?1700327140" defer></script>
+    <script src="../../../../js/mermaid.min.js?1700327140" defer></script>
+    <script>
+      window.themeUseMermaid = JSON.parse("{ \"securityLevel\": \"loose\" }");
+    </script>
+    <script src="../../../../js/theme.js?1700327140" defer></script>
+  </body>
+</html>

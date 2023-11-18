@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.120.4">
+    <meta name="generator" content="Relearn 5.23.2+tip">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Sql Befehle :: Informatikabitur">
+    <meta name="twitter:description" content=" Befehl Nutzen SELECT(DISTINCT)&hellip;FROM WHERE Bedingung GROUP BY Gruppiert nach dem angegebenen Attribut ORDER BY Ordnet nach einem bestimmten Spalte (wird als Zahl angegeben) ASC Ordnet die Ausgabe vom kleinsten zum größten Element DESC Ordnet die Ausgabe von größtem zum kleinsten Element LEFT JOIN&hellip;ON Verbindet zwei Tabellen, wobei die linke Tabelle die Primärtabelle ist, wobei ON den Primärschlüssel definiert RIGHT JOIN&hellip;ON Verbindet zwei Tabellen, wobei die rechte Tabelle die Primärtabelle ist, wobei ON den Primärschlüssel definiert INNER JOIN&hellip;ON Verbindet alle Zeilen, die in beiden Tabellen vorhanden sind JOIN&hellip;ON Ist eine andere Schreibweise zum INNER JOIN UNION Vereinigt die Zeilen aus zwei Tabellen mit den gleichen Attributen in einer Tabelle AS bennent eine Spalte in der Ergebnistabelle NULL ">
+    <meta property="og:title" content="Sql Befehle :: Informatikabitur">
+    <meta property="og:description" content=" Befehl Nutzen SELECT(DISTINCT)&hellip;FROM WHERE Bedingung GROUP BY Gruppiert nach dem angegebenen Attribut ORDER BY Ordnet nach einem bestimmten Spalte (wird als Zahl angegeben) ASC Ordnet die Ausgabe vom kleinsten zum größten Element DESC Ordnet die Ausgabe von größtem zum kleinsten Element LEFT JOIN&hellip;ON Verbindet zwei Tabellen, wobei die linke Tabelle die Primärtabelle ist, wobei ON den Primärschlüssel definiert RIGHT JOIN&hellip;ON Verbindet zwei Tabellen, wobei die rechte Tabelle die Primärtabelle ist, wobei ON den Primärschlüssel definiert INNER JOIN&hellip;ON Verbindet alle Zeilen, die in beiden Tabellen vorhanden sind JOIN&hellip;ON Ist eine andere Schreibweise zum INNER JOIN UNION Vereinigt die Zeilen aus zwei Tabellen mit den gleichen Attributen in einer Tabelle AS bennent eine Spalte in der Ergebnistabelle NULL ">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="/informatik/datenbanken/sql-befehle.html">
+    <meta property="article:section" content="Datenbanken :: Informatikabitur">
+    <meta property="og:site_name" content="Informatikabitur">
+    <title>Sql Befehle :: Informatikabitur</title>
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="../../../css/fontawesome-all.min.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fontawesome-all.min.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../../css/nucleus.css?1700327140" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/auto-complete.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../../css/perfect-scrollbar.min.css?1700327140" rel="stylesheet">
+    <link href="../../../css/fonts.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fonts.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../../css/theme.css?1700327140" rel="stylesheet">
+    <link href="../../../css/theme-auto.css?1700327140" rel="stylesheet" id="R-variant-style">
+    <link href="../../../css/variant.css?1700327140" rel="stylesheet">
+    <link href="../../../css/print.css?1700327140" rel="stylesheet" media="print">
+    <link href="../../../css/format-print.css?1700327140" rel="stylesheet">
+    <link href="../../../css/ie.css?1700327140" rel="stylesheet">
+    <script src="../../../js/url.js?1700327140"></script>
+    <script src="../../../js/variant.js?1700327140"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="../../../index.search.js";
+      var root_url="../../../";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='/';
+      // variant stuff
+      window.variants && variants.init( [ 'auto', 'relearn-bright', 'relearn-light', 'relearn-dark', 'zen-light', 'zen-dark', 'neon', 'learn', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="../../../informatik/datenbanken/sql-befehle.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+              <button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)">
+                <i class="fa-fw fas fa-bars"></i>
+              </button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../informatik.html"><span itemprop="name">Informatik</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../informatik/datenbanken.html"><span itemprop="name">Datenbanken</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Sql Befehle</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="sql-befehle">Sql Befehle</h1>
+
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Befehl</th>
+<th style="text-align:left">Nutzen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">SELECT(DISTINCT)&hellip;FROM</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">WHERE</td>
+<td style="text-align:left">Bedingung</td>
+</tr>
+<tr>
+<td style="text-align:left">GROUP BY</td>
+<td style="text-align:left">Gruppiert nach dem angegebenen Attribut</td>
+</tr>
+<tr>
+<td style="text-align:left">ORDER BY</td>
+<td style="text-align:left">Ordnet nach einem bestimmten Spalte (wird als Zahl angegeben)</td>
+</tr>
+<tr>
+<td style="text-align:left">ASC</td>
+<td style="text-align:left">Ordnet die Ausgabe vom kleinsten zum größten Element</td>
+</tr>
+<tr>
+<td style="text-align:left">DESC</td>
+<td style="text-align:left">Ordnet die Ausgabe von größtem zum kleinsten Element</td>
+</tr>
+<tr>
+<td style="text-align:left">LEFT JOIN&hellip;ON</td>
+<td style="text-align:left">Verbindet <strong>zwei</strong> Tabellen, wobei die <strong>linke</strong> Tabelle die Primärtabelle ist, wobei ON den Primärschlüssel definiert</td>
+</tr>
+<tr>
+<td style="text-align:left">RIGHT JOIN&hellip;ON</td>
+<td style="text-align:left">Verbindet <strong>zwei</strong> Tabellen, wobei die <strong>rechte</strong> Tabelle die Primärtabelle ist, wobei ON den Primärschlüssel definiert</td>
+</tr>
+<tr>
+<td style="text-align:left">INNER JOIN&hellip;ON</td>
+<td style="text-align:left">Verbindet <strong>alle</strong> Zeilen, die in beiden Tabellen vorhanden sind</td>
+</tr>
+<tr>
+<td style="text-align:left">JOIN&hellip;ON</td>
+<td style="text-align:left">Ist eine andere Schreibweise zum INNER JOIN</td>
+</tr>
+<tr>
+<td style="text-align:left">UNION</td>
+<td style="text-align:left">Vereinigt die Zeilen aus zwei Tabellen mit den gleichen Attributen in einer Tabelle</td>
+</tr>
+<tr>
+<td style="text-align:left">AS</td>
+<td style="text-align:left">bennent eine Spalte in der Ergebnistabelle</td>
+</tr>
+<tr>
+<td style="text-align:left">NULL</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="../../../js/clipboard.min.js?1700327140" defer></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1700327140" defer></script>
+    <script>
+      function useMathJax( config ){
+        if( !Object.assign ){
+          
+          return;
+        }
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          loader: {
+            load: ['[tex]/mhchem']
+          },
+          startup: {
+            elements: [
+              '.math'
+            ]
+          },
+          tex: {
+            inlineMath: [
+              ['$', '$'], 
+              ['\\(', '\\)']
+            ]
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="../../../js/mathjax/tex-mml-chtml.js?1700327140"></script>
+    <script src="../../../js/d3/d3-color.min.js?1700327140" defer></script>
+    <script src="../../../js/d3/d3-dispatch.min.js?1700327140" defer></script>
+    <script src="../../../js/d3/d3-drag.min.js?1700327140" defer></script>
+    <script src="../../../js/d3/d3-ease.min.js?1700327140" defer></script>
+    <script src="../../../js/d3/d3-interpolate.min.js?1700327140" defer></script>
+    <script src="../../../js/d3/d3-selection.min.js?1700327140" defer></script>
+    <script src="../../../js/d3/d3-timer.min.js?1700327140" defer></script>
+    <script src="../../../js/d3/d3-transition.min.js?1700327140" defer></script>
+    <script src="../../../js/d3/d3-zoom.min.js?1700327140" defer></script>
+    <script src="../../../js/js-yaml.min.js?1700327140" defer></script>
+    <script src="../../../js/mermaid.min.js?1700327140" defer></script>
+    <script>
+      window.themeUseMermaid = JSON.parse("{ \"securityLevel\": \"loose\" }");
+    </script>
+    <script src="../../../js/theme.js?1700327140" defer></script>
+  </body>
+</html>

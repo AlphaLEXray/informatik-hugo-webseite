@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.120.4">
+    <meta name="generator" content="Relearn 5.23.2+tip">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="RSA-Verschlüsselung :: Informatikabitur">
+    <meta name="twitter:description" content="privater Schlüssel: (d, N)
+Beispiel:	(11, 14)
+öffentlicher Schlüssel: (e, N)
+Beispiel: (5, 14)
+Nachricht: m
+Beispiel: c (3)
+Verschlüsseln m^e (als Zahl) mod N
+Beispiel:
+3 mod 14 = 5 (e) Cyphertext (c) = 5 (e)
+Entschlüsseln c^d (als Zahl) mod N
+Beispiel:
+5 mod 15 = 3 (c)
+RSA-Schlüsselgeneration Um eine Nachricht mit dem RSA-Verfahren zu verschlüsseln braucht man einen privaten und einen öffentlichen Schlüssel. Dieser wird generell in 5 Schritten erzeugt.">
+    <meta property="og:title" content="RSA-Verschlüsselung :: Informatikabitur">
+    <meta property="og:description" content="privater Schlüssel: (d, N)
+Beispiel:	(11, 14)
+öffentlicher Schlüssel: (e, N)
+Beispiel: (5, 14)
+Nachricht: m
+Beispiel: c (3)
+Verschlüsseln m^e (als Zahl) mod N
+Beispiel:
+3 mod 14 = 5 (e) Cyphertext (c) = 5 (e)
+Entschlüsseln c^d (als Zahl) mod N
+Beispiel:
+5 mod 15 = 3 (c)
+RSA-Schlüsselgeneration Um eine Nachricht mit dem RSA-Verfahren zu verschlüsseln braucht man einen privaten und einen öffentlichen Schlüssel. Dieser wird generell in 5 Schritten erzeugt.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="/informatik/verschluesselung/asymmetrische-verschluesselung/rsa.html">
+    <meta property="article:section" content="Asymmetrische Verschluesselung :: Informatikabitur">
+    <meta property="og:site_name" content="Informatikabitur">
+    <title>RSA-Verschlüsselung :: Informatikabitur</title>
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="../../../../css/fontawesome-all.min.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../../css/fontawesome-all.min.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../../../css/nucleus.css?1700327140" rel="stylesheet">
+    <link href="../../../../css/auto-complete.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../../css/auto-complete.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../../../css/perfect-scrollbar.min.css?1700327140" rel="stylesheet">
+    <link href="../../../../css/fonts.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../../css/fonts.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../../../css/theme.css?1700327140" rel="stylesheet">
+    <link href="../../../../css/theme-auto.css?1700327140" rel="stylesheet" id="R-variant-style">
+    <link href="../../../../css/variant.css?1700327140" rel="stylesheet">
+    <link href="../../../../css/print.css?1700327140" rel="stylesheet" media="print">
+    <link href="../../../../css/format-print.css?1700327140" rel="stylesheet">
+    <link href="../../../../css/ie.css?1700327140" rel="stylesheet">
+    <script src="../../../../js/url.js?1700327140"></script>
+    <script src="../../../../js/variant.js?1700327140"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="../../../../index.search.js";
+      var root_url="../../../../";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='/';
+      // variant stuff
+      window.variants && variants.init( [ 'auto', 'relearn-bright', 'relearn-light', 'relearn-dark', 'zen-light', 'zen-dark', 'neon', 'learn', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="../../../../informatik/verschluesselung/asymmetrische-verschluesselung/rsa.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+              <button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)">
+                <i class="fa-fw fas fa-bars"></i>
+              </button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../../informatik.html"><span itemprop="name">Informatik</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../../informatik/verschluesselung.html"><span itemprop="name">Verschluesselung</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../../informatik/verschluesselung/asymmetrische-verschluesselung.html"><span itemprop="name">Asymmetrische Verschluesselung</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">RSA-Verschlüsselung</span><meta itemprop="position" content="4"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="rsa-verschlüsselung">RSA-Verschlüsselung</h1>
+
+<p>privater Schlüssel: (d, N)</p>
+<blockquote>
+<p>Beispiel:	(11, 14)</p>
+</blockquote>
+<p>öffentlicher Schlüssel: (e, N)</p>
+<blockquote>
+<p>Beispiel: (5, 14)</p>
+</blockquote>
+<p>Nachricht: m</p>
+<blockquote>
+<p>Beispiel: c (3)</p>
+</blockquote>
+<h2 id="verschlüsseln">Verschlüsseln</h2>
+<p>m^e (als Zahl) mod N</p>
+<p>Beispiel:</p>
+<blockquote>
+<p>3 mod 14 = 5 (e)
+Cyphertext  (c) = 5 (e)</p>
+</blockquote>
+<h2 id="entschlüsseln">Entschlüsseln</h2>
+<p>c^d (als Zahl) mod N</p>
+<p>Beispiel:</p>
+<blockquote>
+<p>5 mod 15 = 3 (c)</p>
+</blockquote>
+<h2 id="rsa-schlüsselgeneration">RSA-Schlüsselgeneration</h2>
+<p>Um eine Nachricht mit dem RSA-Verfahren zu verschlüsseln braucht man einen privaten und einen öffentlichen Schlüssel. Dieser wird generell in 5 Schritten erzeugt.</p>
+<ul>
+<li>
+<p>Schritt 1 – p und q<br>
+Wähle zwei zufällige möglichst große Primzahlen aus. Diese nennen wir p und q</p>
+</li>
+<li>
+<p>Schritt 2 – N<br>
+Nun ermittlen wir die Zahl N, indem wir p mit q multiplizieren.</p>
+</li>
+<li>
+<p>Schritt 3 – r<br>
+Als nächstes wird nun r mit ermittelt, indem p und q jeweils mit 1 subtrahiert werden und danach multipliziert werden.</p>
+</li>
+<li>
+<p>Schritt 4 – e<br>
+Wähle eine zufällige Zahl e, die keinen gemeinsamen Teiler mit r hat.</p>
+</li>
+<li>
+<p>Schritt 5 – d<br>
+Als letzes wird die Zahl d so gewählt, dass e*d mod r = 1 gilt.</p>
+</li>
+</ul>
+<p>Nun haben wir alle nötigen Komponenten, um unsere privaten und öffentlichen Schlüssel zu erstellen.</p>
+<p>Diese sehen wie folgt aus:</p>
+<p>(<strong>e</strong>, <strong>N</strong>) → öffentlicher Schlüssel
+(<strong>d</strong>, <strong>N</strong>) → privater Schlüssel</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="../../../../js/clipboard.min.js?1700327140" defer></script>
+    <script src="../../../../js/perfect-scrollbar.min.js?1700327140" defer></script>
+    <script>
+      function useMathJax( config ){
+        if( !Object.assign ){
+          
+          return;
+        }
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          loader: {
+            load: ['[tex]/mhchem']
+          },
+          startup: {
+            elements: [
+              '.math'
+            ]
+          },
+          tex: {
+            inlineMath: [
+              ['$', '$'], 
+              ['\\(', '\\)']
+            ]
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="../../../../js/mathjax/tex-mml-chtml.js?1700327140"></script>
+    <script src="../../../../js/d3/d3-color.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-dispatch.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-drag.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-ease.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-interpolate.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-selection.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-timer.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-transition.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-zoom.min.js?1700327140" defer></script>
+    <script src="../../../../js/js-yaml.min.js?1700327140" defer></script>
+    <script src="../../../../js/mermaid.min.js?1700327140" defer></script>
+    <script>
+      window.themeUseMermaid = JSON.parse("{ \"securityLevel\": \"loose\" }");
+    </script>
+    <script src="../../../../js/theme.js?1700327140" defer></script>
+  </body>
+</html>

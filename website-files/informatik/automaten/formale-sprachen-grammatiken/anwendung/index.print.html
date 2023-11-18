@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.120.4">
+    <meta name="generator" content="Relearn 5.23.2+tip">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Anwendung :: Informatikabitur">
+    <meta name="twitter:description" content="Parser: kontextsensitive Grammatik Scanner: reguläre Grammatik Übersetzung von Quellcode in Maschinensprache Um einen Quellcode in eine Maschinensprache zu übersetzen, verwendet man einen Compiler, welcher mithilfe von verschiedenen Schritten mit speziellen Aufgaben, den Quelltext analysiert und umwandelt:
+Scanner → lexikalische Analyse Parser → syntaktische Analyse semantische Analyse Codegenerator → Synthesepahse In der folgenden Section werden der Scanner (Schritt 1) und der Parser (Schritt 2) näher behandelt.
+Scanner lexikalische (zeichenweise) Analyse des Quelltextes wird auch Lexer genannt bildet die Grundlage für den Parser Scanner zerlegt den Text in seine Bestandteile (Token) arbeitet nach den Regeln der regulüren Grammatik erkennt das Wort einer Sprache mithilfe eines DEAs erstellt eine Tokenliste (indizierte Liste aller Token mit Typen und Speicheradressen) Parser syntaktische Analyse des Quellcodes → Analyse der syntaktischen Korrektheit Scanner bildet die Grundlage für die semantische Analyse übernimmt sowohl die lexikalische als auch die syntaktische Analyse, wenn man bei der Worterkennung nicht zwischen den beiden unterscheidet erzeugt ein Ableitungsbaum Zusammenarbeit zwischen Scanner und Parser Scanner Parser können auf zwei Arten zusammenarbeiten:">
+    <meta property="og:title" content="Anwendung :: Informatikabitur">
+    <meta property="og:description" content="Parser: kontextsensitive Grammatik Scanner: reguläre Grammatik Übersetzung von Quellcode in Maschinensprache Um einen Quellcode in eine Maschinensprache zu übersetzen, verwendet man einen Compiler, welcher mithilfe von verschiedenen Schritten mit speziellen Aufgaben, den Quelltext analysiert und umwandelt:
+Scanner → lexikalische Analyse Parser → syntaktische Analyse semantische Analyse Codegenerator → Synthesepahse In der folgenden Section werden der Scanner (Schritt 1) und der Parser (Schritt 2) näher behandelt.
+Scanner lexikalische (zeichenweise) Analyse des Quelltextes wird auch Lexer genannt bildet die Grundlage für den Parser Scanner zerlegt den Text in seine Bestandteile (Token) arbeitet nach den Regeln der regulüren Grammatik erkennt das Wort einer Sprache mithilfe eines DEAs erstellt eine Tokenliste (indizierte Liste aller Token mit Typen und Speicheradressen) Parser syntaktische Analyse des Quellcodes → Analyse der syntaktischen Korrektheit Scanner bildet die Grundlage für die semantische Analyse übernimmt sowohl die lexikalische als auch die syntaktische Analyse, wenn man bei der Worterkennung nicht zwischen den beiden unterscheidet erzeugt ein Ableitungsbaum Zusammenarbeit zwischen Scanner und Parser Scanner Parser können auf zwei Arten zusammenarbeiten:">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="/informatik/automaten/formale-sprachen-grammatiken/anwendung.html">
+    <meta property="article:section" content="Formale Sprachen Grammatiken :: Informatikabitur">
+    <meta property="og:site_name" content="Informatikabitur">
+    <title>Anwendung :: Informatikabitur</title>
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="../../../../css/fontawesome-all.min.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../../css/fontawesome-all.min.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../../../css/nucleus.css?1700327140" rel="stylesheet">
+    <link href="../../../../css/auto-complete.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../../css/auto-complete.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../../../css/perfect-scrollbar.min.css?1700327140" rel="stylesheet">
+    <link href="../../../../css/fonts.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../../css/fonts.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../../../css/theme.css?1700327140" rel="stylesheet">
+    <link href="../../../../css/theme-auto.css?1700327140" rel="stylesheet" id="R-variant-style">
+    <link href="../../../../css/variant.css?1700327140" rel="stylesheet">
+    <link href="../../../../css/print.css?1700327140" rel="stylesheet" media="print">
+    <link href="../../../../css/format-print.css?1700327140" rel="stylesheet">
+    <link href="../../../../css/ie.css?1700327140" rel="stylesheet">
+    <script src="../../../../js/url.js?1700327140"></script>
+    <script src="../../../../js/variant.js?1700327140"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="../../../../index.search.js";
+      var root_url="../../../../";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='/';
+      // variant stuff
+      window.variants && variants.init( [ 'auto', 'relearn-bright', 'relearn-light', 'relearn-dark', 'zen-light', 'zen-dark', 'neon', 'learn', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="../../../../informatik/automaten/formale-sprachen-grammatiken/anwendung.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+              <button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)">
+                <i class="fa-fw fas fa-bars"></i>
+              </button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../../informatik.html"><span itemprop="name">Informatik</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../../informatik/automaten.html"><span itemprop="name">Automaten</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../../informatik/automaten/formale-sprachen-grammatiken.html"><span itemprop="name">Formale Sprachen Grammatiken</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Anwendung</span><meta itemprop="position" content="4"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="anwendung">Anwendung</h1>
+
+<ul>
+<li>Parser: kontextsensitive Grammatik</li>
+<li>Scanner: reguläre Grammatik</li>
+</ul>
+<h1 id="übersetzung-von-quellcode-in-maschinensprache">Übersetzung von Quellcode in Maschinensprache</h1>
+<p>Um einen Quellcode in eine Maschinensprache zu übersetzen, verwendet man einen Compiler, welcher mithilfe von verschiedenen Schritten mit speziellen Aufgaben, den Quelltext analysiert und umwandelt:</p>
+<ol>
+<li>Scanner → lexikalische Analyse</li>
+<li>Parser → syntaktische Analyse</li>
+<li>semantische Analyse</li>
+<li>Codegenerator → Synthesepahse</li>
+</ol>
+<p>In der folgenden Section werden der Scanner (Schritt 1) und der Parser (Schritt 2) näher behandelt.</p>
+<h2 id="scanner">Scanner</h2>
+<ul>
+<li>lexikalische (zeichenweise) Analyse des Quelltextes</li>
+<li>wird auch Lexer genannt</li>
+<li>bildet die Grundlage für den Parser</li>
+<li>Scanner zerlegt den Text in seine Bestandteile (Token)</li>
+<li>arbeitet nach den Regeln der regulüren Grammatik</li>
+<li>erkennt das Wort einer Sprache mithilfe eines DEAs</li>
+<li>erstellt eine Tokenliste (indizierte Liste aller Token mit Typen und Speicheradressen)</li>
+</ul>
+<h2 id="parser">Parser</h2>
+<ul>
+<li>syntaktische Analyse des Quellcodes → Analyse der syntaktischen Korrektheit</li>
+<li>Scanner bildet die Grundlage für die semantische Analyse</li>
+<li>übernimmt sowohl die lexikalische als auch die syntaktische Analyse, wenn man bei der Worterkennung nicht zwischen den beiden unterscheidet</li>
+<li>erzeugt ein Ableitungsbaum</li>
+</ul>
+<h2 id="zusammenarbeit-zwischen-scanner-und-parser">Zusammenarbeit zwischen Scanner und Parser</h2>
+<p>Scanner Parser können auf zwei Arten zusammenarbeiten:</p>
+<ol>
+<li>Der Parser erhält jedes Token einzeln vom Scanner, wenn dieser mit dem Token fertig ist</li>
+<li>Der Parser erhält eine Tokenliste vom Scanner, nachdem dieser mit allen Token fertig ist</li>
+</ol>
+<p>Die Methode, die verwendet wird, hängt von der Komplexität der Sprache ab.</p>
+<h2 id="verwendung-von-sprachen-und-grammatiken">Verwendung von Sprachen und Grammatiken</h2>
+<p><strong>Scanner</strong>:<br>
+Damit der Scanner überprüfen kann, od die Folge der Eingabezeichen des Quellcodes den Terminalen der regulären Sprache entspricht, verwendet er DEAs als Akzeptoren und arbeitet somit nach den Regeln der regulären Grammatik.</p>
+<p><strong>Parser</strong>:<br>
+Parser hingegen verwenden eine Kontextfreie Grammatik, um zu überprüfen, ob die Folge der Token der gegebenen Grammatik entspricht</p>
+<h2 id="weitere-schritte-eines-compilers">Weitere Schritte eines Compilers</h2>
+<h3 id="semantische-analyse">Semantische Analyse</h3>
+<p>Bei der semantische Analyse wird überprüft, ob die Programmteile sinnvoll zusammenpassen bzw., ob das Programm Sinn ergibt. Allerdings wird hier der Quellcode nicht auf die Funktionsweise bzw. das Ergebnis überprüft.</p>
+<h3 id="codegenerator">Codegenerator</h3>
+<p>Der Codegenerator ist der letzte Schritt im Compileprozess. Er findet statt, wenn die anderen Schritte keine Fehlermeldungen zurückgegeben haben. Hier wird alles in einem Code in der entsprechenden Maschinensprache zusammengeführt, welcher vom Prozessor aus- und lesbar ist.</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="../../../../js/clipboard.min.js?1700327140" defer></script>
+    <script src="../../../../js/perfect-scrollbar.min.js?1700327140" defer></script>
+    <script>
+      function useMathJax( config ){
+        if( !Object.assign ){
+          
+          return;
+        }
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          loader: {
+            load: ['[tex]/mhchem']
+          },
+          startup: {
+            elements: [
+              '.math'
+            ]
+          },
+          tex: {
+            inlineMath: [
+              ['$', '$'], 
+              ['\\(', '\\)']
+            ]
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="../../../../js/mathjax/tex-mml-chtml.js?1700327140"></script>
+    <script src="../../../../js/d3/d3-color.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-dispatch.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-drag.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-ease.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-interpolate.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-selection.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-timer.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-transition.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-zoom.min.js?1700327140" defer></script>
+    <script src="../../../../js/js-yaml.min.js?1700327140" defer></script>
+    <script src="../../../../js/mermaid.min.js?1700327140" defer></script>
+    <script>
+      window.themeUseMermaid = JSON.parse("{ \"securityLevel\": \"loose\" }");
+    </script>
+    <script src="../../../../js/theme.js?1700327140" defer></script>
+  </body>
+</html>

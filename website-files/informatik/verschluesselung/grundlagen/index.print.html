@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.120.4">
+    <meta name="generator" content="Relearn 5.23.2+tip">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Grundlagen :: Informatikabitur">
+    <meta name="twitter:description" content="">
+    <meta property="og:title" content="Grundlagen :: Informatikabitur">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/informatik/verschluesselung/grundlagen.html">
+    <meta property="og:site_name" content="Informatikabitur">
+    <title>Grundlagen :: Informatikabitur</title>
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="../../../css/fontawesome-all.min.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fontawesome-all.min.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../../css/nucleus.css?1700327140" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/auto-complete.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../../css/perfect-scrollbar.min.css?1700327140" rel="stylesheet">
+    <link href="../../../css/fonts.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fonts.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../../css/theme.css?1700327140" rel="stylesheet">
+    <link href="../../../css/theme-auto.css?1700327140" rel="stylesheet" id="R-variant-style">
+    <link href="../../../css/variant.css?1700327140" rel="stylesheet">
+    <link href="../../../css/print.css?1700327140" rel="stylesheet" media="print">
+    <link href="../../../css/format-print.css?1700327140" rel="stylesheet">
+    <link href="../../../css/ie.css?1700327140" rel="stylesheet">
+    <script src="../../../js/url.js?1700327140"></script>
+    <script src="../../../js/variant.js?1700327140"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="../../../index.search.js";
+      var root_url="../../../";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='/';
+      // variant stuff
+      window.variants && variants.init( [ 'auto', 'relearn-bright', 'relearn-light', 'relearn-dark', 'zen-light', 'zen-dark', 'neon', 'learn', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="../../../informatik/verschluesselung/grundlagen.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+              <button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)">
+                <i class="fa-fw fas fa-bars"></i>
+              </button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../informatik.html"><span itemprop="name">Informatik</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../informatik/verschluesselung.html"><span itemprop="name">Verschluesselung</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Grundlagen</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="grundlagen">Grundlagen</h1>
+
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+          <section>
+            <h1 class="a11y-only">Subsections of Grundlagen</h1>
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="grundbegriffe">Grundbegriffe</h1>
+
+<table>
+<thead>
+<tr>
+<th>Begriff</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Klartext (Plaintext)</td>
+<td>Beschreibt eine unverschlüsselte Nachricht</td>
+</tr>
+<tr>
+<td>Klartextalphabet</td>
+<td>Zeichen, aus denen der Klartext bestehen kann</td>
+</tr>
+<tr>
+<td>Geheimtext (Ciphertext)</td>
+<td>Beschreibt eine verschlüsselte Nachricht</td>
+</tr>
+<tr>
+<td>Geheimtextalphabet</td>
+<td>Zeichen, aus denen der Geheimtext bestehen kann</td>
+</tr>
+<tr>
+<td>Verschlüsseln (Chiffrieren)</td>
+<td>Vorgang, um einen Klartext durch ein Verfahren in einen Geheimtext umzuwandeln</td>
+</tr>
+<tr>
+<td>Entschlüsseln (Dechiffriern)</td>
+<td>Vorgang, um einen Geheimtext in einen Klartext umzuwandeln</td>
+</tr>
+<tr>
+<td>Schlüssel</td>
+<td>nformation oder Algorithmus, welcher angibt, wie das Verschlüsselungsverfahren in einer Situation angewendet werden soll.</td>
+</tr>
+<tr>
+<td>Kryptographie</td>
+<td>Die Wissenschaft der Entwicklung von Verschlüsselungsvervahren, sowie der Ver- und Entschlüsselung von Daten</td>
+</tr>
+<tr>
+<td>Kryptoanalyse</td>
+<td>Die Wissenschaft des Brechens von Verschlüsselungsverfahren</td>
+</tr>
+<tr>
+<td>Kryptologie</td>
+<td>Zusammenfassung von Kryptoanalyse und Kryptographie</td>
+</tr>
+</tbody>
+</table>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="mathematische-grundlagen-der-kryptografie">Mathematische Grundlagen der Kryptografie</h1>
+
+<h2 id="primzahlen">Primzahlen</h2>
+<p>Eine Primzahl ist eine Zahl, die größer als eins ist und nur durch sich selbst und eins teilbar ist.</p>
+<h2 id="primfaktorzerlegung">Primfaktorzerlegung</h2>
+<p>Jede natürliche Zahl die größer als eins ist und selbst keine Primzahl ist, lässt sich als ein Produkt von mindestens zwei Primzahlen schreiben.</p>
+<p>Beispiel:</p>
+<blockquote>
+<p>60= 2<em>30 = 2</em>2<em>15= 2²</em>3*5</p>
+</blockquote>
+<h2 id="teilbarkeit">Teilbarkeit</h2>
+<p>Eine ganze Zahl a ist durch eine andere ganze Zahl b teilbar, wenn bei der Division a:b kein Rest entsteht.</p>
+<p>Beispiel:</p>
+<blockquote>
+<p>Teilbar: 8:4 = 2
+Nicht Teilbar (mit Rest): 8:7= 1 r 1</p>
+</blockquote>
+<p><em>Teiler einer Zahl: ggT (größter gemeinsamer Teiler)</em></p>
+<p>Beispiel:</p>
+<blockquote>
+<p>gemeinsame Teiler von 12 und 18: 1,2,3,6
+größter gemeinsame Teiler von 12 und 18: ggT(12,18) = 6</p>
+</blockquote>
+<h2 id="die-modulo-funktion">Die Modulo-Funktion</h2>
+<ul>
+<li>a mod m ist der Rest, den eine Zahl bei der Division durch eine Zahl lässt. Es gibt also eine Zahl k mit a=k*m+r</li>
+<li>Der Rest r kann also nur die Werte 0 bis m-1 annehmen.</li>
+</ul>
+<p>Beispiel:</p>
+<blockquote>
+<p>19 mod 5 = 4, da 19:5 = 3 (Rest 4)</p>
+</blockquote>
+<h2 id="kongruenzen">Kongruenzen</h2>
+<p>Sei m &gt; 1 eine natürliche Zahl. Lassen zwei ganze Zahlen a und b bei der Division durch m den gleichen Rest, dann nennt man a und b kongurent modulo m und schreibt dafür kurz: a≡b mod m</p>
+<p>Beispiel:</p>
+<blockquote>
+<p>30≡4mod13, da 30mod13=4 und 4mod13=4</p>
+</blockquote>
+<h2 id="rechengesetze-für-modulo-funktionen">Rechengesetze für Modulo-Funktionen</h2>
+<ul>
+<li>(x+y) mod m = ((x mod m) + (y mod m)) mod m</li>
+<li>(x*y) mod m = ((y mod m) * (y mod m)) mod m</li>
+</ul>
+<p>Beispiel:</p>
+<blockquote>
+<p>23 mod 5 = (12+11) mod 5 = ((12 mod 5) + (11 mod 5)) mod 5 = (2+1) mod 5 = 5 mod 5</p>
+</blockquote>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+          </section>
+        </div>
+      </main>
+    </div>
+    <script src="../../../js/clipboard.min.js?1700327140" defer></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1700327140" defer></script>
+    <script>
+      function useMathJax( config ){
+        if( !Object.assign ){
+          
+          return;
+        }
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          loader: {
+            load: ['[tex]/mhchem']
+          },
+          startup: {
+            elements: [
+              '.math'
+            ]
+          },
+          tex: {
+            inlineMath: [
+              ['$', '$'], 
+              ['\\(', '\\)']
+            ]
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="../../../js/mathjax/tex-mml-chtml.js?1700327140"></script>
+    <script src="../../../js/d3/d3-color.min.js?1700327140" defer></script>
+    <script src="../../../js/d3/d3-dispatch.min.js?1700327140" defer></script>
+    <script src="../../../js/d3/d3-drag.min.js?1700327140" defer></script>
+    <script src="../../../js/d3/d3-ease.min.js?1700327140" defer></script>
+    <script src="../../../js/d3/d3-interpolate.min.js?1700327140" defer></script>
+    <script src="../../../js/d3/d3-selection.min.js?1700327140" defer></script>
+    <script src="../../../js/d3/d3-timer.min.js?1700327140" defer></script>
+    <script src="../../../js/d3/d3-transition.min.js?1700327140" defer></script>
+    <script src="../../../js/d3/d3-zoom.min.js?1700327140" defer></script>
+    <script src="../../../js/js-yaml.min.js?1700327140" defer></script>
+    <script src="../../../js/mermaid.min.js?1700327140" defer></script>
+    <script>
+      window.themeUseMermaid = JSON.parse("{ \"securityLevel\": \"loose\" }");
+    </script>
+    <script src="../../../js/theme.js?1700327140" defer></script>
+  </body>
+</html>

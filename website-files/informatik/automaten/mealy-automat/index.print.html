@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.120.4">
+    <meta name="generator" content="Relearn 5.23.2+tip">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Mealy Automat :: Informatikabitur">
+    <meta name="twitter:description" content="endlich: Eingabealphabet, (Ausgabealphabet), Zustände sind endlich
+A = (Q, Σ, δ, Ω, λ,s) Q: nichtleere, endliche Menge von Zuständen Σ: nichtleeres, endliches Eingabealphabet Ω: nichtleeres, endliches Ausgabealphabet δ: QxΣ → Q Übergangsfunktion, die jeder Kombination (Zustand, Eingabezeichen) einen Nachfolgezustand zuordnet λ: QxΣ → Ω Ausgabefunktion, die jeder Kombination (Zustand, Eingabezeichen) eine Ausgabe zuordnet s∈Q: Startzustand Beispiel: A = (Q, Σ,Ω, δ, λ,s) mit:
+Q = {q0, q1}
+q0: zu, q1: offen Σ = {O, S}">
+    <meta property="og:title" content="Mealy Automat :: Informatikabitur">
+    <meta property="og:description" content="endlich: Eingabealphabet, (Ausgabealphabet), Zustände sind endlich
+A = (Q, Σ, δ, Ω, λ,s) Q: nichtleere, endliche Menge von Zuständen Σ: nichtleeres, endliches Eingabealphabet Ω: nichtleeres, endliches Ausgabealphabet δ: QxΣ → Q Übergangsfunktion, die jeder Kombination (Zustand, Eingabezeichen) einen Nachfolgezustand zuordnet λ: QxΣ → Ω Ausgabefunktion, die jeder Kombination (Zustand, Eingabezeichen) eine Ausgabe zuordnet s∈Q: Startzustand Beispiel: A = (Q, Σ,Ω, δ, λ,s) mit:
+Q = {q0, q1}
+q0: zu, q1: offen Σ = {O, S}">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="/informatik/automaten/mealy-automat.html">
+    <meta property="article:section" content="Automaten :: Informatikabitur">
+    <meta property="og:site_name" content="Informatikabitur">
+    <title>Mealy Automat :: Informatikabitur</title>
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="../../../css/fontawesome-all.min.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fontawesome-all.min.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../../css/nucleus.css?1700327140" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/auto-complete.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../../css/perfect-scrollbar.min.css?1700327140" rel="stylesheet">
+    <link href="../../../css/fonts.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fonts.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../../css/theme.css?1700327140" rel="stylesheet">
+    <link href="../../../css/theme-auto.css?1700327140" rel="stylesheet" id="R-variant-style">
+    <link href="../../../css/variant.css?1700327140" rel="stylesheet">
+    <link href="../../../css/print.css?1700327140" rel="stylesheet" media="print">
+    <link href="../../../css/format-print.css?1700327140" rel="stylesheet">
+    <link href="../../../css/ie.css?1700327140" rel="stylesheet">
+    <script src="../../../js/url.js?1700327140"></script>
+    <script src="../../../js/variant.js?1700327140"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="../../../index.search.js";
+      var root_url="../../../";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='/';
+      // variant stuff
+      window.variants && variants.init( [ 'auto', 'relearn-bright', 'relearn-light', 'relearn-dark', 'zen-light', 'zen-dark', 'neon', 'learn', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="../../../informatik/automaten/mealy-automat.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+              <button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)">
+                <i class="fa-fw fas fa-bars"></i>
+              </button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../informatik.html"><span itemprop="name">Informatik</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../informatik/automaten.html"><span itemprop="name">Automaten</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Mealy Automat</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="mealy-automat">Mealy Automat</h1>
+
+<p>endlich: Eingabealphabet, (Ausgabealphabet), Zustände sind <strong>endlich</strong></p>
+<ul>
+<li>A = (Q, Σ, δ, Ω, λ,s)</li>
+<li>Q: nichtleere, endliche Menge von Zuständen</li>
+<li>Σ: nichtleeres, endliches Eingabealphabet</li>
+<li>Ω: nichtleeres, endliches Ausgabealphabet</li>
+<li>δ: QxΣ → Q Übergangsfunktion, die jeder Kombination (Zustand, Eingabezeichen) einen Nachfolgezustand zuordnet</li>
+<li>λ: QxΣ → Ω Ausgabefunktion, die jeder Kombination (Zustand, Eingabezeichen) eine Ausgabe zuordnet</li>
+<li>s∈Q: Startzustand</li>
+</ul>
+<h3 id="beispiel">Beispiel:</h3>
+<ul>
+<li>
+<p>A = (Q, Σ,Ω, δ, λ,s) mit:</p>
+</li>
+<li>
+<p>Q = {q<!-- raw HTML omitted -->0<!-- raw HTML omitted -->, q<!-- raw HTML omitted -->1<!-- raw HTML omitted -->}</p>
+<ul>
+<li>q<!-- raw HTML omitted -->0<!-- raw HTML omitted -->: zu, q<!-- raw HTML omitted -->1<!-- raw HTML omitted -->: offen</li>
+</ul>
+</li>
+<li>
+<p>Σ = {O, S}</p>
+<ul>
+<li>O: öffnen, S: schließen</li>
+</ul>
+</li>
+<li>
+<p>Ω = {GO, GS, N}</p>
+<ul>
+<li>GO: &ldquo;Tür wird geöffnet&rdquo;, GS: &ldquo;Tür wird geschlossen&rdquo;, N: keine Ausgabe</li>
+</ul>
+</li>
+<li>
+<p>s = q<!-- raw HTML omitted -->0<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p>δ:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>O</th>
+<th>S</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>q<!-- raw HTML omitted -->0<!-- raw HTML omitted --></td>
+<td>q<!-- raw HTML omitted -->1<!-- raw HTML omitted --></td>
+<td>q<!-- raw HTML omitted -->0<!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td>q<!-- raw HTML omitted -->1<!-- raw HTML omitted --></td>
+<td>q<!-- raw HTML omitted -->1<!-- raw HTML omitted --></td>
+<td>q<!-- raw HTML omitted -->0<!-- raw HTML omitted --></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>λ:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>O</th>
+<th>S</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>q<!-- raw HTML omitted -->0<!-- raw HTML omitted --></td>
+<td>GO</td>
+<td>N</td>
+</tr>
+<tr>
+<td>q<!-- raw HTML omitted -->1<!-- raw HTML omitted --></td>
+<td>N</td>
+<td>GS</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<p><strong>oder</strong> als Übergangsgraph:</p>
+<p><a href="#R-image-0e21d4913fa14644af329887f92e12c3" class="lightbox-link"><img src="../../../informatik/automaten/mealy-automat.html/mealy-automat-beispiel.jpg" alt="Mealy-Automat" class="figure-image border lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0e21d4913fa14644af329887f92e12c3"><img src="../../../informatik/automaten/mealy-automat.html/mealy-automat-beispiel.jpg" alt="Mealy-Automat" class="lightbox-image border lightbox noshadow" loading="lazy"></a></p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="../../../js/clipboard.min.js?1700327140" defer></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1700327140" defer></script>
+    <script>
+      function useMathJax( config ){
+        if( !Object.assign ){
+          
+          return;
+        }
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          loader: {
+            load: ['[tex]/mhchem']
+          },
+          startup: {
+            elements: [
+              '.math'
+            ]
+          },
+          tex: {
+            inlineMath: [
+              ['$', '$'], 
+              ['\\(', '\\)']
+            ]
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="../../../js/mathjax/tex-mml-chtml.js?1700327140"></script>
+    <script src="../../../js/d3/d3-color.min.js?1700327140" defer></script>
+    <script src="../../../js/d3/d3-dispatch.min.js?1700327140" defer></script>
+    <script src="../../../js/d3/d3-drag.min.js?1700327140" defer></script>
+    <script src="../../../js/d3/d3-ease.min.js?1700327140" defer></script>
+    <script src="../../../js/d3/d3-interpolate.min.js?1700327140" defer></script>
+    <script src="../../../js/d3/d3-selection.min.js?1700327140" defer></script>
+    <script src="../../../js/d3/d3-timer.min.js?1700327140" defer></script>
+    <script src="../../../js/d3/d3-transition.min.js?1700327140" defer></script>
+    <script src="../../../js/d3/d3-zoom.min.js?1700327140" defer></script>
+    <script src="../../../js/js-yaml.min.js?1700327140" defer></script>
+    <script src="../../../js/mermaid.min.js?1700327140" defer></script>
+    <script>
+      window.themeUseMermaid = JSON.parse("{ \"securityLevel\": \"loose\" }");
+    </script>
+    <script src="../../../js/theme.js?1700327140" defer></script>
+  </body>
+</html>

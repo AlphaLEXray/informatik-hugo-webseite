@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.120.4">
+    <meta name="generator" content="Relearn 5.23.2+tip">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Formale Grammatik :: Informatikabitur">
+    <meta name="twitter:description" content="G = (N, T, P, S) N: nichtleere, endliche Menge von Nichtterminalen T: nichtleere, endliche Menge von Terminalen P: endliche Menge von Produktionsregeln (Jede Regel bildet eine beliebige Kombination aus T und N, die mindestens ein N enthält, auf eine beliebige Kombination von Terminalen und Nichtterminalen ab.) s∈N ist das Startsymbol Beispiel: L = {anbncn|n≥0}
+G = (N, T, S, P) N = {S, S&rsquo;, B} T = {a, b, c} S Startsymbol P = {">
+    <meta property="og:title" content="Formale Grammatik :: Informatikabitur">
+    <meta property="og:description" content="G = (N, T, P, S) N: nichtleere, endliche Menge von Nichtterminalen T: nichtleere, endliche Menge von Terminalen P: endliche Menge von Produktionsregeln (Jede Regel bildet eine beliebige Kombination aus T und N, die mindestens ein N enthält, auf eine beliebige Kombination von Terminalen und Nichtterminalen ab.) s∈N ist das Startsymbol Beispiel: L = {anbncn|n≥0}
+G = (N, T, S, P) N = {S, S&rsquo;, B} T = {a, b, c} S Startsymbol P = {">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="/informatik/automaten/formale-sprachen-grammatiken/formale-grammatik.html">
+    <meta property="article:section" content="Formale Sprachen Grammatiken :: Informatikabitur">
+    <meta property="og:site_name" content="Informatikabitur">
+    <title>Formale Grammatik :: Informatikabitur</title>
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="../../../../css/fontawesome-all.min.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../../css/fontawesome-all.min.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../../../css/nucleus.css?1700327140" rel="stylesheet">
+    <link href="../../../../css/auto-complete.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../../css/auto-complete.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../../../css/perfect-scrollbar.min.css?1700327140" rel="stylesheet">
+    <link href="../../../../css/fonts.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../../css/fonts.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../../../css/theme.css?1700327140" rel="stylesheet">
+    <link href="../../../../css/theme-auto.css?1700327140" rel="stylesheet" id="R-variant-style">
+    <link href="../../../../css/variant.css?1700327140" rel="stylesheet">
+    <link href="../../../../css/print.css?1700327140" rel="stylesheet" media="print">
+    <link href="../../../../css/format-print.css?1700327140" rel="stylesheet">
+    <link href="../../../../css/ie.css?1700327140" rel="stylesheet">
+    <script src="../../../../js/url.js?1700327140"></script>
+    <script src="../../../../js/variant.js?1700327140"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="../../../../index.search.js";
+      var root_url="../../../../";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='/';
+      // variant stuff
+      window.variants && variants.init( [ 'auto', 'relearn-bright', 'relearn-light', 'relearn-dark', 'zen-light', 'zen-dark', 'neon', 'learn', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="../../../../informatik/automaten/formale-sprachen-grammatiken/formale-grammatik.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+              <button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)">
+                <i class="fa-fw fas fa-bars"></i>
+              </button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../../informatik.html"><span itemprop="name">Informatik</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../../informatik/automaten.html"><span itemprop="name">Automaten</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../../informatik/automaten/formale-sprachen-grammatiken.html"><span itemprop="name">Formale Sprachen Grammatiken</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Formale Grammatik</span><meta itemprop="position" content="4"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="formale-grammatik">Formale Grammatik</h1>
+
+<ul>
+<li>G = (N, T, P, S)</li>
+<li>N: nichtleere, endliche Menge von Nichtterminalen</li>
+<li>T: nichtleere, endliche Menge von Terminalen</li>
+<li>P: endliche Menge von Produktionsregeln (Jede Regel bildet eine beliebige Kombination aus T und N, die mindestens ein N enthält, auf eine beliebige Kombination von Terminalen und Nichtterminalen ab.)</li>
+<li>s∈N ist das Startsymbol</li>
+</ul>
+<p><strong>Beispiel</strong>: L = {a<!-- raw HTML omitted -->n<!-- raw HTML omitted -->b<!-- raw HTML omitted -->n<!-- raw HTML omitted -->c<!-- raw HTML omitted -->n<!-- raw HTML omitted -->|n≥0}</p>
+<ul>
+<li>G = (N, T, S, P)</li>
+<li>N = {S, S&rsquo;, B}</li>
+<li>T = {a, b, c}</li>
+<li>S Startsymbol</li>
+<li>P = {<br>
+S → S&rsquo; | ϵ<br>
+S&rsquo; → aS&rsquo;Bc | abc<br>
+cB → Bc<br>
+bB → bb}</li>
+</ul>
+<h3 id="rechtsreguläre-grammatik">rechtsreguläre Grammatik</h3>
+<p>Außschließlich Produktionsregeln der Form:
+N → T | TN (Wörter wachsen nach rechts) | ϵ</p>
+<h3 id="linksreguläre-grammatik">linksreguläre Grammatik</h3>
+<p>Außschließlich Produktionsregeln der Form:
+N → T | NT (Wörter wachsen nach links) | ϵ</p>
+<h3 id="kontextfreie-grammatik">kontextfreie Grammatik</h3>
+<p>Außschließlich Produktionsregeln der Form:
+N → (NUT)∗ <em>(alle Kombinationen aus ϵ, N, T)</em> , also auch N → ϵ</p>
+<h3 id="zeigen-dass-ein-wort-sich-aus-einer-grammatik-ableiten-lässt-siehe-grammatik-oben">Zeigen, dass ein Wort sich aus einer Grammatik ableiten lässt (siehe Grammatik oben)</h3>
+<p>aabbcc: S → S&rsquo; → aS&rsquo;Bc → aabcBc → aabBcc → aabbcc (Ableitung des Wortes)</p>
+<h2 id="hirarchie-formaler-sprachen">Hirarchie formaler Sprachen</h2>
+<p><a href="#R-image-7b2b0438233b4e9d2e5c2b133c49918c" class="lightbox-link"><img src="../../../../informatik/automaten/formale-sprachen-grammatiken/formale-grammatik.html/chomsky-hirarchie.jpg" alt="Hierarchie formaler Sprachen" class="figure-image border lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7b2b0438233b4e9d2e5c2b133c49918c"><img src="../../../../informatik/automaten/formale-sprachen-grammatiken/formale-grammatik.html/chomsky-hirarchie.jpg" alt="Hierarchie formaler Sprachen" class="lightbox-image border lightbox noshadow" loading="lazy"></a></p>
+<h2 id="reguläre-und-kontextfreie-sprachen">reguläre und kontextfreie Sprachen</h2>
+<p>Die Sprache L ist regulär ⇔ es existiert eine reguläre Grammatik, die L erzeugt ⇔ es existiert ein DEA, der L erkennt</p>
+<p>Die Sprache L ist kontextfrei ⇔ es existiert eine kontextfreie Grammatik, die L erzeugt ⇔ es existiert ein NICHTDETERMINISTISCHER Kellerautomat, der L erkennt</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+        </div>
+      </main>
+    </div>
+    <script src="../../../../js/clipboard.min.js?1700327140" defer></script>
+    <script src="../../../../js/perfect-scrollbar.min.js?1700327140" defer></script>
+    <script>
+      function useMathJax( config ){
+        if( !Object.assign ){
+          
+          return;
+        }
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          loader: {
+            load: ['[tex]/mhchem']
+          },
+          startup: {
+            elements: [
+              '.math'
+            ]
+          },
+          tex: {
+            inlineMath: [
+              ['$', '$'], 
+              ['\\(', '\\)']
+            ]
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="../../../../js/mathjax/tex-mml-chtml.js?1700327140"></script>
+    <script src="../../../../js/d3/d3-color.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-dispatch.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-drag.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-ease.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-interpolate.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-selection.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-timer.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-transition.min.js?1700327140" defer></script>
+    <script src="../../../../js/d3/d3-zoom.min.js?1700327140" defer></script>
+    <script src="../../../../js/js-yaml.min.js?1700327140" defer></script>
+    <script src="../../../../js/mermaid.min.js?1700327140" defer></script>
+    <script>
+      window.themeUseMermaid = JSON.parse("{ \"securityLevel\": \"loose\" }");
+    </script>
+    <script src="../../../../js/theme.js?1700327140" defer></script>
+  </body>
+</html>

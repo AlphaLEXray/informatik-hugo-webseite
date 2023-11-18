@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.120.4">
+    <meta name="generator" content="Relearn 5.23.2+tip">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Verschluesselung :: Informatikabitur">
+    <meta name="twitter:description" content="">
+    <meta property="og:title" content="Verschluesselung :: Informatikabitur">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/informatik/verschluesselung.html">
+    <meta property="og:site_name" content="Informatikabitur">
+    <title>Verschluesselung :: Informatikabitur</title>
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="../../css/fontawesome-all.min.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fontawesome-all.min.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../css/nucleus.css?1700327140" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/auto-complete.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../css/perfect-scrollbar.min.css?1700327140" rel="stylesheet">
+    <link href="../../css/fonts.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fonts.css?1700327140" rel="stylesheet"></noscript>
+    <link href="../../css/theme.css?1700327140" rel="stylesheet">
+    <link href="../../css/theme-auto.css?1700327140" rel="stylesheet" id="R-variant-style">
+    <link href="../../css/variant.css?1700327140" rel="stylesheet">
+    <link href="../../css/print.css?1700327140" rel="stylesheet" media="print">
+    <link href="../../css/format-print.css?1700327140" rel="stylesheet">
+    <link href="../../css/ie.css?1700327140" rel="stylesheet">
+    <script src="../../js/url.js?1700327140"></script>
+    <script src="../../js/variant.js?1700327140"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="../../index.search.js";
+      var root_url="../../";
+      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.baseUriFull='/';
+      // variant stuff
+      window.variants && variants.init( [ 'auto', 'relearn-bright', 'relearn-light', 'relearn-dark', 'zen-light', 'zen-dark', 'neon', 'learn', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support print disableInlineCopyToClipboard" data-url="../../informatik/verschluesselung.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+              <button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)">
+                <i class="fa-fw fas fa-bars"></i>
+              </button>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../informatik.html"><span itemprop="name">Informatik</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Verschluesselung</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable chapter narrow" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="chapter">
+            <header class="headline">
+            </header>
+<div class="article-subheading">Chapter 6</div>
+<h1 id="verschluesselung">Verschluesselung</h1>
+
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+          <section>
+            <h1 class="a11y-only">Subsections of Verschluesselung</h1>
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="asymmetrische-verschluesselung">Asymmetrische Verschluesselung</h1>
+
+<p>Die asymmetrische Verschlüsselung basiert, anders als die symmetrische Verschlüsselung, auf zwei verschiedenen Schlüsseln. Diese sind der öffentliche und der private Schlüssel. Der öffentliche Schlüssel wird an die Kommunikationspartner verschickt. Diese verschlüsseln ihre Nachrichten mit diesem öffentlichem Schlüssel. Wenn eine Nachricht (oder Datei) mit einem öffentlichen Schlüssel verschlüsselt wurde, kann sie nur mithilfe des privaten Schlüssels entschlüsselt werden. Der private Schlüssel soll privat gehalten werden, weshalb er (idealerweise) auf dem Gerät bleiben sollte. Eine Kommunikation zwischen zwei Kommunikationspartnern könnte wie folgt ablaufen:</p>
+<ol>
+<li>Partner0 sendet Partner1 seinen öffentlichen Schlüssel</li>
+<li>Partner1 verschlüsselt seine Nachricht an Partner0 mit dessen öffentlichen Schlüssel den er von ihm bekommen hat</li>
+<li>Partner0 erhält die Nachricht von Partner1 und entschlüsselt diese mit seinem privaten Schlüssel.</li>
+<li>Nachdem Partner0 die Nachricht enthalten hat, kann er noch eine Nachricht als Bestätigung schicken. Diese wird mit dem private Schlüssel verschlüsselt und kann mit dem öffentlichen Schlüssel entschlüsselt werden. Somit bestätigt Partner0, dass er wirklich er selbst ist da er den privaten Schlüssel besitzt. Dies nennt man auch Signatur und sie enthält keine sensitiven Daten.</li>
+</ol>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+          <section>
+            <h1 class="a11y-only">Subsections of Asymmetrische Verschluesselung</h1>
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="rsa-verschlüsselung">RSA-Verschlüsselung</h1>
+
+<p>privater Schlüssel: (d, N)</p>
+<blockquote>
+<p>Beispiel:	(11, 14)</p>
+</blockquote>
+<p>öffentlicher Schlüssel: (e, N)</p>
+<blockquote>
+<p>Beispiel: (5, 14)</p>
+</blockquote>
+<p>Nachricht: m</p>
+<blockquote>
+<p>Beispiel: c (3)</p>
+</blockquote>
+<h2 id="verschlüsseln">Verschlüsseln</h2>
+<p>m^e (als Zahl) mod N</p>
+<p>Beispiel:</p>
+<blockquote>
+<p>3 mod 14 = 5 (e)
+Cyphertext  (c) = 5 (e)</p>
+</blockquote>
+<h2 id="entschlüsseln">Entschlüsseln</h2>
+<p>c^d (als Zahl) mod N</p>
+<p>Beispiel:</p>
+<blockquote>
+<p>5 mod 15 = 3 (c)</p>
+</blockquote>
+<h2 id="rsa-schlüsselgeneration">RSA-Schlüsselgeneration</h2>
+<p>Um eine Nachricht mit dem RSA-Verfahren zu verschlüsseln braucht man einen privaten und einen öffentlichen Schlüssel. Dieser wird generell in 5 Schritten erzeugt.</p>
+<ul>
+<li>
+<p>Schritt 1 – p und q<br>
+Wähle zwei zufällige möglichst große Primzahlen aus. Diese nennen wir p und q</p>
+</li>
+<li>
+<p>Schritt 2 – N<br>
+Nun ermittlen wir die Zahl N, indem wir p mit q multiplizieren.</p>
+</li>
+<li>
+<p>Schritt 3 – r<br>
+Als nächstes wird nun r mit ermittelt, indem p und q jeweils mit 1 subtrahiert werden und danach multipliziert werden.</p>
+</li>
+<li>
+<p>Schritt 4 – e<br>
+Wähle eine zufällige Zahl e, die keinen gemeinsamen Teiler mit r hat.</p>
+</li>
+<li>
+<p>Schritt 5 – d<br>
+Als letzes wird die Zahl d so gewählt, dass e*d mod r = 1 gilt.</p>
+</li>
+</ul>
+<p>Nun haben wir alle nötigen Komponenten, um unsere privaten und öffentlichen Schlüssel zu erstellen.</p>
+<p>Diese sehen wie folgt aus:</p>
+<p>(<strong>e</strong>, <strong>N</strong>) → öffentlicher Schlüssel
+(<strong>d</strong>, <strong>N</strong>) → privater Schlüssel</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+          </section>
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="grundlagen">Grundlagen</h1>
+
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+          <section>
+            <h1 class="a11y-only">Subsections of Grundlagen</h1>
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="grundbegriffe">Grundbegriffe</h1>
+
+<table>
+<thead>
+<tr>
+<th>Begriff</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Klartext (Plaintext)</td>
+<td>Beschreibt eine unverschlüsselte Nachricht</td>
+</tr>
+<tr>
+<td>Klartextalphabet</td>
+<td>Zeichen, aus denen der Klartext bestehen kann</td>
+</tr>
+<tr>
+<td>Geheimtext (Ciphertext)</td>
+<td>Beschreibt eine verschlüsselte Nachricht</td>
+</tr>
+<tr>
+<td>Geheimtextalphabet</td>
+<td>Zeichen, aus denen der Geheimtext bestehen kann</td>
+</tr>
+<tr>
+<td>Verschlüsseln (Chiffrieren)</td>
+<td>Vorgang, um einen Klartext durch ein Verfahren in einen Geheimtext umzuwandeln</td>
+</tr>
+<tr>
+<td>Entschlüsseln (Dechiffriern)</td>
+<td>Vorgang, um einen Geheimtext in einen Klartext umzuwandeln</td>
+</tr>
+<tr>
+<td>Schlüssel</td>
+<td>nformation oder Algorithmus, welcher angibt, wie das Verschlüsselungsverfahren in einer Situation angewendet werden soll.</td>
+</tr>
+<tr>
+<td>Kryptographie</td>
+<td>Die Wissenschaft der Entwicklung von Verschlüsselungsvervahren, sowie der Ver- und Entschlüsselung von Daten</td>
+</tr>
+<tr>
+<td>Kryptoanalyse</td>
+<td>Die Wissenschaft des Brechens von Verschlüsselungsverfahren</td>
+</tr>
+<tr>
+<td>Kryptologie</td>
+<td>Zusammenfassung von Kryptoanalyse und Kryptographie</td>
+</tr>
+</tbody>
+</table>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="mathematische-grundlagen-der-kryptografie">Mathematische Grundlagen der Kryptografie</h1>
+
+<h2 id="primzahlen">Primzahlen</h2>
+<p>Eine Primzahl ist eine Zahl, die größer als eins ist und nur durch sich selbst und eins teilbar ist.</p>
+<h2 id="primfaktorzerlegung">Primfaktorzerlegung</h2>
+<p>Jede natürliche Zahl die größer als eins ist und selbst keine Primzahl ist, lässt sich als ein Produkt von mindestens zwei Primzahlen schreiben.</p>
+<p>Beispiel:</p>
+<blockquote>
+<p>60= 2<em>30 = 2</em>2<em>15= 2²</em>3*5</p>
+</blockquote>
+<h2 id="teilbarkeit">Teilbarkeit</h2>
+<p>Eine ganze Zahl a ist durch eine andere ganze Zahl b teilbar, wenn bei der Division a:b kein Rest entsteht.</p>
+<p>Beispiel:</p>
+<blockquote>
+<p>Teilbar: 8:4 = 2
+Nicht Teilbar (mit Rest): 8:7= 1 r 1</p>
+</blockquote>
+<p><em>Teiler einer Zahl: ggT (größter gemeinsamer Teiler)</em></p>
+<p>Beispiel:</p>
+<blockquote>
+<p>gemeinsame Teiler von 12 und 18: 1,2,3,6
+größter gemeinsame Teiler von 12 und 18: ggT(12,18) = 6</p>
+</blockquote>
+<h2 id="die-modulo-funktion">Die Modulo-Funktion</h2>
+<ul>
+<li>a mod m ist der Rest, den eine Zahl bei der Division durch eine Zahl lässt. Es gibt also eine Zahl k mit a=k*m+r</li>
+<li>Der Rest r kann also nur die Werte 0 bis m-1 annehmen.</li>
+</ul>
+<p>Beispiel:</p>
+<blockquote>
+<p>19 mod 5 = 4, da 19:5 = 3 (Rest 4)</p>
+</blockquote>
+<h2 id="kongruenzen">Kongruenzen</h2>
+<p>Sei m &gt; 1 eine natürliche Zahl. Lassen zwei ganze Zahlen a und b bei der Division durch m den gleichen Rest, dann nennt man a und b kongurent modulo m und schreibt dafür kurz: a≡b mod m</p>
+<p>Beispiel:</p>
+<blockquote>
+<p>30≡4mod13, da 30mod13=4 und 4mod13=4</p>
+</blockquote>
+<h2 id="rechengesetze-für-modulo-funktionen">Rechengesetze für Modulo-Funktionen</h2>
+<ul>
+<li>(x+y) mod m = ((x mod m) + (y mod m)) mod m</li>
+<li>(x*y) mod m = ((y mod m) * (y mod m)) mod m</li>
+</ul>
+<p>Beispiel:</p>
+<blockquote>
+<p>23 mod 5 = (12+11) mod 5 = ((12 mod 5) + (11 mod 5)) mod 5 = (2+1) mod 5 = 5 mod 5</p>
+</blockquote>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+          </section>
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="symmetrische-verschluesselung">Symmetrische Verschluesselung</h1>
+
+<p>Die symmetrische Verschlüsselung benutzt nur einen Schlüssel, um die Nachricht zu ver- und entschlüsseln. Dies hat den Nachteil, dass dieser Schlüssel geheim gehalten werden muss und deshalb über ein sicheres Übertragungsmedium mitgeteilt werden muss. Es gibt aber auch Verfahren, mit denen man einen symmetrischen Schlüssel über eine nicht sichere Verbindung austauschen kann. Dies ist der Diffie-Hellman-Schlüsselaustausch.</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+          <section>
+            <h1 class="a11y-only">Subsections of Symmetrische Verschluesselung</h1>
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="caesar-verschlüsselung">Caesar-Verschlüsselung</h1>
+
+<p>Das Caesar-Verfahren ist ein unsicheres, symmetrisches Verschlüsselungsverfahren. Bei der Verschlüsselung wird das Alphabet um einen festen Schlüssel verschoben, wobei dieser eine Zahl von 1-25 an nehmen kann. Das Verfahren ist unsicher, da es nur 25 verschiedene Schlüssel gibt, wodurch alle möglichen Kombinationen schnell ausprobiert werden können.</p>
+<p>Beispiel:</p>
+<p><a href="#R-image-544f6d594a914c4d5671d5cc043c597e" class="lightbox-link"><img src="../../informatik/verschluesselung/symmetrische-verschluesselung/ceasar.html/caesar-beispiel.png" alt="Ceasar Beispiel" class="figure-image border lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-544f6d594a914c4d5671d5cc043c597e"><img src="../../informatik/verschluesselung/symmetrische-verschluesselung/ceasar.html/caesar-beispiel.png" alt="Ceasar Beispiel" class="lightbox-image border lightbox noshadow" loading="lazy"></a></p>
+<p>Verschlüsseln wir eine Nachricht:</p>
+<p>→ &ldquo;TEST&rdquo;</p>
+<p><a href="#R-image-5f7d6340a3ae63e5359ed632dfb10b72" class="lightbox-link"><img src="../../informatik/verschluesselung/symmetrische-verschluesselung/ceasar.html/caesar-beispiel-edited.png" alt="Caesar Beispiel edited" class="figure-image border lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5f7d6340a3ae63e5359ed632dfb10b72"><img src="../../informatik/verschluesselung/symmetrische-verschluesselung/ceasar.html/caesar-beispiel-edited.png" alt="Caesar Beispiel edited" class="lightbox-image border lightbox noshadow" loading="lazy"></a></p>
+<p>Wir erhalten:<br>
+T → W<br>
+E → H<br>
+S → V<br>
+T → W</p>
+<p>Verschlüsselt: WHVW</p>
+<p>Beim Entschlüsseln wird dieser Vorgang einfach rückwärts durchgeführt.</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="diffie-hellman-verfahren">Diffie Hellman Verfahren</h1>
+
+<p>Das Diffie-Hellman-Verfahren wird genutzt, um einen symmetrischen Schlüssel über eine ungesicherte Verbindung auszutauschen.</p>
+<p>Beispiel:</p>
+<!-- raw HTML omitted -->
+<p><a href="#R-image-3523468e073e64baadd69e629441b45a" class="lightbox-link"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Diffie-Hellman_Key_Exchange_%28de%29.svg" alt="Diffie-Hellman-Verfahren Veranschaulichung DE" class="figure-image border lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3523468e073e64baadd69e629441b45a"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Diffie-Hellman_Key_Exchange_%28de%29.svg" alt="Diffie-Hellman-Verfahren Veranschaulichung DE" class="lightbox-image border lightbox noshadow" loading="lazy"></a><br>
+<strong>Quelle</strong>: Wikimedia Commons, Public Domain → <a href="https://commons.wikimedia.org/wiki/File:Diffie-Hellman_Key_Exchange_%28de%29.svg" target="_blank">https://commons.wikimedia.org/wiki/File:Diffie-Hellman_Key_Exchange_(de).svg</a></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p><a href="#R-image-d2e4d889aa3ff7be10ef9f97732d36bf" class="lightbox-link"><img src="../../informatik/verschluesselung/symmetrische-verschluesselung/diffie-hellman-verfahren.html/mathematisches-beispiel-diffie-hellman.png" alt="Diffie-Hellman-Verfahren mathematische Veranschaulichung" class="figure-image border lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d2e4d889aa3ff7be10ef9f97732d36bf"><img src="../../informatik/verschluesselung/symmetrische-verschluesselung/diffie-hellman-verfahren.html/mathematisches-beispiel-diffie-hellman.png" alt="Diffie-Hellman-Verfahren mathematische Veranschaulichung" class="lightbox-image border lightbox noshadow" loading="lazy"></a><br>
+<strong>Quelle</strong>: <a href="https://openclipart.org" target="_blank">https://openclipart.org</a></p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="kasiski-test">Kasiski Test</h1>
+
+<ul>
+<li>Wird benutzt, um die Länge des Schlüsselworts bei der Vigenere Verschlüsselung zu bestimmen</li>
+<li>Nachdem die Länge bestimmt wurde, können einfach wie auch beim Caesar verfahren alle Möglichkeiten durchprobiert werden.</li>
+</ul>
+<p>Beispiel:</p>
+<blockquote>
+<p>AXTRX TRYLC TYSZO EMLAF QWEUZ HRKDP NRVWM WXRPI
+JTRHN IKMYF WLQIE NNOXW OTVXB NEXRK AFYHW KXAXF
+QYAWD PKKWB WLZOF XRLSN AAWUX WTURH RFWLL WWKYF
+WGAXG LPCTG ZXWOX RPIYB CSMYF WIKPA DHYBC SMYFW
+KGMTE EUWAD LHSLP AVHFK HMWLK</p>
+</blockquote>
+<p>Dieser Text wurde mit dem Wort „ALTESTESTAMENT“ verschlüsselt. Wir versuchen nun die Schlüssellänge heraus zu finden. Dazu müssen wir zunächst wiederkehrende Zeichenketten von einer Mindestlänge von 3 finden.</p>
+<blockquote>
+<p>A<code>XTR</code> <code>X TR</code>YLC TYSZO EMLAF QWEUZ HRKDP NRVWM W<code>XRPI</code>
+JTRHN IKM<code>YF W</code>LQIE NNOXW OTVXB NEXRK AFYHW KXAXF
+QYAWD PKKWB WLZOF XRLSN AAWUX WTURH RFWLL WWK<code>YF W</code>GAXG LPCTG ZXWO<code>X RPI</code> <code>YB CSMYF W</code>IKPA DH<code>YBC SMYFW</code>
+KGMTE EUWAD LHSLP AVHFK HMWLK</p>
+</blockquote>
+<ul>
+<li>XTR:         Abstand 3</li>
+<li>XRPI:        Abstand 98</li>
+<li>YFW:         Abstand 70</li>
+<li>YBCSMYFW:    Abstand 14</li>
+</ul>
+<p>Zuletzt zerlegen wir die Zahlen noch in ihre Primfaktoren:</p>
+<p>3   =      3
+98   = 2 ×         7 × 7
+70   = 2 ×     5 × 7
+14   = 2 ×         7</p>
+<p>Nun suchen wir ein gemeinsames Vielfaches der Zahlen. Hierbei fällt die Zahl 14 auf:</p>
+<p>2 * 7 = 14</p>
+<p><strong>Dieses Vielfache passt zu allen Zahlen. Eventuell war der Abstand von 3 nur ein zufälliges Auftreten. 14 stimmt in diesem Fall.</strong></p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="vigenere">Vigenere</h1>
+
+<p>Das VIGENÈRE-Verfahren ist ein unsicheres Verschlüsselungsverfahren, welches durch ein Schlüsselwort den Quellbuchstaben durch ein sich veränderndes Alphabet ein anderen Wert zu ordnet.</p>
+<p>Beispiel:</p>
+<ul>
+<li>Nachricht: Test</li>
+<li>Schlüsselwort: Test</li>
+</ul>
+<p>Im Vigenere Quadrat:</p>
+<p><a href="#R-image-bc7665acdb82086c5626ba95107273a5" class="lightbox-link"><img src="../../informatik/verschluesselung/symmetrische-verschluesselung/vigenere.html/vigenere-quadrat.png" alt="Vigenere Quadrat edited" class="figure-image border lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bc7665acdb82086c5626ba95107273a5"><img src="../../informatik/verschluesselung/symmetrische-verschluesselung/vigenere.html/vigenere-quadrat.png" alt="Vigenere Quadrat edited" class="lightbox-image border lightbox noshadow" loading="lazy"></a></p>
+<p>„Test“ mit dem Schlüssel „Test“ ergibt: MIKM</p>
+<p>Beim Entschlüsseln wird dieses Verfahren einfach rückwärts angewandt.</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+
+          </section>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script src="../../js/clipboard.min.js?1700327140" defer></script>
+    <script src="../../js/perfect-scrollbar.min.js?1700327140" defer></script>
+    <script>
+      function useMathJax( config ){
+        if( !Object.assign ){
+          
+          return;
+        }
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          loader: {
+            load: ['[tex]/mhchem']
+          },
+          startup: {
+            elements: [
+              '.math'
+            ]
+          },
+          tex: {
+            inlineMath: [
+              ['$', '$'], 
+              ['\\(', '\\)']
+            ]
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="../../js/mathjax/tex-mml-chtml.js?1700327140"></script>
+    <script src="../../js/d3/d3-color.min.js?1700327140" defer></script>
+    <script src="../../js/d3/d3-dispatch.min.js?1700327140" defer></script>
+    <script src="../../js/d3/d3-drag.min.js?1700327140" defer></script>
+    <script src="../../js/d3/d3-ease.min.js?1700327140" defer></script>
+    <script src="../../js/d3/d3-interpolate.min.js?1700327140" defer></script>
+    <script src="../../js/d3/d3-selection.min.js?1700327140" defer></script>
+    <script src="../../js/d3/d3-timer.min.js?1700327140" defer></script>
+    <script src="../../js/d3/d3-transition.min.js?1700327140" defer></script>
+    <script src="../../js/d3/d3-zoom.min.js?1700327140" defer></script>
+    <script src="../../js/js-yaml.min.js?1700327140" defer></script>
+    <script src="../../js/mermaid.min.js?1700327140" defer></script>
+    <script>
+      window.themeUseMermaid = JSON.parse("{ \"securityLevel\": \"loose\" }");
+    </script>
+    <script src="../../js/theme.js?1700327140" defer></script>
+  </body>
+</html>

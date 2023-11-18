@@ -5,6 +5,27 @@
     <link>/informatik/datenstrukturen.html</link>
     <description>Recent content in Datenstrukturen on Informatikabitur</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>de-de</language><atom:link href="/informatik/datenstrukturen/index.xml" rel="self" type="application/rss+xml" />
+    <language>de-de</language>
+    <atom:link href="/informatik/datenstrukturen/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lineare Datenstrukturen</title>
+      <link>/informatik/datenstrukturen/lineare-datenstrukturen.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/informatik/datenstrukturen/lineare-datenstrukturen.html</guid>
+      <description>Queue Aufbau Methoden enqueue() Hängt ein Objekt am Anfang der Schlange an dequeue() Entfernt das Objekt am Ende der Schlange getContent() Gibt das Inhaltsobjekt am Ende der Schlange wieder isEmpty() Gibt true zurück wenn die Schlange leer ist List Aufbau Methoden isEmpty() Gibt true zurück wenn die Liste leer ist hasAccess() Gibt true zurück falls der Pointer auf ein valides Objekt zeigt next() Bewegt den Pointer eine Information weiter toFirst() Setzt den Pointer zurück auf die erste information in der Liste toLast() Setzt den Pointer auf das letzte Element in der Liste getContent() Gibt das aktuelle inhaltsobjekt zurück setContent(pContent) setzt den aktuellen Inhalt auf den Parameter insert(pContent) fügt ein Objekt nach dem Pointer ein append(pContent) fügt am ende der Liste ein Objekt hinzu concat() setzt zwei Listen zu einer zusammen remove() entfernt das aktuelle Objekt aus der Liste Stack Aufbau Methoden top() Gibt das Objekt das oben auf dem Stapel liegt zurück push() Legt ein Objekt oben auf den Stapel pop() Entfernt das oberste Objekt isEmpty() gibt true zurück, falls der Stapel keine Inhaltsobjekte hat </description>
+    </item>
+    <item>
+      <title>Nichtlineare Datenstrukturen</title>
+      <link>/informatik/datenstrukturen/nichtlineare-datenstrukturen.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/informatik/datenstrukturen/nichtlineare-datenstrukturen.html</guid>
+      <description>Um Graphen (und auch Baeume) zu erstellen gibt es eine gute Webseite:
+https://csacademy.com/app/graph_editor/
+Graphen Definition: Ein Graph besteht aus Knoten die mit Kanten verbunden sind. Zudem können Kanten gewichtet werden. Ein praktisches Beispiel eines Graphen ist das Internet, wo viele veschiedene Computer (Knoten) mit Kabeln (Kanten) verbunden sind.
+Es gibt verschiedene Arten von Graphen die nicht exlusiv zueinander sind.
+Dazu gehören:
+ungerichtete/gerichtete Graphen ungewichtete/gewichtete Graphen Beispiel eines ungerichteten Graphen:
+Beispiel eines gerichteten Graphen:</description>
+    </item>
   </channel>
 </rss>
