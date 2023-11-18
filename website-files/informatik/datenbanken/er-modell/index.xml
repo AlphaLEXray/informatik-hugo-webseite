@@ -10,15 +10,19 @@
       <title>Modellierung</title>
       <link>/informatik/datenbanken/er-modell/modellierung.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>/informatik/datenbanken/er-modell/modellierung.html</guid>
       <description> Begriff Bedeutung Entität Objekt aus der Realsituation, über das Informationen gespeichert werden Entitätsmenge Zusammenfassung mehrerer gleichartiger Entitäten Attribut Eigenschaft aller Entitäten einer Entitätsmenge Beziehungen Zusammenhang von Entitäten untereinander Beziehungsmengen Zusammenfassung von gleichartigen Beziehungen Kardinalitäten beschreiben, wie viele Entitäten einer Entitätsmenge an einer bestimmten Beziehung beteiligt sein können oder müssen. Es wird zwischen den Kardinalitäten -1 (kein oder ein) und -m bzw. n (kein, ein oder mehrere) unterschieden. Somit sind drei Beziehungsarten möglich (1:1, 1:n und m:n) </description>
     </item>
+    
     <item>
       <title>Umsetzung</title>
       <link>/informatik/datenbanken/er-modell/umsetzung.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>/informatik/datenbanken/er-modell/umsetzung.html</guid>
       <description>Begriff Bedeutung Beispiel Relationsschema Jede Entitätsmenge wird im relationalen Modell einer eigenständigen Relation überführt Verlag(VID, Name, Sitz, Ansprechpartner) Fremdschlüssel Primärschlüssel der in einer Relation vorkommt und mit einem senkreckten Pfeil gekennzeichnet wird m:n-Beziehung Wird im relationalem Modell (Relationsschema) in eine eigene Relation überführt. Attribute sind die Primärschlüssel der beiden an der Beziehung beteiligten Entitätsmengen (als Fremdschlüssel), die gemeinsam den Primärschlüssel der Beziehungstabelle bilden, sowie ggf. Attribute der Beziehungsmenge 1:n-Beziehung Die Relation mit der Kardinalität n wird der Primärschlüssel der Relation mit der Kardinalität 1 als Fremdschlüssel angefügt.</description>
     </item>
+    
   </channel>
 </rss>
