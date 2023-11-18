@@ -39,19 +39,19 @@ Beim Entschlüsseln wird dieser Vorgang einfach rückwärts durchgeführt.">
     <meta property="og:site_name" content="Informatikabitur">
     <title>Caesar-Verschlüsselung :: Informatikabitur</title>
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="../../../../css/fontawesome-all.min.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../../css/fontawesome-all.min.css?1700327140" rel="stylesheet"></noscript>
-    <link href="../../../../css/nucleus.css?1700327140" rel="stylesheet">
-    <link href="../../../../css/auto-complete.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../../css/auto-complete.css?1700327140" rel="stylesheet"></noscript>
-    <link href="../../../../css/perfect-scrollbar.min.css?1700327140" rel="stylesheet">
-    <link href="../../../../css/fonts.css?1700327140" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../../css/fonts.css?1700327140" rel="stylesheet"></noscript>
-    <link href="../../../../css/theme.css?1700327140" rel="stylesheet">
-    <link href="../../../../css/theme-auto.css?1700327140" rel="stylesheet" id="R-variant-style">
-    <link href="../../../../css/variant.css?1700327140" rel="stylesheet">
-    <link href="../../../../css/print.css?1700327140" rel="stylesheet" media="print">
-    <link href="../../../../css/format-print.css?1700327140" rel="stylesheet">
-    <link href="../../../../css/ie.css?1700327140" rel="stylesheet">
-    <script src="../../../../js/url.js?1700327140"></script>
-    <script src="../../../../js/variant.js?1700327140"></script>
+    <link href="../../../../css/fontawesome-all.min.css?1700327226" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../../css/fontawesome-all.min.css?1700327226" rel="stylesheet"></noscript>
+    <link href="../../../../css/nucleus.css?1700327226" rel="stylesheet">
+    <link href="../../../../css/auto-complete.css?1700327226" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../../css/auto-complete.css?1700327226" rel="stylesheet"></noscript>
+    <link href="../../../../css/perfect-scrollbar.min.css?1700327226" rel="stylesheet">
+    <link href="../../../../css/fonts.css?1700327226" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../../css/fonts.css?1700327226" rel="stylesheet"></noscript>
+    <link href="../../../../css/theme.css?1700327226" rel="stylesheet">
+    <link href="../../../../css/theme-auto.css?1700327226" rel="stylesheet" id="R-variant-style">
+    <link href="../../../../css/variant.css?1700327226" rel="stylesheet">
+    <link href="../../../../css/print.css?1700327226" rel="stylesheet" media="print">
+    <link href="../../../../css/format-print.css?1700327226" rel="stylesheet">
+    <link href="../../../../css/ie.css?1700327226" rel="stylesheet">
+    <script src="../../../../js/url.js?1700327226"></script>
+    <script src="../../../../js/variant.js?1700327226"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -106,12 +106,12 @@ Beim Entschlüsseln wird dieser Vorgang einfach rückwärts durchgeführt.">
 
 <p>Das Caesar-Verfahren ist ein unsicheres, symmetrisches Verschlüsselungsverfahren. Bei der Verschlüsselung wird das Alphabet um einen festen Schlüssel verschoben, wobei dieser eine Zahl von 1-25 an nehmen kann. Das Verfahren ist unsicher, da es nur 25 verschiedene Schlüssel gibt, wodurch alle möglichen Kombinationen schnell ausprobiert werden können.</p>
 <p>Beispiel:</p>
-<p><a href="#R-image-544f6d594a914c4d5671d5cc043c597e" class="lightbox-link"><img src="../../../../informatik/verschluesselung/symmetrische-verschluesselung/ceasar.html/caesar-beispiel.png" alt="Ceasar Beispiel" class="figure-image border lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-544f6d594a914c4d5671d5cc043c597e"><img src="../../../../informatik/verschluesselung/symmetrische-verschluesselung/ceasar.html/caesar-beispiel.png" alt="Ceasar Beispiel" class="lightbox-image border lightbox noshadow" loading="lazy"></a></p>
+<p><a href="#R-image-e8881fedfde61f7577ccf5bd1388bf0b" class="lightbox-link"><img src="../../../../informatik/verschluesselung/symmetrische-verschluesselung/ceasar.html/caesar-beispiel.png" alt="Ceasar Beispiel" class="figure-image border lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e8881fedfde61f7577ccf5bd1388bf0b"><img src="../../../../informatik/verschluesselung/symmetrische-verschluesselung/ceasar.html/caesar-beispiel.png" alt="Ceasar Beispiel" class="lightbox-image border lightbox noshadow" loading="lazy"></a></p>
 <p>Verschlüsseln wir eine Nachricht:</p>
 <p>→ &ldquo;TEST&rdquo;</p>
-<p><a href="#R-image-5f7d6340a3ae63e5359ed632dfb10b72" class="lightbox-link"><img src="../../../../informatik/verschluesselung/symmetrische-verschluesselung/ceasar.html/caesar-beispiel-edited.png" alt="Caesar Beispiel edited" class="figure-image border lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5f7d6340a3ae63e5359ed632dfb10b72"><img src="../../../../informatik/verschluesselung/symmetrische-verschluesselung/ceasar.html/caesar-beispiel-edited.png" alt="Caesar Beispiel edited" class="lightbox-image border lightbox noshadow" loading="lazy"></a></p>
+<p><a href="#R-image-30a7e58fb199af42bd81059adbb6986d" class="lightbox-link"><img src="../../../../informatik/verschluesselung/symmetrische-verschluesselung/ceasar.html/caesar-beispiel-edited.png" alt="Caesar Beispiel edited" class="figure-image border lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-30a7e58fb199af42bd81059adbb6986d"><img src="../../../../informatik/verschluesselung/symmetrische-verschluesselung/ceasar.html/caesar-beispiel-edited.png" alt="Caesar Beispiel edited" class="lightbox-image border lightbox noshadow" loading="lazy"></a></p>
 <p>Wir erhalten:<br>
 T → W<br>
 E → H<br>
@@ -127,8 +127,8 @@ T → W</p>
         </div>
       </main>
     </div>
-    <script src="../../../../js/clipboard.min.js?1700327140" defer></script>
-    <script src="../../../../js/perfect-scrollbar.min.js?1700327140" defer></script>
+    <script src="../../../../js/clipboard.min.js?1700327226" defer></script>
+    <script src="../../../../js/perfect-scrollbar.min.js?1700327226" defer></script>
     <script>
       function useMathJax( config ){
         if( !Object.assign ){
@@ -157,21 +157,21 @@ T → W</p>
       }
       useMathJax( JSON.parse("{}") );
     </script>
-    <script id="MathJax-script" async src="../../../../js/mathjax/tex-mml-chtml.js?1700327140"></script>
-    <script src="../../../../js/d3/d3-color.min.js?1700327140" defer></script>
-    <script src="../../../../js/d3/d3-dispatch.min.js?1700327140" defer></script>
-    <script src="../../../../js/d3/d3-drag.min.js?1700327140" defer></script>
-    <script src="../../../../js/d3/d3-ease.min.js?1700327140" defer></script>
-    <script src="../../../../js/d3/d3-interpolate.min.js?1700327140" defer></script>
-    <script src="../../../../js/d3/d3-selection.min.js?1700327140" defer></script>
-    <script src="../../../../js/d3/d3-timer.min.js?1700327140" defer></script>
-    <script src="../../../../js/d3/d3-transition.min.js?1700327140" defer></script>
-    <script src="../../../../js/d3/d3-zoom.min.js?1700327140" defer></script>
-    <script src="../../../../js/js-yaml.min.js?1700327140" defer></script>
-    <script src="../../../../js/mermaid.min.js?1700327140" defer></script>
+    <script id="MathJax-script" async src="../../../../js/mathjax/tex-mml-chtml.js?1700327226"></script>
+    <script src="../../../../js/d3/d3-color.min.js?1700327226" defer></script>
+    <script src="../../../../js/d3/d3-dispatch.min.js?1700327226" defer></script>
+    <script src="../../../../js/d3/d3-drag.min.js?1700327226" defer></script>
+    <script src="../../../../js/d3/d3-ease.min.js?1700327226" defer></script>
+    <script src="../../../../js/d3/d3-interpolate.min.js?1700327226" defer></script>
+    <script src="../../../../js/d3/d3-selection.min.js?1700327226" defer></script>
+    <script src="../../../../js/d3/d3-timer.min.js?1700327226" defer></script>
+    <script src="../../../../js/d3/d3-transition.min.js?1700327226" defer></script>
+    <script src="../../../../js/d3/d3-zoom.min.js?1700327226" defer></script>
+    <script src="../../../../js/js-yaml.min.js?1700327226" defer></script>
+    <script src="../../../../js/mermaid.min.js?1700327226" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"securityLevel\": \"loose\" }");
     </script>
-    <script src="../../../../js/theme.js?1700327140" defer></script>
+    <script src="../../../../js/theme.js?1700327226" defer></script>
   </body>
 </html>
