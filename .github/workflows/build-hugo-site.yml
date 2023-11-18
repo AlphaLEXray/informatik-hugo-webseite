@@ -6,9 +6,6 @@ on:
   push:
     branches:
       - main
-      - development
-      - github-actions
-
 jobs:
   deploy:
     name: Build and Deploy
