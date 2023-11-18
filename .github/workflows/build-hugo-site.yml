@@ -3,7 +3,7 @@ name: Website
 
 on:
   workflow_dispatch:
-  merge:
+  push:
     branches:
       - main
 jobs:
@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Setup Hugo
         env:
-          HUGO_VERSION: 0.111.0
+          HUGO_VERSION: 0.120.4
         run: |
           mkdir ~/hugo
           cd ~/hugo
