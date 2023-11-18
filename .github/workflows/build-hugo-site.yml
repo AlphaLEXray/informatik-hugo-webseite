@@ -3,7 +3,7 @@ name: Website
 
 on:
   workflow_dispatch:
-  push:
+  merge:
     branches:
       - main
 jobs:
