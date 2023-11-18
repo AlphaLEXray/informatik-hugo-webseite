@@ -2,19 +2,525 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Informatikabitur</title>
-    <link>/index.html</link>
+    <link>/</link>
     <description>Recent content on Informatikabitur</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Informatik</title>
-      <link>/informatik.html</link>
+      <title>Anwendungsschicht</title>
+      <link>/informatik/netzwerke/schichtenmodell/anwendungsschicht.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/informatik.html</guid>
-      <description>Dies ist eine Sammlung von Lernmaterialen für den Informatikunterricht als Vorbereitung für das Abitur (in NRW).
-This is a collection of computer science materials for the German Abitur (Majors/A-Levels).
-Vorgaben Abitur 2022 NRW Link: https://www.standardsicherung.schulministerium.nrw.de/cms/zentralabitur-gost/faecher/getfile.php?file=5024#page=4
-Materialien zu den zentralen Abiturprüfungen im Fach Informatik Link: https://www.schulentwicklung.nrw.de/lehrplaene/upload/klp_SII/if/Dokumentation_ZA-IF_GK-LK_ab_2018_2021_12_22.pdf</description>
+      
+      <guid>/informatik/netzwerke/schichtenmodell/anwendungsschicht.html</guid>
+      <description> Stellt Dienste für die jeweilige Anwendung bereit Übersetzt die Daten in eine Systemunabhängige Form Verbindet jeweils die an einer Sitzung beteiligten Anwendungen </description>
     </item>
+    
+    <item>
+      <title>Bus Topologie</title>
+      <link>/informatik/netzwerke/netzwerktopologien/bus-topologie.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/netzwerke/netzwerktopologien/bus-topologie.html</guid>
+      <description>Beschreibung:
+Alle Rechner sind direkt mit dem Übertragungsmedium verbunden, dem sogenannten BUS. Dies führt dazu, dass nur ein Teilnehmer zu einem Zeitpunkt Daten versenden kann.
+Vorteile Nachteile Einfache Installation Der Ausfall eines Kabels führt zum Ausfall des gesamten Netzwerks Kurze Leitungen Besitzt einen hohen Organisationsaufwand wegen der eingeschränkten Sendemöglichkeiten </description>
+    </item>
+    
+    <item>
+      <title>Caesar-Verschlüsselung</title>
+      <link>/informatik/verschluesselung/symmetrische-verschluesselung/ceasar.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/verschluesselung/symmetrische-verschluesselung/ceasar.html</guid>
+      <description>Das Caesar-Verfahren ist ein unsicheres, symmetrisches Verschlüsselungsverfahren. Bei der Verschlüsselung wird das Alphabet um einen festen Schlüssel verschoben, wobei dieser eine Zahl von 1-25 an nehmen kann. Das Verfahren ist unsicher, da es nur 25 verschiedene Schlüssel gibt, wodurch alle möglichen Kombinationen schnell ausprobiert werden können.
+Beispiel:
+Verschlüsseln wir eine Nachricht:
+→ &amp;ldquo;TEST&amp;rdquo;
+Wir erhalten:
+T → W
+E → H
+S → V
+T → W
+Verschlüsselt: WHVW
+Beim Entschlüsseln wird dieser Vorgang einfach rückwärts durchgeführt.</description>
+    </item>
+    
+    <item>
+      <title>Client Server Modellierung</title>
+      <link>/informatik/netzwerke/client-server/client-server-modellierung.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/netzwerke/client-server/client-server-modellierung.html</guid>
+      <description>Allgemein:
+Nr. Client an Server Server an Client 1 Anfrage Reaktion auf diese Anfrage (Was geschieht bei dieser Anfrage) 2 Message Was passiert beim Erhalt der Message (bei variablen, was für fälle gibt es) &amp;hellip; &amp;hellip; &amp;hellip; Beispiel:
+Nr. Client an Server Server an Client 1 ANMELDUNG Begrüßung, Aufforderung zur Wahl der Größe und Farbe des T-Shirts 2 HOODIE: &amp;lt;Groesse&amp;gt;:&amp;lt;Farbe&amp;gt; Größe und Farbe werden bestätigt, Preis wird übermittelt, Bestätigung wird angefordert, Größe oder Farbe ist falsch, Aufforderung für eine korrekte Eingabe 3 BESTAETIGUNG:&amp;lt;Wahl&amp;gt; Bei &amp;lt;Wahl&amp;gt; = ja (gleich) wird dem Kunden gedanktBei &amp;lt;Wahl&amp;gt; = (gleich) nein wird der Kunde abgemeldetBei &amp;lt;Wahl&amp;gt; !</description>
+    </item>
+    
+    <item>
+      <title>Erste Normalform</title>
+      <link>/informatik/datenbanken/ueberfuehrung-von-normalformen/erste-normalform.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/datenbanken/ueberfuehrung-von-normalformen/erste-normalform.html</guid>
+      <description>Alle Werte müsen atomar sein, das heißt, dass sie nicht weiter zerlegbar sind. Beispiel:
+Name Telefon Nummer Kevin 0217817563, 021738498 Name Telefon Nummer Kevin 0217817563 Kevin 021738498 Die Tabelle befindet sich nun in der ersten Normalform, da die Attribute nicht weiter aufgebrochen werden können.</description>
+    </item>
+    
+    <item>
+      <title>Fachwoerter</title>
+      <link>/informatik/datenbanken/fachwoerter.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/datenbanken/fachwoerter.html</guid>
+      <description> Fachwörter Definition Primärschlüssel eine minimale Menge von Attributen, die jeden möglichen Datensatz eindeutig identifiziert Redundanz wenn Daten mehrmals gespeichert werden. Sie können weggelassen werden, ohne dass Informationen verloren gehen Anomalien Probleme und Fehler, die bei Operationen auf den Datensätzen einer Datenbank entstehen können. Es werden Änderungs-, Einfüge- und Löschanomalien unterschieden Inkonsistenzen Widersprüche im Datenbestand einer Datenbank. Sie können durch Anomalien hervorgerufen werden </description>
+    </item>
+    
+    <item>
+      <title>Grundbegriffe</title>
+      <link>/informatik/verschluesselung/grundlagen/grundbegriffe.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/verschluesselung/grundlagen/grundbegriffe.html</guid>
+      <description> Begriff Definition Klartext (Plaintext) Beschreibt eine unverschlüsselte Nachricht Klartextalphabet Zeichen, aus denen der Klartext bestehen kann Geheimtext (Ciphertext) Beschreibt eine verschlüsselte Nachricht Geheimtextalphabet Zeichen, aus denen der Geheimtext bestehen kann Verschlüsseln (Chiffrieren) Vorgang, um einen Klartext durch ein Verfahren in einen Geheimtext umzuwandeln Entschlüsseln (Dechiffriern) Vorgang, um einen Geheimtext in einen Klartext umzuwandeln Schlüssel nformation oder Algorithmus, welcher angibt, wie das Verschlüsselungsverfahren in einer Situation angewendet werden soll. Kryptographie Die Wissenschaft der Entwicklung von Verschlüsselungsvervahren, sowie der Ver- und Entschlüsselung von Daten Kryptoanalyse Die Wissenschaft des Brechens von Verschlüsselungsverfahren Kryptologie Zusammenfassung von Kryptoanalyse und Kryptographie </description>
+    </item>
+    
+    <item>
+      <title>Grundprinzipien</title>
+      <link>/informatik/datenschutz/grundprinzipien.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/datenschutz/grundprinzipien.html</guid>
+      <description>Verbot mit Erlaubnisvorbehalt Die Verarbeitung, d. h. zum Beispiel die Erhebung, Speicherung, Weitergabe oder allgemeine Verwendung personenbezogener Daten ist grundsätzlich verboten – es sei denn, die betroffene Person hat der Verarbeitung für einen konkreten Zweck zugestimmt oder es gibt eine explizite gesetzliche Regelung, die eine Verarbeitung für einen konkreten Zweck erlaubt. Datenminimierung Die Verarbeitung personenbezogener Daten ist an dem Ziel auszurichten, so wenig personenbezogene Daten wie möglich zu verarbeiten. Insbesondere sind personenbezogene Daten nach Möglichkeit zu anonymisieren bzw.</description>
+    </item>
+    
+    <item>
+      <title>Mealy Automat</title>
+      <link>/informatik/automaten/mealy-automat.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/automaten/mealy-automat.html</guid>
+      <description>endlich: Eingabealphabet, (Ausgabealphabet), Zustände sind endlich
+A = (Q, Σ, δ, Ω, λ,s) Q: nichtleere, endliche Menge von Zuständen Σ: nichtleeres, endliches Eingabealphabet Ω: nichtleeres, endliches Ausgabealphabet δ: QxΣ → Q Übergangsfunktion, die jeder Kombination (Zustand, Eingabezeichen) einen Nachfolgezustand zuordnet λ: QxΣ → Ω Ausgabefunktion, die jeder Kombination (Zustand, Eingabezeichen) eine Ausgabe zuordnet s∈Q: Startzustand Beispiel: A = (Q, Σ,Ω, δ, λ,s) mit:
+Q = {q0, q1}
+q0: zu, q1: offen Σ = {O, S}</description>
+    </item>
+    
+    <item>
+      <title>Modellierung</title>
+      <link>/informatik/datenbanken/er-modell/modellierung.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/datenbanken/er-modell/modellierung.html</guid>
+      <description> Begriff Bedeutung Entität Objekt aus der Realsituation, über das Informationen gespeichert werden Entitätsmenge Zusammenfassung mehrerer gleichartiger Entitäten Attribut Eigenschaft aller Entitäten einer Entitätsmenge Beziehungen Zusammenhang von Entitäten untereinander Beziehungsmengen Zusammenfassung von gleichartigen Beziehungen Kardinalitäten beschreiben, wie viele Entitäten einer Entitätsmenge an einer bestimmten Beziehung beteiligt sein können oder müssen. Es wird zwischen den Kardinalitäten -1 (kein oder ein) und -m bzw. n (kein, ein oder mehrere) unterschieden. Somit sind drei Beziehungsarten möglich (1:1, 1:n und m:n) </description>
+    </item>
+    
+    <item>
+      <title>Paritaetsbit</title>
+      <link>/informatik/netzwerke/pruefverfahren/paritaetsbit.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/netzwerke/pruefverfahren/paritaetsbit.html</guid>
+      <description>Definition:
+An die Bitfolge wird ein Prüfbit angehängt, durch das die Anzahl der Einsen in der Bitfolge gerade wird.
+Beispiel: Bitfolge: 10010111 Berechnung: Anzahl der Einsen ist ungerade Prüfbit: 1 </description>
+    </item>
+    
+    <item>
+      <title>RSA-Verschlüsselung</title>
+      <link>/informatik/verschluesselung/asymmetrische-verschluesselung/rsa.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/verschluesselung/asymmetrische-verschluesselung/rsa.html</guid>
+      <description>privater Schlüssel: (d, N)
+Beispiel:	(11, 14)
+öffentlicher Schlüssel: (e, N)
+Beispiel: (5, 14)
+Nachricht: m
+Beispiel: c (3)
+Verschlüsseln m^e (als Zahl) mod N
+Beispiel:
+3 mod 14 = 5 (e) Cyphertext (c) = 5 (e)
+Entschlüsseln c^d (als Zahl) mod N
+Beispiel:
+5 mod 15 = 3 (c)
+RSA-Schlüsselgeneration Um eine Nachricht mit dem RSA-Verfahren zu verschlüsseln braucht man einen privaten und einen öffentlichen Schlüssel. Dieser wird generell in 5 Schritten erzeugt.</description>
+    </item>
+    
+    <item>
+      <title>Syntax</title>
+      <link>/informatik/automaten/formale-sprachen-grammatiken/syntax.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/automaten/formale-sprachen-grammatiken/syntax.html</guid>
+      <description>Regelsystem zur Kombination elementarer Zeichen zu zusammengesetzten Zeichen, z.B.: Syntaxregeln einer Grammatik, etc.</description>
+    </item>
+    
+    <item>
+      <title>Vergleichs Operatoren</title>
+      <link>/informatik/datenbanken/operatoren/vergleichs-operatoren.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/datenbanken/operatoren/vergleichs-operatoren.html</guid>
+      <description> Symbol Operation = gleich &amp;lt;&amp;gt; ungleich &amp;gt; größer &amp;lt; kleiner &amp;gt;= größer gleich &amp;lt;= kleiner gleich LIKE gibt Inhalte die eine bestimmte Zeichenfolge beinhaltet zurück (&amp;rsquo;%&amp;hellip;%&#39;) BETWEEN gibt nur die Inhalte zwischen zwei Werten zurück IN gitb die spezifizierten Werte zurück IS NULL Überprüft, ob das Element vorhanden ist </description>
+    </item>
+    
+    <item>
+      <title>Arithmetische Operatoren</title>
+      <link>/informatik/datenbanken/operatoren/arithmetische-operatoren.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/datenbanken/operatoren/arithmetische-operatoren.html</guid>
+      <description> Symbol Operation + addition - subtration * multiplikation / division </description>
+    </item>
+    
+    <item>
+      <title>Client Server Kommunikation</title>
+      <link>/informatik/netzwerke/client-server/client-server-kommunikation.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/netzwerke/client-server/client-server-kommunikation.html</guid>
+      <description>Kommunikation zwischen Client und Server:
+Client sendet Server sendet Anfrage → ← Antwort Anfrage → ← &amp;hellip; </description>
+    </item>
+    
+    <item>
+      <title>Dea</title>
+      <link>/informatik/automaten/dea.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/automaten/dea.html</guid>
+      <description>deterministisch: für jeden Zustand gibt es für jedes Eingabezeichen nur genau einen Folgezustand
+A = (Q, Σ, F, δ, s) Q: nichtleere, endliche Menge von Zuständen Σ: nichtleeres, endliches Eingabealphabet F⊆Q Menge der akzeptierenden Zustände δ: QxΣ → Q Übergangsfunktion, die jeder Kombination (Zustand, Eingabezeichen) einen Nachfolgezustand zuordnet s∈Q Startzustand Beispiel:
+A = (Q, Σ, F, δ, s) Q = {q0, q1} Σ = {0, 1} F = {q0, q3} s = q0 δ = 0 1 q0 q3 q2 q1 q3 q2 q2 q3 q1 q3 q2 q3 oder</description>
+    </item>
+    
+    <item>
+      <title>Formale Sprach</title>
+      <link>/informatik/automaten/formale-sprachen-grammatiken/formale-sprach.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/automaten/formale-sprachen-grammatiken/formale-sprach.html</guid>
+      <description>Eine Formale Sprache L über einem Alphabet Σ ist eine Teilmenge aller möglichen Verknüpfungen des Alphabets
+Zusammenhang zwischen Automaten und Grammatiken Automaten können die Wörter einer Sprache erkennen. Grammatiken geben die Struktur der Wörter einer Sprache vor. Mittels Produktionsregeln lassen sich Wörter der Sprache erzeugen.</description>
+    </item>
+    
+    <item>
+      <title>Mathematische Grundlagen der Kryptografie</title>
+      <link>/informatik/verschluesselung/grundlagen/mathe-grundlagen-kryptografie.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/verschluesselung/grundlagen/mathe-grundlagen-kryptografie.html</guid>
+      <description>Primzahlen Eine Primzahl ist eine Zahl, die größer als eins ist und nur durch sich selbst und eins teilbar ist.
+Primfaktorzerlegung Jede natürliche Zahl die größer als eins ist und selbst keine Primzahl ist, lässt sich als ein Produkt von mindestens zwei Primzahlen schreiben.
+Beispiel:
+60= 230 = 2215= 2²3*5
+Teilbarkeit Eine ganze Zahl a ist durch eine andere ganze Zahl b teilbar, wenn bei der Division a:b kein Rest entsteht.</description>
+    </item>
+    
+    <item>
+      <title>Pruefsumme</title>
+      <link>/informatik/netzwerke/pruefverfahren/pruefsumme.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/netzwerke/pruefverfahren/pruefsumme.html</guid>
+      <description>Definition:
+Es werden alle Bits der Bitfolge addiert. Die Summe wird modulo n gerechnet, wobei durch n die Länge der Prüfsumme bestimmt wird.
+Beispiel: Bitfolge: 10110111 Berechnung: (1+0+1+1+0+1+1+1)mod4 = 1 r 2 Prüfsumme: 10 (Rest 2) </description>
+    </item>
+    
+    <item>
+      <title>Ring Topologie</title>
+      <link>/informatik/netzwerke/netzwerktopologien/ring-topologie.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/netzwerke/netzwerktopologien/ring-topologie.html</guid>
+      <description>Beschreibung:
+Jeder Computer im Netzwerk ist mit genau zwei weiteren verbunden. Die Daten werden vom Sender über die anderen Computer an den Empfänger geleitet.
+Vorteile Nachteile Verteilte Steuerung mit gleichberechtigten Teilnehmern Es gibt nur einen Alternativweg bei einer Störung Große Netzwerkausdehnung wegen der Signalverstärkung der einzelnen Computer möglich Hoher Verkabelungsaufwand </description>
+    </item>
+    
+    <item>
+      <title>Schutzziele in der Informationssicherheit</title>
+      <link>/informatik/datenschutz/schutzziele.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/datenschutz/schutzziele.html</guid>
+      <description>Es gibt 7 Schutzziele in der Informationssicherheit. Diese sind in keiner besonderen Reihenfolge:
+Vertraulichkeit
+Die Information einer Nachricht ist nur den befugten Personen zugänglich. Integrität
+Der Inahlt der Nachricht kann entweder nicht bearbeitet werden oder nicht unbemerkt bearbeitet werden. Verfügbarkeit
+Ein Dienst muss zur vereinbarten Zeit verfügbar sein. Die Verfügbarkeit setzt sich aus der eigentlichen Aktivzeit geteilt durch die vereinbarte Zeit zusammen. Authentizität
+Beinhaltet, dass der aktuelle Kommunikationsparnter auch der gewollte bzw.</description>
+    </item>
+    
+    <item>
+      <title>Sql Befehle</title>
+      <link>/informatik/datenbanken/sql-befehle.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/datenbanken/sql-befehle.html</guid>
+      <description> Befehl Nutzen SELECT(DISTINCT)&amp;hellip;FROM WHERE Bedingung GROUP BY Gruppiert nach dem angegebenen Attribut ORDER BY Ordnet nach einem bestimmten Spalte (wird als Zahl angegeben) ASC Ordnet die Ausgabe vom kleinsten zum größten Element DESC Ordnet die Ausgabe von größtem zum kleinsten Element LEFT JOIN&amp;hellip;ON Verbindet zwei Tabellen, wobei die linke Tabelle die Primärtabelle ist, wobei ON den Primärschlüssel definiert RIGHT JOIN&amp;hellip;ON Verbindet zwei Tabellen, wobei die rechte Tabelle die Primärtabelle ist, wobei ON den Primärschlüssel definiert INNER JOIN&amp;hellip;ON Verbindet alle Zeilen, die in beiden Tabellen vorhanden sind JOIN&amp;hellip;ON Ist eine andere Schreibweise zum INNER JOIN UNION Vereinigt die Zeilen aus zwei Tabellen mit den gleichen Attributen in einer Tabelle AS bennent eine Spalte in der Ergebnistabelle NULL </description>
+    </item>
+    
+    <item>
+      <title>Transportschicht</title>
+      <link>/informatik/netzwerke/schichtenmodell/transportschicht.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/netzwerke/schichtenmodell/transportschicht.html</guid>
+      <description> Stellt eine zuverlässige Verbindung zwischen den Computern her </description>
+    </item>
+    
+    <item>
+      <title>Umsetzung</title>
+      <link>/informatik/datenbanken/er-modell/umsetzung.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/datenbanken/er-modell/umsetzung.html</guid>
+      <description>Begriff Bedeutung Beispiel Relationsschema Jede Entitätsmenge wird im relationalen Modell einer eigenständigen Relation überführt Verlag(VID, Name, Sitz, Ansprechpartner) Fremdschlüssel Primärschlüssel der in einer Relation vorkommt und mit einem senkreckten Pfeil gekennzeichnet wird m:n-Beziehung Wird im relationalem Modell (Relationsschema) in eine eigene Relation überführt. Attribute sind die Primärschlüssel der beiden an der Beziehung beteiligten Entitätsmengen (als Fremdschlüssel), die gemeinsam den Primärschlüssel der Beziehungstabelle bilden, sowie ggf. Attribute der Beziehungsmenge 1:n-Beziehung Die Relation mit der Kardinalität n wird der Primärschlüssel der Relation mit der Kardinalität 1 als Fremdschlüssel angefügt.</description>
+    </item>
+    
+    <item>
+      <title>Vigenere</title>
+      <link>/informatik/verschluesselung/symmetrische-verschluesselung/vigenere.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/verschluesselung/symmetrische-verschluesselung/vigenere.html</guid>
+      <description>Das VIGENÈRE-Verfahren ist ein unsicheres Verschlüsselungsverfahren, welches durch ein Schlüsselwort den Quellbuchstaben durch ein sich veränderndes Alphabet ein anderen Wert zu ordnet.
+Beispiel:
+Nachricht: Test Schlüsselwort: Test Im Vigenere Quadrat:
+„Test“ mit dem Schlüssel „Test“ ergibt: MIKM
+Beim Entschlüsseln wird dieses Verfahren einfach rückwärts angewandt.</description>
+    </item>
+    
+    <item>
+      <title>Zweite Normalform</title>
+      <link>/informatik/datenbanken/ueberfuehrung-von-normalformen/zweite-normalform.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/datenbanken/ueberfuehrung-von-normalformen/zweite-normalform.html</guid>
+      <description>Befindet sich eine Beziehung in der ersten Normalform und ist jedes Nicht-Primärschlüssel-Attribut funktional vollständig vom Primärschlüssel abhängig, dann befindet sich die Beziehung in der zweiten Normalform (2NF).
+StudentNr. Kursnummer Kurspreis 1 43 50 2 21 60 3 21 60 4 13 60 → Kurspreis kann nicht allein den Wert von Kursnummer oder StudentNr. bestimmen
+→ Kurspreis kann zusammen mit StudentNr. nicht über den Wert von Kursnummer entscheiden
+→ Kurspreis kann zusammen mit Kursnummer nicht über den Wert von StudentNr.</description>
+    </item>
+    
+    <item>
+      <title>Client Server Implementierung</title>
+      <link>/informatik/netzwerke/client-server/client-server-implementierung.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/netzwerke/client-server/client-server-implementierung.html</guid>
+      <description>Um durch die Abiturklassen eine Verbindung auf zu bauen, werden einige Methoden und Vererbungen benötigt.* Der Client muss hier bei diese Methode implementieren: +ProcessMessage(pMessage: String): void Hierbei ist auch wichtig, dass die jeweilige Client Klasse von der Abiturklasse „Client“ erbt (extends). Hierbei muss auch darauf geachtet werden, dass ein Client Objekt durch super mit einer Server IP sowie Port erstellt wird.
+Der Server muss hierbei folgende Methoden Implementieren:
++processNewConnection(pClientIP: String, pClientPort: int): void +processMessage(pClientIP: String, pClientPort: int, pMessage: String): void +processClosingConnection(pClientIP: String, pClientPort: int): void Es ist darauf zu achten, dass die implementierende Klasse von der Abiturklasse „Server“ erbt (extends), sowie durch einen „super()“ Aufruf eine „Server“ Klasse erstellt.</description>
+    </item>
+    
+    <item>
+      <title>Dritte Normalform</title>
+      <link>/informatik/datenbanken/ueberfuehrung-von-normalformen/dritte-normalform.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/datenbanken/ueberfuehrung-von-normalformen/dritte-normalform.html</guid>
+      <description>Befindet sich eine Beziehung in der ersten Normalform und ist jedes Nicht-Primärschlüssel-Attribut funktional vollständig vom Primärschlüssel abhängig, dann befindet sich die Beziehung in der zweiten Normalform (2NF).
+StudentNr. Kursnummer Kurspreis 1 43 50 2 21 60 3 21 60 4 13 60 → Kurspreis kann nicht allein den Wert von Kursnummer oder StudentNr. bestimmen
+→ Kurspreis kann zusammen mit StudentNr. nicht über den Wert von Kursnummer entscheiden
+→ Kurspreis kann zusammen mit Kursnummer nicht über den Wert von StudentNr.</description>
+    </item>
+    
+    <item>
+      <title>Formale Grammatik</title>
+      <link>/informatik/automaten/formale-sprachen-grammatiken/formale-grammatik.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/automaten/formale-sprachen-grammatiken/formale-grammatik.html</guid>
+      <description>G = (N, T, P, S) N: nichtleere, endliche Menge von Nichtterminalen T: nichtleere, endliche Menge von Terminalen P: endliche Menge von Produktionsregeln (Jede Regel bildet eine beliebige Kombination aus T und N, die mindestens ein N enthält, auf eine beliebige Kombination von Terminalen und Nichtterminalen ab.) s∈N ist das Startsymbol Beispiel: L = {anbncn|n≥0}
+G = (N, T, S, P) N = {S, S&amp;rsquo;, B} T = {a, b, c} S Startsymbol P = {</description>
+    </item>
+    
+    <item>
+      <title>Internetschicht</title>
+      <link>/informatik/netzwerke/schichtenmodell/internetschicht.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/netzwerke/schichtenmodell/internetschicht.html</guid>
+      <description> Die Daten werden vom Sender zum Empfänger über das Netzwerk verschickt </description>
+    </item>
+    
+    <item>
+      <title>Kasiski Test</title>
+      <link>/informatik/verschluesselung/symmetrische-verschluesselung/kasiski-test.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/verschluesselung/symmetrische-verschluesselung/kasiski-test.html</guid>
+      <description>Wird benutzt, um die Länge des Schlüsselworts bei der Vigenere Verschlüsselung zu bestimmen Nachdem die Länge bestimmt wurde, können einfach wie auch beim Caesar verfahren alle Möglichkeiten durchprobiert werden. Beispiel:
+AXTRX TRYLC TYSZO EMLAF QWEUZ HRKDP NRVWM WXRPI JTRHN IKMYF WLQIE NNOXW OTVXB NEXRK AFYHW KXAXF QYAWD PKKWB WLZOF XRLSN AAWUX WTURH RFWLL WWKYF WGAXG LPCTG ZXWOX RPIYB CSMYF WIKPA DHYBC SMYFW KGMTE EUWAD LHSLP AVHFK HMWLK
+Dieser Text wurde mit dem Wort „ALTESTESTAMENT“ verschlüsselt.</description>
+    </item>
+    
+    <item>
+      <title>Logische Operatoren</title>
+      <link>/informatik/datenbanken/operatoren/logische-operatoren.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/datenbanken/operatoren/logische-operatoren.html</guid>
+      <description> AND OR NOT </description>
+    </item>
+    
+    <item>
+      <title>Nea</title>
+      <link>/informatik/automaten/nea.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/automaten/nea.html</guid>
+      <description>nichtdeterministisch:
+für eine Kombination aus Zustand und Eingabezeichen kann es mehrere Folgezustände geben, oder keinen Folgezustand. Dann wird auf die leere Menge abgebildet (Fehlerzustand).
+A = (Q, Σ, F, δ, s) Q: nichtleere, endliche Menge von Zuständen Σ: nichtleeres, endliches Eingabealphabet F⊆Q Menge der akzeptierten Zustände δ: QxΣ → P(Q) Übergangsfunktion die jeder Kombination einen Nachfolgezustand zuordnet s∈Q Startzustand P(Q) ist die Potenzmenge von Q, also die Menge aller Teilmengen von Q.</description>
+    </item>
+    
+    <item>
+      <title>Stellungnahme im Fach Informatik</title>
+      <link>/informatik/datenschutz/stellungnahme.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/datenschutz/stellungnahme.html</guid>
+      <description>Eine Stellungsnahme besteht aus drei Teilen. Die These, die Argumente und als letztes die Positionierung.
+These Die These ist eine Behauptung zu der man Stellung nehmen soll. Je nach Aufgabenstellung kann man seine eigenen These entwickeln oder man bekommt eine These.
+Argumente Bei den Argumenten sammelt man verschiedene die für die These oder gegen sie sprechen. Dabei kann man verschiedene Argumentationsverläufe verwenden, wie zum Beispiel:
+Ping-Pong: Pro und Contra Argumente folgen einander im Argumentationsverlauf.</description>
+    </item>
+    
+    <item>
+      <title>Stern Topologie</title>
+      <link>/informatik/netzwerke/netzwerktopologien/stern-topologie.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/netzwerke/netzwerktopologien/stern-topologie.html</guid>
+      <description>Beschreibung:
+Jeder Computer ist mit nur einem Zentralen verbunden. Alle Daten werden über diesen verteilt.
+Vorteile Nachteile Einfache Erweiterung des Netzwerks wegen der geringen Kabellänge Hoher Verkabelungsaufwand Geringe Störungsanfälligkeit beim Ausfall eines Computers, welcher nicht die Zentrale ist Kompletter Netzausfall bei einer Störung des zentralen Rechners </description>
+    </item>
+    
+    <item>
+      <title>XOR-Pruefsumme</title>
+      <link>/informatik/netzwerke/pruefverfahren/xor-pruefsumme.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/netzwerke/pruefverfahren/xor-pruefsumme.html</guid>
+      <description>Definition:
+Mehrere gleich lange Teile einer Bitfolge werden XOR-verknüpft. Es entsteht eine Prüfsumme, die die gleiche Länge wie die einzelnen Bitfolgen hat.
+Beispiel: Bitfolge: 10110011 Berechnung:	10110011 XOR	01101000 Prüfsumme:	11011011 </description>
+    </item>
+    
+    <item>
+      <title>Anwendung</title>
+      <link>/informatik/automaten/formale-sprachen-grammatiken/anwendung.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/automaten/formale-sprachen-grammatiken/anwendung.html</guid>
+      <description>Parser: kontextsensitive Grammatik Scanner: reguläre Grammatik Übersetzung von Quellcode in Maschinensprache Um einen Quellcode in eine Maschinensprache zu übersetzen, verwendet man einen Compiler, welcher mithilfe von verschiedenen Schritten mit speziellen Aufgaben, den Quelltext analysiert und umwandelt:
+Scanner → lexikalische Analyse Parser → syntaktische Analyse semantische Analyse Codegenerator → Synthesepahse In der folgenden Section werden der Scanner (Schritt 1) und der Parser (Schritt 2) näher behandelt.
+Scanner lexikalische (zeichenweise) Analyse des Quelltextes wird auch Lexer genannt bildet die Grundlage für den Parser Scanner zerlegt den Text in seine Bestandteile (Token) arbeitet nach den Regeln der regulüren Grammatik erkennt das Wort einer Sprache mithilfe eines DEAs erstellt eine Tokenliste (indizierte Liste aller Token mit Typen und Speicheradressen) Parser syntaktische Analyse des Quellcodes → Analyse der syntaktischen Korrektheit Scanner bildet die Grundlage für die semantische Analyse übernimmt sowohl die lexikalische als auch die syntaktische Analyse, wenn man bei der Worterkennung nicht zwischen den beiden unterscheidet erzeugt ein Ableitungsbaum Zusammenarbeit zwischen Scanner und Parser Scanner Parser können auf zwei Arten zusammenarbeiten:</description>
+    </item>
+    
+    <item>
+      <title>Diffie Hellman Verfahren</title>
+      <link>/informatik/verschluesselung/symmetrische-verschluesselung/diffie-hellman-verfahren.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/verschluesselung/symmetrische-verschluesselung/diffie-hellman-verfahren.html</guid>
+      <description>Das Diffie-Hellman-Verfahren wird genutzt, um einen symmetrischen Schlüssel über eine ungesicherte Verbindung auszutauschen.
+Beispiel:
+Quelle: Wikimedia Commons, Public Domain → https://commons.wikimedia.org/wiki/File:Diffie-Hellman_Key_Exchange_(de).svg
+Quelle: https://openclipart.org</description>
+    </item>
+    
+    <item>
+      <title>Funktionen</title>
+      <link>/informatik/datenbanken/funktionen.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/datenbanken/funktionen.html</guid>
+      <description> Funktion Nutzen COUNT Zählt die Anzahl der Zeilen SUM Zählt die Werte der Spalte MAX gibt den höchsten Wert zurück MIN gibt den kleinsten Wert zurück AVG gibt den Mittlewert (von int) zurück </description>
+    </item>
+    
+    <item>
+      <title>Netzzugangsschicht</title>
+      <link>/informatik/netzwerke/schichtenmodell/netzzugangsschicht.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/netzwerke/schichtenmodell/netzzugangsschicht.html</guid>
+      <description> Stellt eine zuverlässige physikalische Verbindung her Überträgt die Daten mithilfe von physischen Signalen (wie Licht oder elektrischem Strom) </description>
+    </item>
+    
+    <item>
+      <title>Vermaschte Topologie</title>
+      <link>/informatik/netzwerke/netzwerktopologien/vermaschte-topologie.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/netzwerke/netzwerktopologien/vermaschte-topologie.html</guid>
+      <description>Beschreibung:
+Jeder Computer im Netzwerk ist mit mindestens einem weiteren verbunden. Die Daten haben meistens mehrere Routen vom Sender zum Empfänger. Wenn alle Rechner mit allen anderen verbunden sind heißt diese vollvermascht.
+Vorteile Nachteile Hoch Ausfallsicherheit durch alternative Wege von einem Rechner zum anderen Aufwändige Organisation für Wegbestimmung der Daten notwendig Die Verkabelung ist sehr hochwertig und somit teuer </description>
+    </item>
+    
+    <item>
+      <title>Zusammenhang Dea Nea</title>
+      <link>/informatik/automaten/zusammenhang-dea-nea.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/automaten/zusammenhang-dea-nea.html</guid>
+      <description> DEAs und NEAs beschreiben die gleiche Sprachklasse (reguläre Sprachen) wesentlicher Unterschied: bei NEA sind auch mehrere Folgezustände bzw. kein Folgezustand mögliche der DEA ist ein Spezialfall von einem NEA jeder NEA lässt sich mittels Potenzmengenkonstruktion in einen äquivalenten DEA umwandeln </description>
+    </item>
+    
+    <item>
+      <title>Normalformen</title>
+      <link>/informatik/datenbanken/normalformen.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/datenbanken/normalformen.html</guid>
+      <description> Normalform Bedingung Erste Normalform (1NF) ist erreicht, wenn alle Attribute einen atomaren Wertebereich haben Zweite Normalform (2NF) ist erreicht, wenn die Datenbank in der 1NF ist und zusätzlich jedes Nichtschlüsselattribut vom Primärschlüssel voll funktional abhängig ist und nicht von einem Teil der Schlüsselattribute Dritte Normalform (3NF) ist erreicht, wenn die Datenbank in der 2NF ist und es zusätzlich kein Nichtschlüsselattribut gibt, das transitiv abhängig von einem Schlüsselattribut ist. Es darf also keine funktionalen Abhängigkeiten zwischen Nichtschlüsselattributen geben </description>
+    </item>
+    
+    <item>
+      <title>Potenzmengenkonstruktion</title>
+      <link>/informatik/automaten/potenzmengenkonstruktion.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/automaten/potenzmengenkonstruktion.html</guid>
+      <description>Idee Konstruiere zu NEA einen DEA durch:
+merke im Zustand des DEA, in welchen Zuständen der NEA sein könnte Zustände des DEA sind Mengen von Zuständen des NEA Beispiel
+NEA DEA Jeder Zustand des DEA, der mindestens einen Endzustand vom NEA enthält, wird ein akzeptierender Zustand.
+Algorithmus starte mit Menge des Anfangszustands solange es unbearbeiteten Zustand S={q1,&amp;hellip;, qk} gibt für jedes Eingabezeichen a: für jeden Zustand q1,&amp;hellip;, qk bestimme die Nachfolger für die Eingabe a im NEA und füge sie s&amp;rsquo; hinzu falls es den Zustand s&amp;rsquo; noch nicht gibt, füge ihn hinzu füge den Übergang von s zu s&amp;rsquo; hinzu markiere s als bearbeitet </description>
+    </item>
+    
+    <item>
+      <title>Abhaengigkeiten</title>
+      <link>/informatik/datenbanken/abhaengigkeiten.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/datenbanken/abhaengigkeiten.html</guid>
+      <description>Abhängigkeiten Bedeutung Beispiel funktional abhängig Ein Attribut B ist von einem Attribut A funktional abhängig, wenn jeder Wert von Attribut A einem eindeutigen Wert von Attribut B zugeordnet werden kann A → B voll funktional abhängig Ein Attribut B ist von einer Attributkombination (A1, A2) voll funktional abhängig, wenn ein Attribut B funktional abhängig von der Kombination (A1, A2) ist, aber nicht schon von A1 oder A2 B → (A1, A2) und B nicht → A1 oder → A2 transitiv abhängig Ein Attribut C ist von Attribut A transitiv abhängig, wenn es ein Attribut B gitb welches von A abhängig ist.</description>
+    </item>
+    
+    <item>
+      <title>Kellerautomat</title>
+      <link>/informatik/automaten/kellerautomat.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/automaten/kellerautomat.html</guid>
+      <description>A = (Q, Σ, K, F, δ, s, #) Q: nichtleere, endliche Menge von Zuständen Σ: nichtleeres, endliches Eingabealphabet F⊆Q Menge der akzeptierenden Zustände s∈Q Startzustand δ: Übergangsfunktion, die jeder Kombination (Zustand, Eingabezeichen (ϵ ist auch möglich, gehört aber nicht zum Eingabealphabet), Kellerzeichen) einen Nachfolgezustand und eine Kelleroperation zuordnet #ϵK Anfangssymbol im Keller Beispiel
+A = (Q, Σ, K, F, δ, s, #) Q = {z0, z1, z2} Σ = {a, b} K = {#, A} F = {Z2} s = Z0 δ: stand|E ngabezeichen|K llerzeichen|F lgezustand|K lleroperation| sub&amp;gt;0|a # z sub&amp;gt;0|p sh(A)| sub&amp;gt;0|a A z sub&amp;gt;0|p sh(A)| sub&amp;gt;0|b A z sub&amp;gt;1|p p()| sub&amp;gt;1|b A z sub&amp;gt;1|p p()| sub&amp;gt;1|� |# z sub&amp;gt;2|n p| alle nicht aufgelisteten Übergänge führen in einen Fehlerzustand</description>
+    </item>
+    
+    <item>
+      <title>Vergleich Automaten</title>
+      <link>/informatik/automaten/vergleich-automaten.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/informatik/automaten/vergleich-automaten.html</guid>
+      <description>DEA/NEA Beantwortung von Entscheidungsfragen (gehört die Eingabe einer bestimmten Sprache?) z.B.: zur Prüfung der syntaktischen Korrektheit von Quellcode (if, for, ..) erkennt reguläre Sprachen Kellerautomaten (nichtdeterministisch) Erkennung beliebig vieler Klammernschachtelnungen erkennt kontextfreie Sprachen erkennt keine Sprachen der Form L = {anbncn|n&amp;gt;0} </description>
+    </item>
+    
   </channel>
 </rss>

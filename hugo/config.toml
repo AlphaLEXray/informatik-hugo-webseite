@@ -10,8 +10,8 @@ theme = "relearn"
 # For search functionality
 [outputs]
   home = ["HTML", "RSS", "JSON"]
-  section = ["HTML", "RSS", "PRINT"]
-  page = ["HTML", "RSS", "PRINT"]
+  section = ["HTML", "RSS"]
+  page = ["HTML", "RSS"]
 
 [params]
   # Change default color scheme with a variant one. Eg. can be "red", "blue", "green" or an array like [ "blue", "green" ].

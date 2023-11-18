@@ -10,29 +10,37 @@
       <title>Anwendungsschicht</title>
       <link>/informatik/netzwerke/schichtenmodell/anwendungsschicht.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>/informatik/netzwerke/schichtenmodell/anwendungsschicht.html</guid>
       <description> Stellt Dienste für die jeweilige Anwendung bereit Übersetzt die Daten in eine Systemunabhängige Form Verbindet jeweils die an einer Sitzung beteiligten Anwendungen </description>
     </item>
+    
     <item>
       <title>Transportschicht</title>
       <link>/informatik/netzwerke/schichtenmodell/transportschicht.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>/informatik/netzwerke/schichtenmodell/transportschicht.html</guid>
       <description> Stellt eine zuverlässige Verbindung zwischen den Computern her </description>
     </item>
+    
     <item>
       <title>Internetschicht</title>
       <link>/informatik/netzwerke/schichtenmodell/internetschicht.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>/informatik/netzwerke/schichtenmodell/internetschicht.html</guid>
       <description> Die Daten werden vom Sender zum Empfänger über das Netzwerk verschickt </description>
     </item>
+    
     <item>
       <title>Netzzugangsschicht</title>
       <link>/informatik/netzwerke/schichtenmodell/netzzugangsschicht.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>/informatik/netzwerke/schichtenmodell/netzzugangsschicht.html</guid>
       <description> Stellt eine zuverlässige physikalische Verbindung her Überträgt die Daten mithilfe von physischen Signalen (wie Licht oder elektrischem Strom) </description>
     </item>
+    
   </channel>
 </rss>
