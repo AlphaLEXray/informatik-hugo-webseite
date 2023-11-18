@@ -10,6 +10,7 @@
       <title>RSA-Verschlüsselung</title>
       <link>/informatik/verschluesselung/asymmetrische-verschluesselung/rsa.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>/informatik/verschluesselung/asymmetrische-verschluesselung/rsa.html</guid>
       <description>privater Schlüssel: (d, N)
 Beispiel:	(11, 14)
@@ -25,5 +26,6 @@ Beispiel:
 5 mod 15 = 3 (c)
 RSA-Schlüsselgeneration Um eine Nachricht mit dem RSA-Verfahren zu verschlüsseln braucht man einen privaten und einen öffentlichen Schlüssel. Dieser wird generell in 5 Schritten erzeugt.</description>
     </item>
+    
   </channel>
 </rss>

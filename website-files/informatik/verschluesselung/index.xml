@@ -6,26 +6,5 @@
     <description>Recent content in Verschluesselung on Informatikabitur</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language><atom:link href="/informatik/verschluesselung/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Grundlagen</title>
-      <link>/informatik/verschluesselung/grundlagen.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/informatik/verschluesselung/grundlagen.html</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Symmetrische Verschluesselung</title>
-      <link>/informatik/verschluesselung/symmetrische-verschluesselung.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/informatik/verschluesselung/symmetrische-verschluesselung.html</guid>
-      <description>Die symmetrische Verschlüsselung benutzt nur einen Schlüssel, um die Nachricht zu ver- und entschlüsseln. Dies hat den Nachteil, dass dieser Schlüssel geheim gehalten werden muss und deshalb über ein sicheres Übertragungsmedium mitgeteilt werden muss. Es gibt aber auch Verfahren, mit denen man einen symmetrischen Schlüssel über eine nicht sichere Verbindung austauschen kann. Dies ist der Diffie-Hellman-Schlüsselaustausch.</description>
-    </item>
-    <item>
-      <title>Asymmetrische Verschluesselung</title>
-      <link>/informatik/verschluesselung/asymmetrische-verschluesselung.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/informatik/verschluesselung/asymmetrische-verschluesselung.html</guid>
-      <description>Die asymmetrische Verschlüsselung basiert, anders als die symmetrische Verschlüsselung, auf zwei verschiedenen Schlüsseln. Diese sind der öffentliche und der private Schlüssel. Der öffentliche Schlüssel wird an die Kommunikationspartner verschickt. Diese verschlüsseln ihre Nachrichten mit diesem öffentlichem Schlüssel. Wenn eine Nachricht (oder Datei) mit einem öffentlichen Schlüssel verschlüsselt wurde, kann sie nur mithilfe des privaten Schlüssels entschlüsselt werden. Der private Schlüssel soll privat gehalten werden, weshalb er (idealerweise) auf dem Gerät bleiben sollte.</description>
-    </item>
   </channel>
 </rss>

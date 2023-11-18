@@ -10,37 +10,45 @@
       <title>Bus Topologie</title>
       <link>/informatik/netzwerke/netzwerktopologien/bus-topologie.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>/informatik/netzwerke/netzwerktopologien/bus-topologie.html</guid>
       <description>Beschreibung:
 Alle Rechner sind direkt mit dem Übertragungsmedium verbunden, dem sogenannten BUS. Dies führt dazu, dass nur ein Teilnehmer zu einem Zeitpunkt Daten versenden kann.
 Vorteile Nachteile Einfache Installation Der Ausfall eines Kabels führt zum Ausfall des gesamten Netzwerks Kurze Leitungen Besitzt einen hohen Organisationsaufwand wegen der eingeschränkten Sendemöglichkeiten </description>
     </item>
+    
     <item>
       <title>Ring Topologie</title>
       <link>/informatik/netzwerke/netzwerktopologien/ring-topologie.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>/informatik/netzwerke/netzwerktopologien/ring-topologie.html</guid>
       <description>Beschreibung:
 Jeder Computer im Netzwerk ist mit genau zwei weiteren verbunden. Die Daten werden vom Sender über die anderen Computer an den Empfänger geleitet.
 Vorteile Nachteile Verteilte Steuerung mit gleichberechtigten Teilnehmern Es gibt nur einen Alternativweg bei einer Störung Große Netzwerkausdehnung wegen der Signalverstärkung der einzelnen Computer möglich Hoher Verkabelungsaufwand </description>
     </item>
+    
     <item>
       <title>Stern Topologie</title>
       <link>/informatik/netzwerke/netzwerktopologien/stern-topologie.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>/informatik/netzwerke/netzwerktopologien/stern-topologie.html</guid>
       <description>Beschreibung:
 Jeder Computer ist mit nur einem Zentralen verbunden. Alle Daten werden über diesen verteilt.
 Vorteile Nachteile Einfache Erweiterung des Netzwerks wegen der geringen Kabellänge Hoher Verkabelungsaufwand Geringe Störungsanfälligkeit beim Ausfall eines Computers, welcher nicht die Zentrale ist Kompletter Netzausfall bei einer Störung des zentralen Rechners </description>
     </item>
+    
     <item>
       <title>Vermaschte Topologie</title>
       <link>/informatik/netzwerke/netzwerktopologien/vermaschte-topologie.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>/informatik/netzwerke/netzwerktopologien/vermaschte-topologie.html</guid>
       <description>Beschreibung:
 Jeder Computer im Netzwerk ist mit mindestens einem weiteren verbunden. Die Daten haben meistens mehrere Routen vom Sender zum Empfänger. Wenn alle Rechner mit allen anderen verbunden sind heißt diese vollvermascht.
 Vorteile Nachteile Hoch Ausfallsicherheit durch alternative Wege von einem Rechner zum anderen Aufwändige Organisation für Wegbestimmung der Daten notwendig Die Verkabelung ist sehr hochwertig und somit teuer </description>
     </item>
+    
   </channel>
 </rss>
