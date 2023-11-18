@@ -1,0 +1,29 @@
+# source: https://swharden.com/blog/2022-03-20-github-actions-hugo/
+name: Website
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Hugo
+        env:
+          HUGO_VERSION: 0.120.4
+        run: |
+          mkdir ~/hugo
+          cd ~/hugo
+          curl -L "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz" --output hugo.tar.gz
+          tar -xvzf hugo.tar.gz
+          sudo mv hugo /usr/local/bin          
+      - name: Build
+        run: |
+          rm -rf ~/website-files/*
+		      hugo -d ~/website-files/
